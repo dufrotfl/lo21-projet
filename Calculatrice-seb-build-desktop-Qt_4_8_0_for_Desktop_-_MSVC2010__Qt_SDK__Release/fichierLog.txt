@@ -1,0 +1,46 @@
+
+---------------------------------------------------------------------------------------
+------------------ Fichier de log de l'application Calculatrice -----------------------
+------------------   Par Sébastien Fradcourt & Florian Dufrot   -----------------------
+------------------   Fichier crée le Fri May 25 13:28:20 2012   -----------------------
+---------------------------------------------------------------------------------------
+
+Date et heure du log: Fri May 25 13:28:20 2012
+	Importance : 1
+	Contenu :    Lol
+
+Date et heure du log: Fri May 25 13:28:50 2012
+	Importance : 1
+	Contenu :    Lol
+
+Date et heure du log: Fri May 25 13:29:16 2012
+	Importance : 1
+	Contenu :    Lol
+
+Date et heure du log: Fri May 25 13:29:26 2012
+	Importance : 1
+	Contenu :    Lol
+
+Date et heure du log: Fri May 25 13:32:08 2012
+	Importance : 1
+	Contenu :    Lol
+
+Date et heure du log: Fri May 25 13:32:18 2012
+	Importance : 1
+	Contenu :    Lol
+
+Date et heure du log: Fri May 25 13:32:27 2012
+	Importance : 1
+	Contenu :    Lol
+
+Date et heure du log: Fri May 25 13:32:35 2012
+	Importance : 1
+	Contenu :    Lol
+
+Date et heure du log: Fri May 25 13:45:57 2012
+	Importance : 1
+	Contenu :    Lol
+
+Date et heure du log: Mon May 28 12:17:47 2012
+	Importance : 1
+	Contenu :    Lol

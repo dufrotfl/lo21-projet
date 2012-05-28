@@ -1,0 +1,55 @@
+/*!
+ \file context.h
+ \author Sebastien Fradcourt & Florian Dufrot
+ \date 24 Mai 2012
+ \version 1.0
+ */
+ 
+#ifndef CONTEXT_H
+#define CONTEXT_H
+
+/*!
+ \class Context
+ \brief Classe Permettant de gérer l'écriture du context afin de pouvoir le recharger lors de l'ouverture de l'application
+*/
+class Context {
+private:
+	/**<
+	 L'unique instance de Context
+	*/
+    static Context* _instance;
+	/*!
+	 \brief Constructeur par défaut
+	*/
+    Context();
+	/*!
+	 \brief Contructeur par copie (On le définit dans le header afin d'interdire l'utilisation de celui-ci)
+	*/
+    Context(const Context& );
+	/*!
+	 \brief Operateur d'affectation (On le définit dans le header afin d'interdire l'utilisation de celui-ci)
+	*/
+	void operator=(const Context &);
+	
+	/*!
+	 \brief Destructeur de la classe Context
+	*/
+    ~Context() {}
+public:
+	/*!
+	 \brief Getter de l'unique instance de Context, si elle existe pas, on la crée
+	 \return L'unique instance de Context
+	*/
+    static Context* getInstance();
+	/*!
+	 \brief Méthode permettant de libérer l'unique instance de Context
+	*/
+    static void freeInstance();
+
+	/*!
+	 \brief Méthode permettant de stocker le context en mémoire afin de pouvoir le recharger après
+	*/
+    void sauvegardeContext(/*A modifier*/);
+};
+
+#endif
