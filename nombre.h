@@ -9,6 +9,8 @@
 #define NOMBRE_H
 #include "constante.h"
 
+class Reel;
+
 #define PI 3.14159265
 
 /*!
@@ -34,6 +36,18 @@ public:
 	 \brief Méthode permettant de transformer le nombre en son cube
 	*/
     virtual void cube() =0;
+
+
+    Reel* Acos();
+    Reel* Asin();
+    Reel* Atan();
+    Reel* Asinh();
+    Reel* Acosh();
+    Reel* Atanh();
+    Reel* Aln();
+    Reel* Alog();
+    Reel* Ainv();
+    Reel* Asqrt();
 };
 
 #endif NOMBRE_H

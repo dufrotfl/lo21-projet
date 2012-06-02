@@ -31,9 +31,17 @@ public:
     Entier():_val(0) {}
 	/**
 	 \brief Crée un entier avec la valeur passée en paramètre
-	 \param val La valeur de l'entier
+     \param v La valeur de l'entier
 	*/
     Entier(int v):_val(v) {}
+
+    /**
+      \brief Crée un entier par constructeur par copie
+      \param e L'entier à copier
+      */
+    Entier(const Entier &e) { _val = e.getVal(); }
+
+    void operator=(NombreNonComplexe* nnc);
 	/**
 	 \brief Getter de la valeur de l'entier
 	 \return La valeur de l'entier

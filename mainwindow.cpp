@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "QDebug"
 
 MainWindow* MainWindow::mw = 0;
 
@@ -53,11 +54,18 @@ void MainWindow::on_ComplexesYesRadioButton_clicked()
 {
     ui->ComplexDelimiterPushButton->setVisible(true);
     Settings::getInstance()->setUtilisationDeComplexe(Settings::COMPLEXE);
+    _pile->clear();
+    ui->InputLineEdit->clear();
+    ui->StackDisplayTextEdit->clear();
 }
 
 void MainWindow::on_ComplexesNoRadioButton_clicked()
 {
+    ui->ComplexDelimiterPushButton->setVisible(false);
     Settings::getInstance()->setUtilisationDeComplexe(Settings::NON_COMPLEXE);
+    _pile->clear();
+    ui->InputLineEdit->clear();
+    ui->StackDisplayTextEdit->clear();
 }
 
 void MainWindow::on_AnglesDegreesRadioButton_clicked()
@@ -101,9 +109,7 @@ void MainWindow::on_MultiplyPushButton_clicked()
 
 void MainWindow::on_ExpressionPushButton_clicked()
 {
-    /*if(!ui->InputLineEdit->selectedText().isEmpty())
-        ui->InputLineEdit->setText(ui->InputLineEdit->text().mid(0, ui->InputLineEdit->selectionStart()-1)+"\'"+ui->InputLineEdit->selectedText()+"\'"+ui->InputLineEdit->text().mid(ui->InputLineEdit->selectionStart()+ui->InputLineEdit->selectedText().length(), ui->InputLineEdit->text().length()-1));
-    */ui->InputLineEdit->setText(ui->InputLineEdit->text()+"\'");
+    ui->InputLineEdit->setText(ui->InputLineEdit->text()+"\'");
 }
 
 void MainWindow::on_SubstractPushButton_clicked()
@@ -183,21 +189,26 @@ void MainWindow::on_EvalPushButton_clicked()
 
 void MainWindow::on_StackDisplaySizespinBox_valueChanged(int arg1)
 {
-
+    Settings::getInstance()->setNbElementAffichable(arg1);
 }
 
 void MainWindow::on_DeletePushButton_clicked()
 {
     ui->InputLineEdit->clear();
 }
-#include "QDebug"
+
 void MainWindow::on_InputLineEdit_returnPressed() throw (LogMessage) {
+    // Le texte entré par l'utilisateur dans le InputLineEdit
     QString input(ui->InputLineEdit->text());
+    // Si il n'y a pas de texte entré
     if(input.isEmpty()) {
-        Constante* c = _pile->pop();
+        Constante* c = _pile->sommet();
+        // Si la constante en haut de la pile est une Expression
         if(typeid(*c)==typeid(Expression)) {
             Expression* e = dynamic_cast<Expression*>(c);
             try {
+                // On évalue cette Expression et on empile le résultat
+                _pile->pop();
                 _pile->push(e->eval());
                 ui->InputLineEdit->clear();
             }
@@ -205,22 +216,50 @@ void MainWindow::on_InputLineEdit_returnPressed() throw (LogMessage) {
                 LogSystem::getInstance()->addMessage(lm);
             }
         }
-        else
-            _pile->push(c);
     }
-    else if((QRegExp("^'\.+'$").indexIn(ui->InputLineEdit->text()))!=-1) {
-        qDebug() << "passes-tu ici? 1";
-        _pile->push(ConstanteFactory::getConstante(ui->InputLineEdit->text()));
-        ui->InputLineEdit->clear();
+    // Si l'utilisateur a entré une Expression, on l'empile sans la modifier
+    else if(QRegExp("^'\.+'$").indexIn(input)!=-1) {
+        try {
+            _pile->push(ConstanteFactory::getConstante(input));
+            ui->InputLineEdit->clear();
+        }
+        catch(LogMessage lm) {
+            LogSystem::getInstance()->addMessage(lm);
+        }
     }
+    // Sinon, l'utilisateur a entré un NombreNonComplexe ou un Operateur
     else {
         try {
             QStringList constantes(input.split(' '));
             QStringList::iterator i;
 
             for(i=constantes.begin(); i != constantes.end(); i++) {
-                Constante * p = ConstanteFactory::getConstante(*i);
-                _pile->push(p);
+                Constante* p = ConstanteFactory::getConstante(*i);
+
+                // Si c'est un Operateur
+                if(typeid(*p)==typeid(Operateur)) {
+                    Operateur* o = dynamic_cast<Operateur*>(p);
+                    // Si l'arité de l'opérateur est 1, on dépile un élément de la pile
+                    // et on appelle l'opérateur sur notre NombreNonComplexe ou Epxression
+                    // (car la pile ne peut contenir que ces deux types là).
+                    if(o->getArite()==1) {
+                        Constante *cpop = _pile->pop();
+                        _pile->push(o->call(cpop));
+                        delete cpop;
+                    }
+                    // Si l'arité de l'opérateur est 2, on dépile deux éléments de la pile
+                    // et on appelle l'opérateur sur nos NombreNonComplexe ou Epxression
+                    // (car la pile ne peut contenir que ces deux types là).
+                    else if(o->getArite()==2) {
+                        Constante *cpop1 = _pile->pop();
+                        Constante *cpop2 = _pile->pop();
+                        _pile->push(o->call(cpop2, cpop1));
+                        delete cpop1, cpop2;
+                    }
+                }
+                else
+                    _pile->push(p);
+
                 ui->InputLineEdit->clear();
             }
         }

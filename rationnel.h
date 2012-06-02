@@ -39,6 +39,12 @@ public:
 	 \param d Le dénominateur du rationnel
 	*/
     Rationnel(int n, int d) throw(LogMessage):_numerateur(n), _denominateur(d) {if(d==0) throw new LogMessage("Division par 0 non autorisée", 1);}
+
+    /**
+      \brief Crée un rationnel avec un constructeur par copie
+      \param r Le rationnel à copier
+      */
+    Rationnel(const Rationnel &r) { _numerateur = r.getNumerateur(); _denominateur = r.getDenominateur(); }
     /**
 	 \brief Getter du numérateur de rationnel
 	 \return Le numérateur

@@ -34,6 +34,11 @@ public:
 	 \param val La valeur du réel
 	*/
     Reel(float val) : _val(val) {}
+    /**
+      \brief Crée un réel avec un constructeur par copie
+      \param r Le réel à copier
+      */
+    Reel(const Reel &r) { _val = r.getVal(); }
 	/**
 	 \brief Getter de la valeur du réel
 	 \return La valeur du réel

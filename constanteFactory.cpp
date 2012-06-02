@@ -1,5 +1,4 @@
 #include "constanteFactory.h"
-#include "qdebug.h"
 
 Constante* ConstanteFactory::getConstante(const QString &str) {
     QString strcopy(str.toUpper());
@@ -49,7 +48,6 @@ Constante* ConstanteFactory::getConstante(const QString &str) {
         Constante* reel = ConstanteFactory::getConstante(strcopy.left(dollarPos));
         NombreNonComplexe* nc = dynamic_cast<NombreNonComplexe*>(reel);
         Constante* imaginaire = ConstanteFactory::getConstante(strcopy.right(strcopy.size()-dollarPos-1));
-
         NombreNonComplexe* nc2 = dynamic_cast<NombreNonComplexe*>(imaginaire);
         return new NombreComplexe(nc, nc2);
     }

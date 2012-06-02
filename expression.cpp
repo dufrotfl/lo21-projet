@@ -1,11 +1,9 @@
 #include "expression.h"
 #include "logSystem.h"
 #include "constanteFactory.h"
-#include "qdebug.h"
 
 Expression::Expression(const QString &str) {
     QString strcop = str.mid(1,str.size()-2);
-    qDebug() << strcop;
     QStringList constantes(strcop.split(' '));
     QStringList::iterator i;
     _liste = new QVector<Constante*>();
@@ -27,6 +25,6 @@ Nombre* Expression::eval() const {
 QString Expression::toString() const {
     QString str;
     for(int i =0; i < _liste->size(); i++)
-          str += _liste->at(i)->toString();
+        str += _liste->at(i)->toString()+" ";
     return str;
 }

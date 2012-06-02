@@ -34,7 +34,7 @@ public:
 	 \param img Partie imaginaire du nombre complexe
 	 */
     NombreComplexe(NombreNonComplexe* reel, NombreNonComplexe* img) : _reel(reel), _img(img) {}
-	/*!
+    /*!
 	 \brief Destructeur de l'instance de la classe NombreComplexe
 	*/
     ~NombreComplexe();

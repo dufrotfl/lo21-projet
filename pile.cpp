@@ -80,6 +80,13 @@ void Pile::undo() {
 
 }
 
+Constante* Pile::sommet() {
+    if(!_pileAffichage->isEmpty())
+        return _pileAffichage->first();
+    else
+        throw LogMessage("La pile est vide, impossible de récupérer le sommet.", 1);
+}
+
 
 Constante* Pile::pop() {
     /*if(_pileStockage->size() == _tailleMax)

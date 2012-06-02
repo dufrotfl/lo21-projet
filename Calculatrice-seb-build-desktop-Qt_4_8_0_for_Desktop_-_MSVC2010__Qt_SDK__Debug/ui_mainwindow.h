@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Fri 1. Jun 17:48:36 2012
+** Created: Sat 2. Jun 17:36:37 2012
 **      by: Qt User Interface Compiler version 4.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -349,23 +349,40 @@ public:
         actionR_tablir->setText(QApplication::translate("MainWindow", "R\303\251tablir", 0, QApplication::UnicodeUTF8));
         EvalPushButton->setText(QApplication::translate("MainWindow", "EVAL", 0, QApplication::UnicodeUTF8));
         SevenPushButton->setText(QApplication::translate("MainWindow", "7", 0, QApplication::UnicodeUTF8));
+        SevenPushButton->setShortcut(QApplication::translate("MainWindow", "7", 0, QApplication::UnicodeUTF8));
         FourPushButton->setText(QApplication::translate("MainWindow", "4", 0, QApplication::UnicodeUTF8));
+        FourPushButton->setShortcut(QApplication::translate("MainWindow", "4", 0, QApplication::UnicodeUTF8));
         OnePushButton->setText(QApplication::translate("MainWindow", "1", 0, QApplication::UnicodeUTF8));
+        OnePushButton->setShortcut(QApplication::translate("MainWindow", "1", 0, QApplication::UnicodeUTF8));
         EightPushButton->setText(QApplication::translate("MainWindow", "8", 0, QApplication::UnicodeUTF8));
+        EightPushButton->setShortcut(QApplication::translate("MainWindow", "8", 0, QApplication::UnicodeUTF8));
         FivePushButton->setText(QApplication::translate("MainWindow", "5", 0, QApplication::UnicodeUTF8));
+        FivePushButton->setShortcut(QApplication::translate("MainWindow", "5", 0, QApplication::UnicodeUTF8));
         TwoPushButton->setText(QApplication::translate("MainWindow", "2", 0, QApplication::UnicodeUTF8));
+        TwoPushButton->setShortcut(QApplication::translate("MainWindow", "2", 0, QApplication::UnicodeUTF8));
         ZeroPushButton->setText(QApplication::translate("MainWindow", "0", 0, QApplication::UnicodeUTF8));
+        ZeroPushButton->setShortcut(QApplication::translate("MainWindow", "0", 0, QApplication::UnicodeUTF8));
         NinePushButton->setText(QApplication::translate("MainWindow", "9", 0, QApplication::UnicodeUTF8));
+        NinePushButton->setShortcut(QApplication::translate("MainWindow", "9", 0, QApplication::UnicodeUTF8));
         SixPushButton->setText(QApplication::translate("MainWindow", "6", 0, QApplication::UnicodeUTF8));
+        SixPushButton->setShortcut(QApplication::translate("MainWindow", "6", 0, QApplication::UnicodeUTF8));
         ThreePushButton->setText(QApplication::translate("MainWindow", "3", 0, QApplication::UnicodeUTF8));
+        ThreePushButton->setShortcut(QApplication::translate("MainWindow", "3", 0, QApplication::UnicodeUTF8));
         DividePushButton->setText(QApplication::translate("MainWindow", "/", 0, QApplication::UnicodeUTF8));
+        DividePushButton->setShortcut(QApplication::translate("MainWindow", "/", 0, QApplication::UnicodeUTF8));
         MultiplyPushButton->setText(QApplication::translate("MainWindow", "*", 0, QApplication::UnicodeUTF8));
+        MultiplyPushButton->setShortcut(QApplication::translate("MainWindow", "*", 0, QApplication::UnicodeUTF8));
         SubstractPushButton->setText(QApplication::translate("MainWindow", "-", 0, QApplication::UnicodeUTF8));
+        SubstractPushButton->setShortcut(QApplication::translate("MainWindow", "-", 0, QApplication::UnicodeUTF8));
         AddPushButton->setText(QApplication::translate("MainWindow", "+", 0, QApplication::UnicodeUTF8));
+        AddPushButton->setShortcut(QApplication::translate("MainWindow", "+", 0, QApplication::UnicodeUTF8));
         ExpressionPushButton->setText(QApplication::translate("MainWindow", "'", 0, QApplication::UnicodeUTF8));
+        ExpressionPushButton->setShortcut(QApplication::translate("MainWindow", "'", 0, QApplication::UnicodeUTF8));
         ConstantTypeDelimiterPushButton->setText(QString());
         ComplexDelimiterPushButton->setText(QApplication::translate("MainWindow", "$", 0, QApplication::UnicodeUTF8));
+        ComplexDelimiterPushButton->setShortcut(QApplication::translate("MainWindow", "$", 0, QApplication::UnicodeUTF8));
         EspacePushButton->setText(QApplication::translate("MainWindow", "Espace", 0, QApplication::UnicodeUTF8));
+        EspacePushButton->setShortcut(QApplication::translate("MainWindow", "Space", 0, QApplication::UnicodeUTF8));
         DeletePushButton->setText(QApplication::translate("MainWindow", "Effacer", 0, QApplication::UnicodeUTF8));
         ComplexesGroupBox->setTitle(QApplication::translate("MainWindow", "Complexes", 0, QApplication::UnicodeUTF8));
         ComplexesYesRadioButton->setText(QApplication::translate("MainWindow", "Oui", 0, QApplication::UnicodeUTF8));

@@ -1,5 +1,4 @@
 #include "context.h"
-#include "QDebug"
 
 Context* Context::_instance = 0;
 
@@ -36,5 +35,4 @@ void Context::chargerContext() {
     ifs.read((char *)&p, sizeof(p));
     Settings * set = Settings::getInstance();
     ifs.read((char *)&set, sizeof(set));
-    qDebug() << QString(p->pop()->toString());
 }

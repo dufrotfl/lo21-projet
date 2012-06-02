@@ -21,7 +21,6 @@ LogSystem::LogSystem() {
        _fichier->flush();
    }
    _fichier->close();
-
 }
 
 LogSystem* LogSystem::getInstance() {

@@ -14,6 +14,7 @@ public:
     ~Pile();
     void push(Constante* constante);
     Constante* pop();
+    Constante* sommet();
     void drop();
     void clear();
     void dup();

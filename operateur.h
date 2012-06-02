@@ -8,6 +8,8 @@
 #ifndef OPERATEUR_H
 #define OPERATEUR_H
 #include "constante.h"
+#include "nombreNonComplexe.h"
+#include "nombreComplexe.h"
 
 /*!
   \class Operateur
@@ -37,11 +39,13 @@ public:
     /*!
       \brief Getter de l'int representant l'arité
       */
-    QString getArite() const {return _arite;}
+    int getArite() const {return _arite;}
     /*!
       \copydoc Constante::toString()
       */
     QString toString() const {return _operateur;}
+
+    Constante* call(Constante* c1, Constante *c2=0) const;
 };
 
 #endif OPERATEUR_H
