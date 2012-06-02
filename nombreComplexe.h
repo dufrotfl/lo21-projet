@@ -61,21 +61,21 @@ public:
 	*/
     void cube();
 	/*!
-	 \copydoc Nombre::operator+(Nombre)
+     \copydoc NombreComplexe::operator+(NombreComplexe)
 	*/
-    Nombre& operator+(const Nombre&) const {return NombreComplexe();}
+    NombreComplexe* operator+(NombreComplexe*) const {return new NombreComplexe();}
 	/*!
-	 \copydoc Nombre::operator-(Nombre)
+     \copydoc NombreComplexe::operator-(NombreComplexe)
 	*/
-    Nombre& operator-(const Nombre&) const {return NombreComplexe();}
+    NombreComplexe* operator-(NombreComplexe*) const {return new NombreComplexe();}
 	/*!
-	 \copydoc Nombre::operator/(Nombre)
+     \copydoc NombreComplexe::operator/(NombreComplexe)
 	*/
-    Nombre& operator/(const Nombre&) const {return NombreComplexe();}
+    NombreComplexe* operator/(NombreComplexe*) const {return new NombreComplexe();}
 	/*!
-	 \copydoc Nombre::operator*(Nombre)
+     \copydoc NombreComplexe::operator*(NombreComplexe)
 	*/
-    Nombre& operator*(const Nombre&) const {return NombreComplexe();}
+    NombreComplexe* operator*(NombreComplexe*) const {return new NombreComplexe();}
     /*!
       \copydoc Nombre::toString()
       */

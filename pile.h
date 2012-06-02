@@ -2,8 +2,7 @@
 #define PILE_H
 #include "constante.h"
 #include "QStack.h"
-#include "context.h"
-
+#include "entier.h"
 class Pile {
 private:
     QStack<Constante*> * _pileStockage;
@@ -23,7 +22,7 @@ public:
     void mean(int);
     void redo();
     void undo();
-    void chargerDepuisContexte(const Context &);
+    void affiche();
 };
 
 #endif PILE_H

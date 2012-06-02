@@ -1,4 +1,5 @@
 #include "pile.h"
+#include "mainwindow.h"
 
 Pile::Pile() {
     _pileStockage = new QStack<Constante*>();
@@ -36,7 +37,19 @@ void Pile::dup() {
 }
 
 void Pile::mean(int x) {
+    int j = x;
 
+    for(; j>0; j--) {
+        if(!_pileAffichage->isEmpty() && _pileAffichage->size() >= 2) {
+            Constante* temp1 = _pileAffichage->pop();
+            Constante* temp2 = _pileAffichage->pop();
+
+            // Faire la moyenne et stocker dans _pileAffichage
+            //...
+            _pileStockage->push(temp1);
+            _pileStockage->push(temp2);
+        }
+    }
 }
 
 void Pile::sum(int x) {
@@ -47,6 +60,8 @@ void Pile::sum(int x) {
             Constante* temp1 = _pileAffichage->pop();
             Constante* temp2 = _pileAffichage->pop();
 
+            // Faire la somme et stocker dans _pileAffichage
+            //...
             _pileStockage->push(temp1);
             _pileStockage->push(temp2);
         }
@@ -67,13 +82,23 @@ void Pile::undo() {
 
 
 Constante* Pile::pop() {
-    if(_pileStockage->size() == _tailleMax)
-         _pileStockage->pop_front();
+    /*if(_pileStockage->size() == _tailleMax)
+         _pileStockage->pop_front();*/
     Constante* temp = _pileAffichage->pop();
-    _pileStockage->push(temp);
+    //_pileStockage->push(temp);
     return temp;
 }
 
 void Pile::push(Constante* constante) {
-    _pileAffichage->push(constante);
+   _pileAffichage->push(constante);
+}
+
+void Pile::affiche() {
+
+    if(!_pileAffichage->isEmpty()) {
+        Constante * tmp = _pileAffichage->pop();
+        MainWindow::getInstance()->setStackDisplayTextEdit(tmp->toString());
+        affiche();
+        _pileAffichage->push(tmp);
+    }
 }

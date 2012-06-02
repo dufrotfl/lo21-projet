@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Wed 23. May 22:36:17 2012
+** Created: Fri 1. Jun 17:48:36 2012
 **      by: Qt User Interface Compiler version 4.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -39,6 +39,8 @@ public:
     QAction *actionClavier;
     QAction *actionQuitter;
     QAction *actionA_propos;
+    QAction *actionAnnuler;
+    QAction *actionR_tablir;
     QWidget *centralWidget;
     QWidget *horizontalLayoutWidget;
     QHBoxLayout *inputHorizontalLayout;
@@ -63,11 +65,13 @@ public:
     QPushButton *ExpressionPushButton;
     QPushButton *ConstantTypeDelimiterPushButton;
     QPushButton *ComplexDelimiterPushButton;
+    QPushButton *EspacePushButton;
+    QPushButton *DeletePushButton;
     QWidget *gridLayoutWidget_2;
     QGridLayout *ParametresGridLayout;
     QGroupBox *ComplexesGroupBox;
     QRadioButton *ComplexesYesRadioButton;
-    QRadioButton *CommlexesNoRadioButton;
+    QRadioButton *ComplexesNoRadioButton;
     QGroupBox *AnglesGroupBox;
     QRadioButton *AnglesDegreesRadioButton;
     QRadioButton *AnglesRadianRadioButton;
@@ -81,6 +85,7 @@ public:
     QMenuBar *menuBar;
     QMenu *menuAffichage;
     QMenu *menuFichier;
+    QMenu *menuEdition;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -88,14 +93,14 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(708, 323);
+        MainWindow->resize(800, 600);
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
         MainWindow->setSizePolicy(sizePolicy);
-        MainWindow->setMinimumSize(QSize(708, 323));
-        MainWindow->setMaximumSize(QSize(708, 323));
+        MainWindow->setMinimumSize(QSize(800, 600));
+        MainWindow->setMaximumSize(QSize(800, 600));
         actionClavier = new QAction(MainWindow);
         actionClavier->setObjectName(QString::fromUtf8("actionClavier"));
         actionClavier->setCheckable(true);
@@ -103,6 +108,10 @@ public:
         actionQuitter->setObjectName(QString::fromUtf8("actionQuitter"));
         actionA_propos = new QAction(MainWindow);
         actionA_propos->setObjectName(QString::fromUtf8("actionA_propos"));
+        actionAnnuler = new QAction(MainWindow);
+        actionAnnuler->setObjectName(QString::fromUtf8("actionAnnuler"));
+        actionR_tablir = new QAction(MainWindow);
+        actionR_tablir->setObjectName(QString::fromUtf8("actionR_tablir"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         horizontalLayoutWidget = new QWidget(centralWidget);
@@ -130,7 +139,7 @@ public:
 
         gridLayoutWidget = new QWidget(centralWidget);
         gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(30, 70, 251, 170));
+        gridLayoutWidget->setGeometry(QRect(30, 70, 320, 170));
         KeyBoardGridLayout = new QGridLayout(gridLayoutWidget);
         KeyBoardGridLayout->setSpacing(6);
         KeyBoardGridLayout->setContentsMargins(11, 11, 11, 11);
@@ -221,6 +230,16 @@ public:
 
         KeyBoardGridLayout->addWidget(ComplexDelimiterPushButton, 3, 3, 1, 1);
 
+        EspacePushButton = new QPushButton(gridLayoutWidget);
+        EspacePushButton->setObjectName(QString::fromUtf8("EspacePushButton"));
+
+        KeyBoardGridLayout->addWidget(EspacePushButton, 2, 3, 1, 1);
+
+        DeletePushButton = new QPushButton(gridLayoutWidget);
+        DeletePushButton->setObjectName(QString::fromUtf8("DeletePushButton"));
+
+        KeyBoardGridLayout->addWidget(DeletePushButton, 1, 3, 1, 1);
+
         gridLayoutWidget_2 = new QWidget(centralWidget);
         gridLayoutWidget_2->setObjectName(QString::fromUtf8("gridLayoutWidget_2"));
         gridLayoutWidget_2->setGeometry(QRect(510, 10, 160, 251));
@@ -234,11 +253,10 @@ public:
         ComplexesYesRadioButton = new QRadioButton(ComplexesGroupBox);
         ComplexesYesRadioButton->setObjectName(QString::fromUtf8("ComplexesYesRadioButton"));
         ComplexesYesRadioButton->setGeometry(QRect(10, 20, 82, 17));
-        CommlexesNoRadioButton = new QRadioButton(ComplexesGroupBox);
-        CommlexesNoRadioButton->setObjectName(QString::fromUtf8("CommlexesNoRadioButton"));
-        CommlexesNoRadioButton->setGeometry(QRect(10, 40, 82, 17));
-        ComplexesYesRadioButton->raise();
-        CommlexesNoRadioButton->raise();
+        ComplexesNoRadioButton = new QRadioButton(ComplexesGroupBox);
+        ComplexesNoRadioButton->setObjectName(QString::fromUtf8("ComplexesNoRadioButton"));
+        ComplexesNoRadioButton->setGeometry(QRect(10, 40, 82, 17));
+        ComplexesNoRadioButton->setChecked(true);
 
         ParametresGridLayout->addWidget(ComplexesGroupBox, 1, 0, 1, 1);
 
@@ -247,6 +265,7 @@ public:
         AnglesDegreesRadioButton = new QRadioButton(AnglesGroupBox);
         AnglesDegreesRadioButton->setObjectName(QString::fromUtf8("AnglesDegreesRadioButton"));
         AnglesDegreesRadioButton->setGeometry(QRect(10, 20, 82, 17));
+        AnglesDegreesRadioButton->setChecked(true);
         AnglesRadianRadioButton = new QRadioButton(AnglesGroupBox);
         AnglesRadianRadioButton->setObjectName(QString::fromUtf8("AnglesRadianRadioButton"));
         AnglesRadianRadioButton->setGeometry(QRect(10, 40, 82, 17));
@@ -258,18 +277,13 @@ public:
         IntegerRadioButton = new QRadioButton(ConstantTypeGroupBox);
         IntegerRadioButton->setObjectName(QString::fromUtf8("IntegerRadioButton"));
         IntegerRadioButton->setGeometry(QRect(10, 20, 82, 17));
+        IntegerRadioButton->setChecked(true);
         RationalRadioButton = new QRadioButton(ConstantTypeGroupBox);
         RationalRadioButton->setObjectName(QString::fromUtf8("RationalRadioButton"));
         RationalRadioButton->setGeometry(QRect(10, 40, 82, 17));
         RealRadioButton = new QRadioButton(ConstantTypeGroupBox);
         RealRadioButton->setObjectName(QString::fromUtf8("RealRadioButton"));
         RealRadioButton->setGeometry(QRect(10, 60, 82, 17));
-        IntegerRadioButton->raise();
-        RationalRadioButton->raise();
-        RealRadioButton->raise();
-        ComplexesGroupBox->raise();
-        ComplexesGroupBox->raise();
-        ComplexesGroupBox->raise();
 
         ParametresGridLayout->addWidget(ConstantTypeGroupBox, 0, 0, 1, 1);
 
@@ -285,7 +299,7 @@ public:
         StackDisplayTextEdit->setSizePolicy(sizePolicy);
         StackDisplayTextEdit->setBaseSize(QSize(0, 0));
         StackDisplayTextEdit->setLineWidth(1);
-        StackDisplayTextEdit->setReadOnly(false);
+        StackDisplayTextEdit->setReadOnly(true);
         StackDisplayTextEdit->setTabStopWidth(80);
         StackLabel = new QLabel(centralWidget);
         StackLabel->setObjectName(QString::fromUtf8("StackLabel"));
@@ -296,11 +310,13 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 708, 21));
+        menuBar->setGeometry(QRect(0, 0, 800, 21));
         menuAffichage = new QMenu(menuBar);
         menuAffichage->setObjectName(QString::fromUtf8("menuAffichage"));
         menuFichier = new QMenu(menuBar);
         menuFichier->setObjectName(QString::fromUtf8("menuFichier"));
+        menuEdition = new QMenu(menuBar);
+        menuEdition->setObjectName(QString::fromUtf8("menuEdition"));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -310,10 +326,13 @@ public:
         MainWindow->setStatusBar(statusBar);
 
         menuBar->addAction(menuFichier->menuAction());
+        menuBar->addAction(menuEdition->menuAction());
         menuBar->addAction(menuAffichage->menuAction());
         menuAffichage->addAction(actionClavier);
         menuFichier->addAction(actionQuitter);
         menuFichier->addAction(actionA_propos);
+        menuEdition->addAction(actionAnnuler);
+        menuEdition->addAction(actionR_tablir);
 
         retranslateUi(MainWindow);
 
@@ -326,6 +345,8 @@ public:
         actionClavier->setText(QApplication::translate("MainWindow", "Clavier", 0, QApplication::UnicodeUTF8));
         actionQuitter->setText(QApplication::translate("MainWindow", "Quitter", 0, QApplication::UnicodeUTF8));
         actionA_propos->setText(QApplication::translate("MainWindow", "A propos", 0, QApplication::UnicodeUTF8));
+        actionAnnuler->setText(QApplication::translate("MainWindow", "Annuler", 0, QApplication::UnicodeUTF8));
+        actionR_tablir->setText(QApplication::translate("MainWindow", "R\303\251tablir", 0, QApplication::UnicodeUTF8));
         EvalPushButton->setText(QApplication::translate("MainWindow", "EVAL", 0, QApplication::UnicodeUTF8));
         SevenPushButton->setText(QApplication::translate("MainWindow", "7", 0, QApplication::UnicodeUTF8));
         FourPushButton->setText(QApplication::translate("MainWindow", "4", 0, QApplication::UnicodeUTF8));
@@ -344,9 +365,11 @@ public:
         ExpressionPushButton->setText(QApplication::translate("MainWindow", "'", 0, QApplication::UnicodeUTF8));
         ConstantTypeDelimiterPushButton->setText(QString());
         ComplexDelimiterPushButton->setText(QApplication::translate("MainWindow", "$", 0, QApplication::UnicodeUTF8));
+        EspacePushButton->setText(QApplication::translate("MainWindow", "Espace", 0, QApplication::UnicodeUTF8));
+        DeletePushButton->setText(QApplication::translate("MainWindow", "Effacer", 0, QApplication::UnicodeUTF8));
         ComplexesGroupBox->setTitle(QApplication::translate("MainWindow", "Complexes", 0, QApplication::UnicodeUTF8));
         ComplexesYesRadioButton->setText(QApplication::translate("MainWindow", "Oui", 0, QApplication::UnicodeUTF8));
-        CommlexesNoRadioButton->setText(QApplication::translate("MainWindow", "Non", 0, QApplication::UnicodeUTF8));
+        ComplexesNoRadioButton->setText(QApplication::translate("MainWindow", "Non", 0, QApplication::UnicodeUTF8));
         AnglesGroupBox->setTitle(QApplication::translate("MainWindow", "Angles", 0, QApplication::UnicodeUTF8));
         AnglesDegreesRadioButton->setText(QApplication::translate("MainWindow", "Degr\303\251s", 0, QApplication::UnicodeUTF8));
         AnglesRadianRadioButton->setText(QApplication::translate("MainWindow", "Radians", 0, QApplication::UnicodeUTF8));
@@ -357,6 +380,7 @@ public:
         StackLabel->setText(QApplication::translate("MainWindow", "Pile", 0, QApplication::UnicodeUTF8));
         menuAffichage->setTitle(QApplication::translate("MainWindow", "Affichage", 0, QApplication::UnicodeUTF8));
         menuFichier->setTitle(QApplication::translate("MainWindow", "Fichier", 0, QApplication::UnicodeUTF8));
+        menuEdition->setTitle(QApplication::translate("MainWindow", "Edition", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

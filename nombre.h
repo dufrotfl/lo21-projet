@@ -9,6 +9,8 @@
 #define NOMBRE_H
 #include "constante.h"
 
+#define PI 3.14159265
+
 /*!
   \class Nombre
   \brief Etend l'interface @link Constante @endlink pour regrouper tout les valeurs de type numérique sous cette classe et également de proposer les différentes opérations spécifiques aux nombres (opérations arithmétiques, etc)
@@ -32,30 +34,6 @@ public:
 	 \brief Méthode permettant de transformer le nombre en son cube
 	*/
     virtual void cube() =0;
-	/*!
-	 \brief Méthode permettant de faire l'addition entre deux nombres
-	 \param nombre La deuxième opérande
-	 \return La somme des deux nombres
-	*/
-    virtual Nombre& operator+(const Nombre& nombre) const = 0;
-	/*!
-	 \brief Méthode permettant de faire la soustraction entre deux nombres
-	 \param nombre La deuxième opérande
-	 \return La différence entre les deux nombres
-	*/
-    virtual Nombre& operator-(const Nombre& nombre) const = 0;
-	/*!
-	 \brief Méthode permettant de faire la division entre deux nombres
-	 \param nombre La deuxième opérande
-	 \return Le quotient de la division de ces deux nombres
-	*/
-    virtual Nombre& operator/(const Nombre& nombre) const = 0;
-	/*!
-	 \brief Méthode permettant de faire la multiplication entre deux nombres
-	 \param nombre La deuxième opérande
-	 \return Le produit des deux nombres
-	*/
-    virtual Nombre& operator*(const Nombre& nombre) const = 0;
 };
 
 #endif NOMBRE_H

@@ -9,6 +9,10 @@
 
 #include "nombreNonComplexe.h"
 
+class Reel;
+class Rationnel;
+class NombreComplexe;
+
 /*!
  \class Entier
  \brief Classe implémentant l'interface de @link NombreNonComplexe @endlink
@@ -56,26 +60,14 @@ public:
 	 \copydoc Nombre::cube()
 	*/
     void cube() {_val*=_val*_val;}
-	/*!
-	 \copydoc Nombre::operator+(Nombre)
-	*/
-    Nombre& operator+(const Nombre&) const {return Entier();}
-	/*!
-	 \copydoc Nombre::operator-(Nombre)
-	*/
-    Nombre& operator-(const Nombre&) const {return Entier();}
-	/*!
-	 \copydoc Nombre::operator/(Nombre)
-	*/
-    Nombre& operator/(const Nombre&) const {return Entier();}
-	/*!
-	 \copydoc Nombre::operator*(Nombre)
-	*/
-    Nombre& operator*(const Nombre&) const {return Entier();}
+
+    float getFloatVal() const { return (float)_val;}
+
     /*!
       \copydoc Constante::toString()
       */
-    QString toString() const {return QString(QString::number(_val)); }
+    QString toString() const {return QString(QString::number(getVal())); }
+    NombreComplexe* toNombreComplexe() ;
 };
 
 #endif ENTIER_H

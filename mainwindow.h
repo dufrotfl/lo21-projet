@@ -2,7 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "QStatusBar.h"
+#include "settings.h"
+#include "pile.h"
+#include "typeinfo"
+#include "expression.h"
+#include "logSystem.h"
+#include "constanteFactory.h"
+
 namespace Ui {
 class MainWindow;
 }
@@ -12,13 +18,46 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 private:
-    Ui::MainWindow *ui;
-
-public:
-    explicit MainWindow(QWidget *parent = 0);
-    QString getInput() const;
-    void setInput(const QString &str);
+   Ui::MainWindow* ui;
+   static MainWindow* mw;
+   explicit MainWindow(QWidget *parent = 0);
+   Pile* _pile;
     ~MainWindow();
+public:
+    static MainWindow* getInstance() ;
+    static void freeInstance();
+    Pile* getPile() const {return _pile;}
+    void setStackDisplayTextEdit(const QString &);
+private slots:
+    void on_IntegerRadioButton_clicked();
+    void on_RationalRadioButton_clicked();
+    void on_RealRadioButton_clicked();
+    void on_ComplexesYesRadioButton_clicked();
+    void on_ComplexesNoRadioButton_clicked();
+    void on_AnglesDegreesRadioButton_clicked();
+    void on_AnglesRadianRadioButton_clicked();
+    void on_AddPushButton_clicked();
+    void on_EspacePushButton_clicked();
+    void on_DividePushButton_clicked();
+    void on_MultiplyPushButton_clicked();
+    void on_SubstractPushButton_clicked();
+    void on_ExpressionPushButton_clicked();
+    void on_NinePushButton_clicked();
+    void on_EightPushButton_clicked();
+    void on_SevenPushButton_clicked();
+    void on_SixPushButton_clicked();
+    void on_FivePushButton_clicked();
+    void on_FourPushButton_clicked();
+    void on_ThreePushButton_clicked();
+    void on_TwoPushButton_clicked();
+    void on_OnePushButton_clicked();
+    void on_ZeroPushButton_clicked();
+    void on_ComplexDelimiterPushButton_clicked();
+    void on_ConstantTypeDelimiterPushButton_clicked();
+    void on_EvalPushButton_clicked();
+    void on_StackDisplaySizespinBox_valueChanged(int arg1);
+    void on_DeletePushButton_clicked();
+    void on_InputLineEdit_returnPressed() throw (LogMessage);
 };
 
 #endif // MAINWINDOW_H

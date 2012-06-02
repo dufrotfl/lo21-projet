@@ -10,7 +10,7 @@
 #include "logMessage.h"
 #include "qfile.h"
 #include "QTextStream.h"
-#include "gui.h"
+#include "mainwindow.h"
 
 /*!
  \class LogSystem

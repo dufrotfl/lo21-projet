@@ -8,7 +8,8 @@
 #ifndef CONSTANTE_H
 #define CONSTANTE_H
 
-#include "constanteException.h"
+#include "logMessage.h"
+#include "settings.h"
 
 /*!
   \class Constante

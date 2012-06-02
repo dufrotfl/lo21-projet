@@ -18,7 +18,8 @@ private:
     /**<
       Caractère représentant l'opérateur
       */
-    char * _operateur;
+    QString _operateur;
+    int _arite;
 public:
     /*!
       \brief Crée un opérateur par défaut
@@ -28,15 +29,19 @@ public:
       \brief Crée un opérateur en fonction du paramètre
       \param la chaine représentant l'opérateur
       */
-    Operateur(char *);
+    Operateur(const QString &op, int ar):_operateur(op), _arite(ar) {}
     /*!
       \brief Getter de la chaine representant l'operateur
       */
-    char * getOperateur() const;
+    QString getOperateur() const {return _operateur;}
+    /*!
+      \brief Getter de l'int representant l'arité
+      */
+    QString getArite() const {return _arite;}
     /*!
       \copydoc Constante::toString()
       */
-    QString toString() const;
+    QString toString() const {return _operateur;}
 };
 
 #endif OPERATEUR_H

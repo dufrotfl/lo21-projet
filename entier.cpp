@@ -1,18 +1,9 @@
 #include "entier.h"
-/*
-Nombre& Entier::operator+(const Nombre&) {
+#include "reel.h"
+#include "rationnel.h"
+#include "nombreComplexe.h"
 
+NombreComplexe* Entier::toNombreComplexe() {
+    return new NombreComplexe(this, new Entier(0));
 }
 
-Nombre& Entier::operator-(const Nombre&) {
-
-}
-
-Nombre& Entier::operator/(const Nombre&) {
-
-}
-
-Nombre& Entier::operator*(const Nombre&) {
-
-}
-*/

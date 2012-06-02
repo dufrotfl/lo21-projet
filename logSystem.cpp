@@ -7,6 +7,7 @@
  */
 
 #include "logSystem.h"
+#include "qstatusbar.h"
 
 LogSystem* LogSystem::_instance= 0;
 
@@ -38,8 +39,7 @@ LogSystem::~LogSystem() {
 }
 
 void LogSystem::addMessage(const LogMessage & log) {
-    Gui::getInstance()->getMainWindow()->statusBar()->showMessage("Erreur: "+log.getMessage(), 5000);
-
+    MainWindow::getInstance()->statusBar()->showMessage("Erreur: "+log.getMessage(), 5000);
     if(!_fichier->isOpen())
         _fichier->open(QIODevice::ReadWrite | QIODevice::Text);
     QString texte;

@@ -1,14 +1,15 @@
 #include <QtGui/QApplication>
-#include "Gui.h"
 #include "logSystem.h"
+#include "context.h"
+#include "mainwindow.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    //MainWindow w;
-    //w.show();
-    Gui* g = Gui::getInstance();
-    g->exec();
-    LogSystem::getInstance()->addMessage(LogMessage("Lol", 1));
+    MainWindow * w = MainWindow::getInstance();
+    w->show();
+    //Context::getInstance()->sauvegardeContext();
+    //Context::getInstance()->chargerContext();S
+   // delete w;
     return a.exec();
 }

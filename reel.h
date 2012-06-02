@@ -9,6 +9,9 @@
 #define REEL_H
 
 #include "nombreNonComplexe.h"
+class Rationnel;
+class Entier;
+class NombreComplexe;
 
 /*!
  \class Reel
@@ -46,28 +49,15 @@ public:
     void sqr() { _val *= _val;}
 	/*!
 	 \copydoc Nombre::cube()
-	*/
+    */
     void cube() { _val *= _val*_val;}
-	/*!
-	 \copydoc Nombre::operator+(Nombre)
-	*/
-    Nombre& operator+(const Nombre&) const {return Reel();}
-	/*!
-	 \copydoc Nombre::operator-(Nombre)
-	*/
-    Nombre& operator-(const Nombre&) const {return Reel();}
-	/*!
-	 \copydoc Nombre::operator/(Nombre)
-	*/
-    Nombre& operator/(const Nombre&) const {return Reel();}
-	/*!
-	 \copydoc Nombre::operator*(Nombre)
-	*/
-    Nombre& operator*(const Nombre&) const {return Reel();}
     /*!
       \copydoc Constante::toString()
       */
-    QString toString() const;
+    QString toString() const {return QString(QString::number(getVal()));}
+    NombreComplexe* toNombreComplexe();
+
+    float getFloatVal() const {return _val;}
 };
 
 #endif REEL_H

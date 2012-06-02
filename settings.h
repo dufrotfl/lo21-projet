@@ -13,36 +13,6 @@
  \enum UtilisationDeComplexe
  \brief Le reglage concernant l'utilisation de complexe.
  */
-enum UtilisationDeComplexe {
-    /*! L'utilisation des complexes est autorisee.*/
-    COMPLEXE,
-    /*! L'utilisation des complexes n'est pas autorisee.*/
-    NON_COMPLEXE
-};
-
-/*!
- \enum Angles
- \brief Le reglage concernant l'unite des angles.
- */
-enum Angles {
-    /*! Les angles sont exprimes en degres.*/
-    DEGRES,
-    /*! Les angles sont exprimees en radians.*/
-    RADIANS
-};
-
-/*!
- \enum TypeConstante
- \brief Le reglage concernant le type de constante en cours d'utilisation.
- */
-enum TypeConstante {
-    /*! Les constantes utilisees sont de type entier.*/
-    ENTIER,
-    /*! Les constantes utilisees sont de type rationnel.*/
-    RATIONNEL,
-    /*! Les constantes utilisees sont de type reel.*/
-    REEL
-};
 
 
 /*!
@@ -50,6 +20,37 @@ enum TypeConstante {
  \brief Classe permettant de gerer les paramètres de la page (utilisee dans le cadre de la sauvegarde de contexte notamment)
  */
 class Settings {
+    public:
+    enum UtilisationDeComplexe {
+        /*! L'utilisation des complexes est autorisee.*/
+        COMPLEXE,
+        /*! L'utilisation des complexes n'est pas autorisee.*/
+        NON_COMPLEXE
+    };
+
+    /*!
+     \enum Angles
+     \brief Le reglage concernant l'unite des angles.
+     */
+    enum Angles {
+        /*! Les angles sont exprimes en degres.*/
+        DEGRES,
+        /*! Les angles sont exprimees en radians.*/
+        RADIANS
+    };
+
+    /*!
+     \enum TypeConstante
+     \brief Le reglage concernant le type de constante en cours d'utilisation.
+     */
+    enum TypeConstante {
+        /*! Les constantes utilisees sont de type entier.*/
+        ENTIER,
+        /*! Les constantes utilisees sont de type rationnel.*/
+        RATIONNEL,
+        /*! Les constantes utilisees sont de type reel.*/
+        REEL
+    };
 	private :
 		/*!
          Reglage de l'utilisation des complexes
@@ -63,21 +64,23 @@ class Settings {
          Reglages concernant le type de constante utilisee
 		 */
         TypeConstante _typeConstante;
+        /*!
+          Reglages du nombre de valeur de la pile à afficher
+          */
+        int _nbElemAffichable;
 
         static Settings* _instance;
 
         //! Constructeur sans parametre
         Settings();
 
-        Settings(UtilisationDeComplexe, Angles, TypeConstante);
+        Settings(UtilisationDeComplexe, Angles, TypeConstante,int);
 	
-	public :
+    public :
 
         static Settings* getInstance();
 
         static void freeInstance();
-
-
 		
 		/**
          \brief getter du reglage concernant l'utilisation des complexes
@@ -125,7 +128,23 @@ class Settings {
 		 */
 		void setTypeConstante(TypeConstante co) {
 			_typeConstante = co;
-		}		
+        }
+
+        /**
+         \brief getter du reglage concernant le nombre d'elements de la pile affichable
+         \return _nbElemAffichable
+         */
+        int getNbElemAffichable() {
+            return _nbElemAffichable;
+        }
+
+        /**
+         \brief setter du reglage concernant le nombre d'éléments à afficher dans la pile
+         \param nbElement Nombre d'éléments de la pile à afficher
+         */
+        void setNbElementAffichable(int nbElement) {
+            _nbElemAffichable = nbElement;
+        }
 };
 
 #endif

@@ -6,7 +6,12 @@
  */
 #ifndef RATIONNEL_H
 #define RATIONNEL_H
+
 #include "nombreNonComplexe.h"
+
+class Reel;
+class Entier;
+class NombreComplexe;
 
 /*!
  \class Rationnel
@@ -33,17 +38,17 @@ public:
 	 \param n Le numérateur du rationnel
 	 \param d Le dénominateur du rationnel
 	*/
-    Rationnel(int n, int d) throw(ConstanteException):_numerateur(n), _denominateur(d) {if(d==0) throw new ConstanteException("Division par 0 non autorisée", 1);}
+    Rationnel(int n, int d) throw(LogMessage):_numerateur(n), _denominateur(d) {if(d==0) throw new LogMessage("Division par 0 non autorisée", 1);}
     /**
 	 \brief Getter du numérateur de rationnel
 	 \return Le numérateur
 	 */
-    int getNumerateur() const;
+    int getNumerateur() const {return _numerateur;}
 	/**
 	 \brief Getter du dénominateur de rationnel
 	 \return Le dénominateur
 	 */
-    int getDenominateur() const;
+    int getDenominateur() const {return _denominateur;}
     /*!
 	 \copydoc Nombre::sign()
 	*/
@@ -56,26 +61,13 @@ public:
 	 \copydoc Nombre::cube()
 	*/
     void cube() { _numerateur *= _numerateur*_numerateur; _denominateur *= _denominateur*_denominateur; }
-	/*!
-	 \copydoc Nombre::operator+(Nombre)
-	*/
-    Nombre& operator+(const Nombre&) const {return Rationnel();}
-	/*!
-	 \copydoc Nombre::operator-(Nombre)
-	*/
-    Nombre& operator-(const Nombre&) const {return Rationnel();}
-	/*!
-	 \copydoc Nombre::operator/(Nombre)
-	*/
-    Nombre& operator/(const Nombre&) const {return Rationnel();}
-	/*!
-	 \copydoc Nombre::operator*(Nombre)
-	*/
-    Nombre& operator*(const Nombre&) const {return Rationnel();}
     /*!
       \copydoc Constante::toString()
       */
-    QString toString() const;
+    QString toString() const {return QString(QString::number(getNumerateur()) + "/" + QString::number(getDenominateur()));}
+    NombreComplexe* toNombreComplexe() ;
+
+    float getFloatVal() const { return (float)(_numerateur/_denominateur);}
 };
 
 #endif RATIONNEL_H

@@ -9,8 +9,8 @@
 #define EXPRESSION_H
 
 #include "QString.h"
-#include "nombre.h"
 #include "qvector.h"
+#include "qstringlist.h"
 #include "entier.h"
 
 /*!
@@ -22,17 +22,17 @@ private:
     /**<
       Liste des constantes qui composent cette expression
       */
-    QVector<Constante*> _liste;
+    QVector<Constante*> * _liste;
 public:
     /*!
       \brief Crée une expression par défaut
       */
-    Expression() {}
+    Expression();
     /*!
       \brief Crée une expression avec les
       */
-    Expression(const QString &) {}
-    Nombre* eval() const throw(ConstanteException);
+    Expression(const QString &);
+    Nombre* eval() const throw(LogMessage);
     /*!
       \copydoc Constance::toString()
       */

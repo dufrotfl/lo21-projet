@@ -8,6 +8,12 @@
 #ifndef CONTEXT_H
 #define CONTEXT_H
 
+#include "mainwindow.h"
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
 /*!
  \class Context
  \brief Classe Permettant de gérer l'écriture du context afin de pouvoir le recharger lors de l'ouverture de l'application
@@ -49,7 +55,12 @@ public:
 	/*!
 	 \brief Méthode permettant de stocker le context en mémoire afin de pouvoir le recharger après
 	*/
-    void sauvegardeContext(/*A modifier*/);
+    void sauvegardeContext();
+
+    /*!
+      \brief Méthode permettant de charger le contexte
+      */
+    void chargerContext();
 };
 
 #endif
