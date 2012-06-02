@@ -11,14 +11,6 @@
 #include <QString>
 #include <QRegExp>
 #include "constante.h"
-#include "entier.h"
-#include "expression.h"
-#include "rationnel.h"
-#include "reel.h"
-#include "nombreComplexe.h"
-#include "operateur.h"
-#include "operateur.h"
-#include "settings.h"
 
 /*!
  \class ConstanteFactory

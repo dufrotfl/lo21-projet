@@ -27,5 +27,30 @@ void NombreComplexe::cube() {
 }
 
 QString NombreComplexe::toString() const { 
-    return QString(getReel().toString()+"$"+getImg().toString());
+    return QString(getReel()->toString()+"$"+getImg()->toString());
+}
+
+NombreComplexe* NombreComplexe::operator+(NombreComplexe* nc) {
+    return new NombreComplexe(*_reel+nc->getReel(), *_img+nc->getImg());
+}
+
+NombreComplexe* NombreComplexe::operator-(NombreComplexe* nc) {
+    return new NombreComplexe(*_reel-nc->getReel(), *_img-nc->getImg());
+}
+
+NombreComplexe* NombreComplexe::operator/(NombreComplexe* nc) {
+    NombreNonComplexe* aCarre=nc->getReel();
+    aCarre->sqr();
+    NombreNonComplexe* bCarre=nc->getImg();
+    bCarre->sqr();
+
+    NombreComplexe* res = new NombreComplexe(*(*(*_reel * nc->getReel()) + *_img*nc->getImg()) / (*aCarre+bCarre), *(*(*_reel * nc->getImg()) - *nc->getReel()*_img) / (*aCarre+bCarre));
+    delete aCarre;
+    delete bCarre;
+
+    return res;
+}
+
+NombreComplexe* NombreComplexe::operator*(NombreComplexe* nc) {
+    return new NombreComplexe(*(*_reel*nc->getReel())-*_img*nc->getImg(), *(*_reel*nc->getImg())+*nc->getReel()*_img);
 }

@@ -11,7 +11,7 @@
 #include "QString.h"
 #include "qvector.h"
 #include "qstringlist.h"
-#include "entier.h"
+#include "nombre.h"
 
 /*!
   \class Expression
@@ -32,11 +32,20 @@ public:
       \brief Crée une expression avec les
       */
     Expression(const QString &);
+
+    QVector<Constante*>* getListe() {return _liste;}
+
     Nombre* eval() const throw(LogMessage);
     /*!
       \copydoc Constance::toString()
       */
     QString toString() const;
+
+    Expression* operator+(Constante*);
+    Expression* operator-(Constante*);
+    Expression* operator*(Constante*);
+    Expression* operator/(Constante*);
+
 };
 
 #endif EXPRESSION_H

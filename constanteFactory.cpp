@@ -1,4 +1,11 @@
 #include "constanteFactory.h"
+#include "entier.h"
+#include "expression.h"
+#include "rationnel.h"
+#include "reel.h"
+#include "nombreComplexe.h"
+#include "operateur.h"
+#include "settings.h"
 
 Constante* ConstanteFactory::getConstante(const QString &str) {
     QString strcopy(str.toUpper());

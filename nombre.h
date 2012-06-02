@@ -10,7 +10,8 @@
 #include "constante.h"
 
 class Reel;
-
+class Expression;
+class NombreComplexe;
 #define PI 3.14159265
 
 /*!
@@ -37,7 +38,6 @@ public:
 	*/
     virtual void cube() =0;
 
-
     Reel* Acos();
     Reel* Asin();
     Reel* Atan();
@@ -48,6 +48,13 @@ public:
     Reel* Alog();
     Reel* Ainv();
     Reel* Asqrt();
+
+    virtual NombreComplexe* toNombreComplexe() = 0;
+
+    Expression* operator+(Expression* e);
+    Expression* operator-(Expression* e);
+    Expression* operator/(Expression* e);
+    Expression* operator*(Expression* e);
 };
 
 #endif NOMBRE_H

@@ -9,11 +9,8 @@ Pile::Pile() {
 }
 
 Pile::~Pile() {
-    while(!_pileStockage->isEmpty())
-        delete _pileStockage->pop();
-
-    while(!_pileAffichage->isEmpty())
-        delete _pileAffichage->pop();
+    _pileAffichage->clear();
+    _pileStockage->clear();
     delete _pileStockage;
     delete _pileAffichage;
 }

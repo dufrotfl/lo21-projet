@@ -8,8 +8,8 @@
 #ifndef OPERATEUR_H
 #define OPERATEUR_H
 #include "constante.h"
-#include "nombreNonComplexe.h"
-#include "nombreComplexe.h"
+#include "nombre.h"
+#include "expression.h"
 
 /*!
   \class Operateur
@@ -45,7 +45,7 @@ public:
       */
     QString toString() const {return _operateur;}
 
-    Constante* call(Constante* c1, Constante *c2=0) const;
+    Constante* call(Constante* c1, Constante *c2=0);
 };
 
 #endif OPERATEUR_H

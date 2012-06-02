@@ -5,40 +5,40 @@
 
 NombreNonComplexe* NombreNonComplexe::operator+(NombreNonComplexe* nb) {
     if(Settings::getInstance()->getTypeConstante()==Settings::ENTIER)
-        return new Entier(this->toEntier()->getVal()+nb->toEntier()->getVal());
+        return new Entier(toEntier()->getVal()+nb->toEntier()->getVal());
     else if(Settings::getInstance()->getTypeConstante()==Settings::REEL)
-         return new Reel(this->toReel()->getVal()+nb->toReel()->getVal());
+         return new Reel(toReel()->getVal()+nb->toReel()->getVal());
     else
-         return new Rationnel(this->toRationnel()->getNumerateur()*nb->toRationnel()->getDenominateur()+nb->toRationnel()->getNumerateur()*this->toRationnel()->getDenominateur(), this->toRationnel()->getDenominateur()*nb->toRationnel()->getDenominateur());
+         return new Rationnel(toRationnel()->getNumerateur()*nb->toRationnel()->getDenominateur()+nb->toRationnel()->getNumerateur()*toRationnel()->getDenominateur(), toRationnel()->getDenominateur()*nb->toRationnel()->getDenominateur());
 }
 
 NombreNonComplexe* NombreNonComplexe::operator-(NombreNonComplexe* nb) {
     if(Settings::getInstance()->getTypeConstante()==Settings::ENTIER)
-         return new Entier(this->toEntier()->getVal()*nb->toEntier()->getVal());
+         return new Entier(toEntier()->getVal()-nb->toEntier()->getVal());
     else if(Settings::getInstance()->getTypeConstante()==Settings::REEL)
-        return new Reel(this->toReel()->getVal()*nb->toReel()->getVal());
+        return new Reel(toReel()->getVal()-nb->toReel()->getVal());
     else
-        return new Rationnel(this->toRationnel()->getNumerateur()*nb->toRationnel()->getDenominateur()-nb->toRationnel()->getNumerateur()*this->toRationnel()->getDenominateur(), this->toRationnel()->getDenominateur()*nb->toRationnel()->getDenominateur());
+        return new Rationnel(toRationnel()->getNumerateur()*nb->toRationnel()->getDenominateur()-nb->toRationnel()->getNumerateur()*toRationnel()->getDenominateur(), toRationnel()->getDenominateur()*nb->toRationnel()->getDenominateur());
 }
 
 NombreNonComplexe* NombreNonComplexe::operator/(NombreNonComplexe* nb) {
     if(Settings::getInstance()->getTypeConstante()==Settings::ENTIER)
-        return new Entier(this->toEntier()->getVal()/nb->toEntier()->getVal());
+        return new Entier(toEntier()->getVal()/nb->toEntier()->getVal());
     else if(Settings::getInstance()->getTypeConstante()==Settings::REEL)
-        return new Reel(this->toReel()->getVal()/nb->toReel()->getVal());
+        return new Reel(toReel()->getVal()/nb->toReel()->getVal());
     else {
-        return new Rationnel(this->toRationnel()->getNumerateur()*nb->toRationnel()->getDenominateur(), this->toRationnel()->getNumerateur()*nb->toRationnel()->getDenominateur());
+        return new Rationnel(toRationnel()->getNumerateur()*nb->toRationnel()->getDenominateur(), toRationnel()->getNumerateur()*nb->toRationnel()->getDenominateur());
 
     }
 }
 
 NombreNonComplexe* NombreNonComplexe::operator*(NombreNonComplexe* nb) {
     if(Settings::getInstance()->getTypeConstante()==Settings::ENTIER)
-        return new Entier(this->toEntier()->getVal()*nb->toEntier()->getVal());
+        return new Entier(toEntier()->getVal()*nb->toEntier()->getVal());
     else if(Settings::getInstance()->getTypeConstante()==Settings::REEL)
-        return new Reel(this->toReel()->getVal()*nb->toReel()->getVal());
+        return new Reel(toReel()->getVal()*nb->toReel()->getVal());
     else
-        return new Rationnel(this->toRationnel()->getNumerateur()*nb->toRationnel()->getNumerateur(), this->toRationnel()->getDenominateur()*nb->toRationnel()->getDenominateur());
+        return new Rationnel(toRationnel()->getNumerateur()*nb->toRationnel()->getNumerateur(), toRationnel()->getDenominateur()*nb->toRationnel()->getDenominateur());
 }
 
 Entier* NombreNonComplexe::toEntier() {

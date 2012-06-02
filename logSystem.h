@@ -7,6 +7,7 @@
 
 #ifndef LOGSYSTEM_H
 #define LOGSYSTEM_H
+
 #include "logMessage.h"
 #include "qfile.h"
 #include "QTextStream.h"

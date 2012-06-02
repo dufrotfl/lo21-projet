@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "QDebug"
+#include "operateur.h"
 
 MainWindow* MainWindow::mw = 0;
 

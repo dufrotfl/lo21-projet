@@ -18,11 +18,11 @@ private:
 	/**<
 	 Le pointeur de type @link NombreNonComplexe @endlink vers la partie réelle du nombre complexe
 	*/
-    NombreNonComplexe * _reel;
+    NombreNonComplexe* _reel;
 	/**<
 	 Le pointeur de type @link NombreNonComplexe @endlink vers la partie imaginaire du nombre complexe
 	*/
-    NombreNonComplexe * _img;
+    NombreNonComplexe* _img;
 public:
 	/*!
 	 \brief Crée un nombre complexe
@@ -42,12 +42,12 @@ public:
 	 \brief Getter de la partie réelle du nombre complexe
 	 \return La partie réelle du nombre complexe
 	 */
-    NombreNonComplexe& getReel() const { return *_reel; }
+    NombreNonComplexe* getReel() const { return _reel; }
 	/*!
 	 \brief Getter de la partie imaginaire du nombre complexe
 	 \return La partie imaginaire du nombre complexe
 	 */
-    NombreNonComplexe& getImg() const { return *_img; }
+    NombreNonComplexe* getImg() const { return _img; }
 	/*!
 	 \copydoc Nombre::sign()
 	*/
@@ -63,23 +63,25 @@ public:
 	/*!
      \copydoc NombreComplexe::operator+(NombreComplexe)
 	*/
-    NombreComplexe* operator+(NombreComplexe*) const {return new NombreComplexe();}
+    NombreComplexe* operator+(NombreComplexe*);
 	/*!
      \copydoc NombreComplexe::operator-(NombreComplexe)
 	*/
-    NombreComplexe* operator-(NombreComplexe*) const {return new NombreComplexe();}
+    NombreComplexe* operator-(NombreComplexe*);
 	/*!
      \copydoc NombreComplexe::operator/(NombreComplexe)
 	*/
-    NombreComplexe* operator/(NombreComplexe*) const {return new NombreComplexe();}
+    NombreComplexe* operator/(NombreComplexe*);
 	/*!
      \copydoc NombreComplexe::operator*(NombreComplexe)
 	*/
-    NombreComplexe* operator*(NombreComplexe*) const {return new NombreComplexe();}
+    NombreComplexe* operator*(NombreComplexe*);
     /*!
       \copydoc Nombre::toString()
       */
     QString toString() const;
+
+    NombreComplexe* toNombreComplexe() {return this;}
 };
 
 

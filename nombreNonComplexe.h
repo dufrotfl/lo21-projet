@@ -27,6 +27,7 @@ public:
      \brief Destructeur de l'instance de la classe NombreNonComplexe
     */
     virtual ~NombreNonComplexe() {}
+
     /*!
      \brief Méthode permettant de faire l'addition entre deux nombres
      \param nombre La deuxième opérande
@@ -52,7 +53,7 @@ public:
     */
     NombreNonComplexe* operator*(NombreNonComplexe*);
 
-    virtual NombreComplexe* toNombreComplexe() = 0;
+
     virtual Entier* toEntier();
     virtual Rationnel* toRationnel();
     virtual Reel* toReel();

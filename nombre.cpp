@@ -1,6 +1,25 @@
 #include "nombre.h"
 #include "reel.h"
 #include "nombreComplexe.h"
+#include "expression.h"
+
+Expression* Nombre::operator+(Expression* e) {
+    return *e+this;
+}
+
+Expression* Nombre::operator-(Expression* e) {
+    return *e-this;
+}
+
+
+Expression* Nombre::operator/(Expression* e) {
+    return *e/this;
+}
+
+
+Expression* Nombre::operator*(Expression* e) {
+    return *e*this;
+}
 
 Reel* Nombre::Asin() {
     // on test si c'est un complexe
