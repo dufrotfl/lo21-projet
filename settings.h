@@ -88,16 +88,14 @@ class Settings {
 		 */
         UtilisationDeComplexe getUtilisationDeComplexe() {
 			return _utilisationDeComplexe;
-		}
-		
+		}		
 		/**
          \brief setter du reglage concernant l'utilisation des complexes
          \param comp UtilisationDeComplexe
 		 */
 		void setUtilisationDeComplexe(UtilisationDeComplexe comp) {
 			_utilisationDeComplexe = comp;
-		}
-		
+		}		
 		/**
          \brief getter du reglage concernant l'unite des angles
          \return _angles
@@ -112,16 +110,14 @@ class Settings {
 		 */
 		void setAngles(Angles an) {
 			_angles = an;
-		}
-		
+		}		
 		/**
          \brief getter du reglage concernant le type des constantes
          \return _typeConstante
 		 */
         TypeConstante getTypeConstante() {
 			return _typeConstante;
-		}
-		
+		}		
 		/**
          \brief setter du reglage concernant le type des constantes
          \param co TypeConstante
@@ -129,7 +125,6 @@ class Settings {
 		void setTypeConstante(TypeConstante co) {
 			_typeConstante = co;
         }
-
         /**
          \brief getter du reglage concernant le nombre d'elements de la pile affichable
          \return _nbElemAffichable
@@ -137,14 +132,11 @@ class Settings {
         int getNbElemAffichable() {
             return _nbElemAffichable;
         }
-
         /**
          \brief setter du reglage concernant le nombre d'éléments à afficher dans la pile
          \param nbElement Nombre d'éléments de la pile à afficher
          */
-        void setNbElementAffichable(int nbElement) {
-            _nbElemAffichable = nbElement;
-        }
+        void setNbElementAffichable(int nbElement);
 };
 
 #endif

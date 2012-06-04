@@ -80,7 +80,9 @@ public:
       \copydoc Nombre::toString()
       */
     QString toString() const;
-
+    /*!
+      \copydoc Nombre::toNombreComplexe()
+      */
     NombreComplexe* toNombreComplexe() {return this;}
 };
 

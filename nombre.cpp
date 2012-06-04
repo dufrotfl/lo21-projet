@@ -34,7 +34,7 @@ Reel* Nombre::Asin() {
     valeur = sin(nc->getFloatVal());
 
     if(Settings::getInstance()->getAngles() == Settings::DEGRES)
-        valeur *= 180 / PI;
+        valeur /= 180 / PI;
     return new Reel(valeur);
 }
 
@@ -51,7 +51,7 @@ Reel* Nombre::Acos() {
     valeur = cos(nc->getFloatVal());
 
     if(Settings::getInstance()->getAngles() == Settings::DEGRES)
-        valeur *= 180 / PI;
+        valeur /= 180 / PI;
     return new Reel(valeur);
 }
 
@@ -68,7 +68,7 @@ Reel* Nombre::Atan() {
     valeur = tan(nc->getFloatVal());
 
     if(Settings::getInstance()->getAngles() == Settings::DEGRES)
-        valeur *= 180 / PI;
+        valeur /= 180 / PI;
     return new Reel(valeur);
 }
 
@@ -85,7 +85,7 @@ Reel* Nombre::Asinh() {
     valeur = sinh(nc->getFloatVal());
 
     if(Settings::getInstance()->getAngles() == Settings::DEGRES)
-        valeur *= 180 / PI;
+        valeur /= 180 / PI;
     return new Reel(valeur);
 }
 
@@ -102,7 +102,7 @@ Reel* Nombre::Acosh() {
     valeur = cosh(nc->getFloatVal());
 
     if(Settings::getInstance()->getAngles() == Settings::DEGRES)
-        valeur *= 180 / PI;
+        valeur /= 180 / PI;
     return new Reel(valeur);
 }
 
@@ -119,7 +119,7 @@ Reel* Nombre::Atanh() {
     valeur = tanh(nc->getFloatVal());
 
     if(Settings::getInstance()->getAngles() == Settings::DEGRES)
-        valeur *= 180 / PI;
+        valeur /= 180 / PI;
     return new Reel(valeur);
 }
 

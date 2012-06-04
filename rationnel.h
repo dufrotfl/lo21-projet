@@ -38,8 +38,7 @@ public:
 	 \param n Le numérateur du rationnel
 	 \param d Le dénominateur du rationnel
 	*/
-    Rationnel(int n, int d) throw(LogMessage):_numerateur(n), _denominateur(d) {if(d==0) throw new LogMessage("Division par 0 non autorisée", 1);}
-
+    Rationnel(int n, int d) throw(LogMessage):_numerateur(n), _denominateur(d) {if(d==0) throw LogMessage("Division par 0 non autorisée.", 1); simplifier();}
     /**
       \brief Crée un rationnel avec un constructeur par copie
       \param r Le rationnel à copier
@@ -71,9 +70,25 @@ public:
       \copydoc Constante::toString()
       */
     QString toString() const {return QString(QString::number(getNumerateur()) + "/" + QString::number(getDenominateur()));}
+    /*!
+      \copydoc Nombre::toNombreComplexe()
+      */
     NombreComplexe* toNombreComplexe() ;
-
-    float getFloatVal() const { return (float)(_numerateur/_denominateur);}
+    /*!
+      \copydoc NombreNonComplexe::getFloatVal()
+      */
+    float getFloatVal() const { return (float)_numerateur/(float)_denominateur;}
+    /*!
+      \brief Méthode permettant de renvoyer le pgcd des deux nombres passés en paramètres
+      \param a La première opérande
+      \param b La seconde opérande
+      \return Le pgcd des deux nombres
+      */
+    int pgcd(int a, int b) const;
+    /*!
+      \brief Méthode permettant de simplifier l'objet appelant(le rationnel) en appliquant le pgcd et ainsi simplifier le rationnel
+      */
+    void simplifier();
 };
 
 #endif RATIONNEL_H

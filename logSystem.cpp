@@ -38,7 +38,11 @@ LogSystem::~LogSystem() {
 }
 
 void LogSystem::addMessage(const LogMessage & log) {
-    MainWindow::getInstance()->statusBar()->showMessage("Erreur: "+log.getMessage(), 5000);
+    if(log.getDegre()==1)
+        MainWindow::getInstance()->statusBar()->showMessage("Erreur: "+log.getMessage(), 5000);
+    else if(log.getDegre()==2)
+        MainWindow::getInstance()->statusBar()->showMessage("Avertissement: "+log.getMessage(), 5000);
+
     if(!_fichier->isOpen())
         _fichier->open(QIODevice::ReadWrite | QIODevice::Text);
     QString texte;

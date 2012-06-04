@@ -1,4 +1,6 @@
 #include "context.h"
+#include "qsettings.h"
+
 
 Context* Context::_instance = 0;
 
@@ -18,21 +20,21 @@ void Context::freeInstance() {
 }
 
 void Context::sauvegardeContext() {
-    ofstream ofs("contextSettings.ros", ios::binary);
+    /*Settings set = *Settings::getInstance();
+    Pile p = *MainWindow::getInstance()->getPile();
 
-    Settings * set = Settings::getInstance();
-    ofs.write((char *)&set, sizeof(set));
-    Pile * p = MainWindow::getInstance()->getPile();
-    p->push(new Entier(5));
-    ofs.write((char *)&p, sizeof(p));
+    QSettings fichier_contexte("contexte.ini", QSettings::IniFormat);
+    //fichier_contexte.setValue("Settings", qVariantFromValue(set));
+    fichier_contexte.setValue("Pile", qVariantFromValue(p));
+    fichier_contexte.sync();*/
 }
 
 void Context::chargerContext() {
-    ifstream ifs("context.ros", ios::binary);
+    //Settings set = *Settings::getInstance();
+    //QSettings fichier_contexte("contexte.ini", QSettings::IniFormat);
+    //set.setAngles(fichier_contexte.value("Settings", qVariantFromValue(set)).value<Settings>());
+    //fichier_contexte.sync();
 
-    Pile * p = new Pile();
-
-    ifs.read((char *)&p, sizeof(p));
-    Settings * set = Settings::getInstance();
-    ifs.read((char *)&set, sizeof(set));
+    //MainWindow::getInstance()->setPile(&fichier_contexte.value("Pile", qVariantFromValue(Pile())).value<Pile>());
+    //fichier_contexte.sync();
 }

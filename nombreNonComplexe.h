@@ -27,7 +27,6 @@ public:
      \brief Destructeur de l'instance de la classe NombreNonComplexe
     */
     virtual ~NombreNonComplexe() {}
-
     /*!
      \brief Méthode permettant de faire l'addition entre deux nombres
      \param nombre La deuxième opérande
@@ -52,11 +51,25 @@ public:
      \return Le produit des deux nombres
     */
     NombreNonComplexe* operator*(NombreNonComplexe*);
-
-
+    /*!
+      \brief Méthode permettant de convertir un @link NombreNonComplexe @endlink en son équivalent @link Entier @endlink
+      \return Le pointeur vers l' @link Entier @endlink nouvellement crée
+      */
     virtual Entier* toEntier();
+    /*!
+      \brief Méthode permettant de convertir un @link NombreNonComplexe @endlink en son équivalent @link Rationnel @endlink
+      \return Le pointeur vers le @link Rationnel @endlink nouvellement crée
+      */
     virtual Rationnel* toRationnel();
+    /*!
+      \brief Méthode permettant de convertir un @link NombreNonComplexe @endlink en son équivalent @link Reel @endlink
+      \return Le pointeur vers le @link Reel @endlink nouvellement crée
+      */
     virtual Reel* toReel();
+    /*!
+      \brief Méthode permettant de récupérer la valeur du @link NombreNonComplexe @endlink sous la forme d'un réel
+      \return La valeur réelle
+      */
     virtual float getFloatVal() const = 0;
 };
 

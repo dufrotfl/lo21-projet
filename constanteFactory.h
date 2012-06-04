@@ -22,7 +22,7 @@ public:
 	 \brief Méthode permettant de crée un objet de type @link Constante @endlinke en lui passant une QString en parametre
 	 \param str La chaine à convertir en @link Constante @endlink
 	*/
-    static Constante* getConstante(const QString & str) throw(LogMessage);
+    static Constante* getConstante(const QString & str);
 };
 
 

@@ -53,12 +53,12 @@ public:
     static void freeInstance();
 
 	/*!
-	 \brief Méthode permettant de stocker le context en mémoire afin de pouvoir le recharger après
+     \brief Méthode permettant de stocker le contexte en mémoire afin de pouvoir le recharger après
 	*/
     void sauvegardeContext();
 
     /*!
-      \brief Méthode permettant de charger le contexte
+      \brief Méthode permettant de charger le contexte afin de restaurer les paramètres de la calculatrice et l'état de la pile
       */
     void chargerContext();
 };

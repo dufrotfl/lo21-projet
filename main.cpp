@@ -6,10 +6,9 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    //Context::getInstance()->chargerContext();
     MainWindow * w = MainWindow::getInstance();
     w->show();
     //Context::getInstance()->sauvegardeContext();
-    //Context::getInstance()->chargerContext();S
-   // delete w;
     return a.exec();
 }

@@ -17,7 +17,6 @@
  \class LogSystem
  \brief Classe (utilisant le Design Pattern Singleton) permettant de gérer l'écriture des messages de log dans le fichier correspondant
  */
-
 class LogSystem {
 private :
     /**<
@@ -28,7 +27,6 @@ private :
       Fichier de log
       */
     QFile* _fichier;
-
     /*!
 	 \brief Crée une instance par défault de LogSystem
 	 */
@@ -69,6 +67,7 @@ public:
     void reset();
     /*!
       \brief Méthode permettant d'établir l'entête du fichier
+      \return La chaine contenant l'entete du fichier
       */
     QString initialisationFichier();
 };

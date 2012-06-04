@@ -18,9 +18,12 @@
 class Operateur : public Constante {
 private:
     /**<
-      Caractère représentant l'opérateur
+      Chaine de caractère représentant l'opérateur (ex : +,-,/,*,cos, sin,...)
       */
     QString _operateur;
+    /**<
+      L'arité de l'opérateur (0 pour les opérations sans paramètres comme 'DUP', 1 pour les opérations unaires et 2 pour les opérations binaires)
+      */
     int _arite;
 public:
     /*!
@@ -44,8 +47,13 @@ public:
       \copydoc Constante::toString()
       */
     QString toString() const {return _operateur;}
-
-    Constante* call(Constante* c1, Constante *c2=0);
+    /*!
+      \brief Méthode permettant d'appeler la bonne méthode en fonction de l'opérateur et des deux constantes associées
+      \param c1 La première opérande (présente dans le cas d'une opération unaire & binaire)
+      \param c2 La seconde opérande (présente dans le cas d'une opération binaire)
+      \return Le résultat de type @link Constante @endlink après avoir appliqué l'opération
+      */
+    Constante* call(Constante* c1=0, Constante *c2=0);
 };
 
 #endif OPERATEUR_H

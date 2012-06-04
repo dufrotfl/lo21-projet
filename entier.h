@@ -40,8 +40,6 @@ public:
       \param e L'entier à copier
       */
     Entier(const Entier &e) { _val = e.getVal(); }
-
-    void operator=(NombreNonComplexe* nnc);
 	/**
 	 \brief Getter de la valeur de l'entier
 	 \return La valeur de l'entier
@@ -68,13 +66,17 @@ public:
 	 \copydoc Nombre::cube()
 	*/
     void cube() {_val*=_val*_val;}
-
-    float getFloatVal() const { return (float)_val;}
-
     /*!
       \copydoc Constante::toString()
       */
     QString toString() const {return QString(QString::number(getVal())); }
+    /*!
+      \copydoc NombreNonComplexe::getFloatVal()
+      */
+    float getFloatVal() const { return (float)_val;}
+    /*!
+      \copydoc Nombre::toNombreComplexe()
+      */
     NombreComplexe* toNombreComplexe() ;
 };
 

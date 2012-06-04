@@ -1,4 +1,5 @@
 #include "settings.h"
+#include "mainwindow.h"
 
 Settings * Settings::_instance = 0;
 
@@ -27,4 +28,7 @@ void Settings::freeInstance() {
         delete _instance;
 }
 
-
+void Settings::setNbElementAffichable(int nbElement) {
+    _nbElemAffichable = nbElement;
+    MainWindow::getInstance()->getPile()->setNbElemAffichable(_nbElemAffichable);
+}

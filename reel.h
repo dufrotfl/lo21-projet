@@ -9,6 +9,7 @@
 #define REEL_H
 
 #include "nombreNonComplexe.h"
+
 class Rationnel;
 class Entier;
 class NombreComplexe;
@@ -60,8 +61,13 @@ public:
       \copydoc Constante::toString()
       */
     QString toString() const {return QString(QString::number(getVal()));}
+    /*!
+      \copydoc Nombre::toNombreComplexe()
+      */
     NombreComplexe* toNombreComplexe();
-
+    /*!
+      \copydoc NombreNonComplexe::getFloatVal()
+      */
     float getFloatVal() const {return _val;}
 };
 

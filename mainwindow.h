@@ -8,10 +8,13 @@
 #include "expression.h"
 #include "logSystem.h"
 #include "constanteFactory.h"
+#include "QKeyEvent"
 
 namespace Ui {
 class MainWindow;
 }
+
+
 
 class MainWindow : public QMainWindow
 {
@@ -27,6 +30,7 @@ public:
     static MainWindow* getInstance() ;
     static void freeInstance();
     Pile* getPile() const {return _pile;}
+    void setPile(Pile *pile) {_pile = pile;}
     void setStackDisplayTextEdit(const QString &);
 private slots:
     void on_IntegerRadioButton_clicked();
@@ -58,6 +62,17 @@ private slots:
     void on_StackDisplaySizespinBox_valueChanged(int arg1);
     void on_DeletePushButton_clicked();
     void on_InputLineEdit_returnPressed() throw (LogMessage);
+    void on_InputLineEdit_textChanged(const QString &arg1);
+    void on_ReturnPushButton_clicked();
+    void on_DropPushButton_clicked();
+    void on_SumPushButton_clicked();
+    void on_MeanPushButton_clicked();
+    void on_DupPushButton_clicked();
+    void on_SwapPushButton_clicked();
+    void on_ClearPushButton_clicked();
+    void keyPressEvent(QKeyEvent *);
+signals:
+    QKeyEvent* keyPressed(QKeyEvent*);
 };
 
 #endif // MAINWINDOW_H
