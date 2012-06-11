@@ -38,11 +38,13 @@ LogSystem::~LogSystem() {
 }
 
 void LogSystem::addMessage(const LogMessage & log) {
+    // Gestion du message qui apparait sur l'interface graphique
     if(log.getDegre()==1)
         MainWindow::getInstance()->statusBar()->showMessage("Erreur :     "+log.getMessage(), 5000);
     else if(log.getDegre()==2)
         MainWindow::getInstance()->statusBar()->showMessage("Avertissement :    "+log.getMessage(), 5000);
 
+    // Gestion du message qui va être écrit dans le fichier de log
     if(!_fichier->isOpen())
         _fichier->open(QIODevice::Append | QIODevice::Text);
     // Le message de log que l'on veut insérer

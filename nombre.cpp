@@ -13,11 +13,9 @@ Expression* Nombre::operator-(Expression* e) {
     return *e-this;
 }
 
-
 Expression* Nombre::operator/(Expression* e) {
     return *e/this;
 }
-
 
 Expression* Nombre::operator*(Expression* e) {
     return *e*this;
@@ -35,6 +33,7 @@ Constante* Nombre::Asin() {
     float valeur = 0.0;
     valeur = sin(nc->getFloatVal());
 
+    // Conversion en degrés dans le cas ou les degrés sont sélectionnés
     if(Settings::getInstance()->getAngles() == Settings::DEGRES)
         valeur /= 180 / PI;
 
@@ -58,8 +57,10 @@ Constante* Nombre::Acos() {
     float valeur = 0.0;
     valeur = cos(nc->getFloatVal());
 
+    // Conversion en degrés dans le cas ou les degrés sont sélectionnés
     if(Settings::getInstance()->getAngles() == Settings::DEGRES)
         valeur /= 180 / PI;
+    // On converti pour avoir un type de retour correspondant au paramètre de la calculatrice
     if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
         return new Entier(valeur);
     else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)
@@ -80,8 +81,10 @@ Constante* Nombre::Atan() {
     float valeur = 0.0;
     valeur = tan(nc->getFloatVal());
 
+    // Conversion en degrés dans le cas ou les degrés sont sélectionnés
     if(Settings::getInstance()->getAngles() == Settings::DEGRES)
         valeur /= 180 / PI;
+    // On converti pour avoir un type de retour correspondant au paramètre de la calculatrice
     if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
         return new Entier(valeur);
     else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)
@@ -101,7 +104,7 @@ Constante* Nombre::Asinh() {
     NombreNonComplexe * nc = dynamic_cast<NombreNonComplexe*>(c);
     float valeur = 0.0;
     valeur = sinh(nc->getFloatVal());
-
+    // On converti pour avoir un type de retour correspondant au paramètre de la calculatrice
     if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
         return new Entier(valeur);
     else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)
@@ -121,7 +124,7 @@ Constante* Nombre::Acosh() {
     NombreNonComplexe * nc = dynamic_cast<NombreNonComplexe*>(c);
     float valeur = 0.0;
     valeur = cosh(nc->getFloatVal());
-
+    // On converti pour avoir un type de retour correspondant au paramètre de la calculatrice
     if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
         return new Entier(valeur);
     else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)
@@ -141,6 +144,7 @@ Constante* Nombre::Atanh() {
     NombreNonComplexe * nc = dynamic_cast<NombreNonComplexe*>(c);
     float valeur = 0.0;
     valeur = tanh(nc->getFloatVal());
+    // On converti pour avoir un type de retour correspondant au paramètre de la calculatrice
     if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
         return new Entier(valeur);
     else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)
@@ -160,6 +164,7 @@ Constante* Nombre::Aln() {
     NombreNonComplexe * nc = dynamic_cast<NombreNonComplexe*>(c);
     float valeur = 0.0;
     valeur = log(nc->getFloatVal());
+    // On converti pour avoir un type de retour correspondant au paramètre de la calculatrice
     if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
         return new Entier(valeur);
     else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)
@@ -179,6 +184,8 @@ Constante* Nombre::Alog() {
     NombreNonComplexe * nc = dynamic_cast<NombreNonComplexe*>(c);
     float valeur = 0.0;
     valeur = log10(nc->getFloatVal());
+
+    // On converti pour avoir un type de retour correspondant au paramètre de la calculatrice
     if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
         return new Entier(valeur);
     else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)
@@ -197,6 +204,8 @@ Constante* Nombre::Ainv() {
     }
     NombreNonComplexe * nc = dynamic_cast<NombreNonComplexe*>(c);
     float valeur = 0.0;
+
+    // On converti pour avoir un type de retour correspondant au paramètre de la calculatrice
     if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER) {
         valeur = 1/(nc->getFloatVal());
         return new Entier(valeur);
@@ -221,6 +230,8 @@ Constante* Nombre::Asqrt() {
     NombreNonComplexe * nc = dynamic_cast<NombreNonComplexe*>(c);
     float valeur = 0.0;
     valeur = sqrt(nc->getFloatVal());
+
+    // On converti pour avoir un type de retour correspondant au paramètre de la calculatrice
     if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
         return new Entier(valeur);
     else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)

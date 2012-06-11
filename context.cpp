@@ -20,10 +20,12 @@ void Context::freeInstance() {
 }
 
 void Context::sauvegardeContext() {
+    // On récupère l'instance de Settings et la pile de la mainwindow
     Settings* set = Settings::getInstance();
     Pile* p = MainWindow::getInstance()->getPile();
 
-    // Essai avec QXml
+    // On définit l'arborescence du fichier XML, en créant les bonnes catégories (Angles, typeConstante, etc.) et en ajoutant les valeurs
+    // associées en faisant appel à Settings
     QDomDocument doc("context");
     QDomElement root = doc.createElement("Contexte");
     doc.appendChild(root);
@@ -72,8 +74,8 @@ void Context::sauvegardeContext() {
     root.appendChild(elem5);
     QString xml = doc.toString();
 
+    // La phase d'écrire dans le fichier "contexte.xml"
     QFile file("contexte.xml");
-
     if(!file.open(QIODevice::ReadWrite))
         return;
     file.resize(0);
@@ -82,8 +84,11 @@ void Context::sauvegardeContext() {
     file.close();
 }
 
-void Context::chargerContext() {    
+void Context::chargerContext() {
+    // On récupère l'instance de Settings
     Settings* set = Settings::getInstance();
+
+    // On récupère le contenu de "contexte.xml"
     QFile file("contexte.xml");
     if(!file.open(QIODevice::ReadOnly)) {
         throw LogMessage("Problème du chargement du contexte !", 1);
@@ -98,8 +103,10 @@ void Context::chargerContext() {
      QDomElement docElem = doc.documentElement();
 
      QDomNode n = docElem.firstChild();
+     // Tant que le docElem contient des fils non "visités" on continu
      while(!n.isNull()) {
-         QDomElement e = n.toElement(); // try to convert the node to an element.
+         QDomElement e = n.toElement();
+         // Test necessaire afin de savoir si l'element retourné par "n.toElement" n'est pas null, sinon les tests suivants ne fonctionneraient pas
          if(!e.isNull()) {
              if(e.nodeName() == "Angles") {
                  if(e.text() == "RADIANS") {
@@ -138,5 +145,6 @@ void Context::chargerContext() {
          }
          n = n.nextSibling();
      }
+     // On appelle chargerContexte de Mainwindow afin qu'elle prenne en compte le context.
      MainWindow::getInstance()->chargerContexte();
 }

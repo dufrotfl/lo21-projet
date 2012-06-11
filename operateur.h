@@ -32,19 +32,22 @@ public:
     Operateur();
     /*!
       \brief Crée un opérateur en fonction du paramètre
-      \param la chaine représentant l'opérateur
+      \param op La chaine représentant l'opérateur
+      \param ar L'arité de l'opérateur
       */
-    Operateur(const QString &op, int ar):_operateur(op), _arite(ar) {}
+    Operateur(const QString &op, int ar):_operateur(op), _arite(ar) { if(ar <0 || ar>2) throw LogMessage("Impossible d'instancier un opérateur d'arité non égal à 0, 1 ou 2.", 1);}
     /*!
       \copydoc Constante::clone()
       */
     Operateur* clone() const;
     /*!
       \brief Getter de la chaine representant l'operateur
+      \return La chaine correspondant à l'opérateur
       */
     QString getOperateur() const {return _operateur;}
     /*!
       \brief Getter de l'int representant l'arité
+      \return L'arité de l'opérateur
       */
     int getArite() const {return _arite;}
     /*!

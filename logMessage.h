@@ -31,11 +31,11 @@ private:
     QString _date;
 public:
 	/*!
-      \brief Crée un LogMessage avec des valeurs par défauts
+      \brief Constructeur par défaut
       */
     LogMessage();
     /*!
-      \brief Crée un LogMessage avec les paramètres de la méthode
+      \brief Constructeur avec paramètres
       \param mes string
       \param degre int
       */

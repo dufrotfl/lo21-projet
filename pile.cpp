@@ -33,7 +33,6 @@ void Pile::clear() {
 void Pile::drop() {
     if(!_pileAffichage->isEmpty()) {
         Constante *temp = _pileAffichage->pop();
-        //_pileStockage->push(temp);
     }
 }
 
@@ -61,6 +60,7 @@ void Pile::mean(int x) {
             Operateur* op = new Operateur("+", 2);
             _pileAffichage->push(op->call(temp1, temp2));
             delete op;
+            // nécéssité de retirer autant d'élément dans pile undo que d'appel à l'opérateur + sinon on va avoir dans l'historique chaque opération afin d'obtenir la moyenne
             _pileUndo->pop();
         }
     }
@@ -88,6 +88,7 @@ void Pile::sum(int x) {
             Operateur* op = new Operateur("+", 2);
             _pileAffichage->push(op->call(temp1, temp2));
             delete op;
+            // nécéssité de retirer autant d'élément dans pile undo que d'appel à l'opérateur + sinon on va avoir dans l'historique chaque opération afin d'obtenir la somme
             _pileUndo->pop();
         }
     }

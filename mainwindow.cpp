@@ -380,6 +380,7 @@ void MainWindow::on_InputLineEdit_returnPressed() throw (LogMessage) {
     input = input.simplified();
     // Si il n'y a pas de texte entré
     if(input.isEmpty()) {
+        // On duplique le contenu de la pile
         on_DupPushButton_clicked();
     }
     // Si l'utilisateur a entré une Expression, on l'empile sans la modifier
@@ -398,6 +399,7 @@ void MainWindow::on_InputLineEdit_returnPressed() throw (LogMessage) {
     // Sinon, l'utilisateur a entré un NombreNonComplexe ou un Operateur
     else {
         try {
+            // On sépare chacune des constantes
             QStringList constantes(input.split(' '));
             QStringList::iterator i;
 
@@ -429,7 +431,7 @@ void MainWindow::on_InputLineEdit_returnPressed() throw (LogMessage) {
                         delete cpop;
                     }
                     // Si l'arité de l'opérateur est 2, on dépile deux éléments de la pile
-                    // et on appelle l'opérateur sur nos NombreNonComplexe ou Epxression
+                    // et on appelle l'opérateur sur nos NombreNonComplexe ou Expression
                     // (car la pile ne peut contenir que ces deux types là).
                     else if(o->getArite()==2) {
                         if(_pile->getPileAffichageSize()>= 2) {
@@ -461,7 +463,9 @@ void MainWindow::on_InputLineEdit_returnPressed() throw (LogMessage) {
                             throw LogMessage("Pas assez d'élément à dépiler.", 1);
                     }
                 }
+                // Si c'est pas un opérateur
                 else {
+                    // Si le mode complexe est sélectionné alors on converti en complexe
                     if(Settings::getInstance()->getUtilisationDeComplexe()==Settings::COMPLEXE) {
                         NombreComplexe * pcopy;
                         if(typeid(*p)==typeid(NombreComplexe)) {
@@ -474,13 +478,13 @@ void MainWindow::on_InputLineEdit_returnPressed() throw (LogMessage) {
                         HistoriqueOperateurPush *h = new HistoriqueOperateurPush(pcopy);
                         MainWindow::getInstance()->getPile()->ajouteHistorique(h);
                     }
+                    // Sinon on l'ajoute sans conversion
                     else {
                         _pile->push(p);
                         HistoriqueOperateurPush *h = new HistoriqueOperateurPush(p);
                         MainWindow::getInstance()->getPile()->ajouteHistorique(h);
                     }
                 }
-
                 ui->InputLineEdit->clear();
             }
         }

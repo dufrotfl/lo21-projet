@@ -19,14 +19,12 @@ int Rationnel::pgcd(int a, int b) const {
         a=-a;
     if(b<0)
         b=-b;
-
     while(a!=b) {
         if(a>b)
             a=a-b;
         else
             b=b-a;
     }
-
     return a;
 }
 
@@ -36,7 +34,6 @@ void Rationnel::simplifier() {
         return;
     }
     int i = pgcd(_denominateur, _numerateur);
-
     _numerateur/=i;
     _denominateur/=i;
     if(_denominateur<0) {

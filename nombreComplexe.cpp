@@ -19,17 +19,20 @@ void NombreComplexe::sign() {
 
 void NombreComplexe::sqr() {
     Entier *e = new Entier(2);
-    delete _reel;
     _reel->sqr();
     _reel = *_reel+(*(*e*_reel)*_img);
     _img->sqr();
     _reel = *_reel-_img;
-    delete _img;
     _img = new Entier(0);
 }
 
 void NombreComplexe::cube() {
-    //nc->sqr();
+    NombreComplexe* clone = this->clone();
+    delete _img;
+    delete _reel;
+    clone = *(*clone* clone)* clone;
+    this->_reel = clone->_reel;
+    this->_img = clone->_img;
 }
 
 QString NombreComplexe::toString() const { 
@@ -51,9 +54,6 @@ NombreComplexe* NombreComplexe::operator/(NombreComplexe* nc) {
     bCarre->sqr();
 
     NombreComplexe* res = new NombreComplexe(*(*(*_reel * nc->getReel()) + *_img*nc->getImg()) / (*aCarre+bCarre), *(*(*_reel * nc->getImg()) - *nc->getReel()*_img) / (*aCarre+bCarre));
-    delete aCarre;
-    delete bCarre;
-
     return res;
 }
 

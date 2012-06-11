@@ -1,3 +1,10 @@
+/*!
+ \file mainwindow.h
+ \author Sebastien Fradcourt & Florian Dufrot
+ \date 03 Juin 2012
+ \version 1.0
+ */
+
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
@@ -16,27 +23,68 @@ namespace Ui {
 class MainWindow;
 }
 
+/*!
+ \class MainWindow
+ \brief Classe (utilisant le Design Pattern Singleton) permettant de gérer l'interface de la calculatrice, ainsi que les interactions entre celle-ci et les classes associées.
+ */
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 private:
    Ui::MainWindow* ui;
+   /**<
+     Booléen permettant de savoir si le clavier est affiché ou non
+     */
    bool showClavier;
+   /**<
+     L'instance de la classe MainWindow
+     */
    static MainWindow* mw;
-   explicit MainWindow(QWidget *parent = 0);
-   Pile* _pile;
-    ~MainWindow();
 
+   Pile* _pile;
+   /*!
+     \brief Constructeur
+     */
+   explicit MainWindow(QWidget *parent = 0);
+   /*!
+     \brief Destructeur de la classe
+     */
+    ~MainWindow();
 public:
+   /*!
+     \brief Méthode permettant de retourner l'instance de la classe
+     \return L'instance de la classe
+     */
     static MainWindow* getInstance() ;
+    /*!
+      \brief Méthode permettant de libérer l'instance de classe
+      */
     static void freeInstance();
+    /*!
+      \brief Méthode permettant de charger le contexte : cad charger les bons paramètres en fonction des settings
+      */
     void chargerContexte();
+    /*!
+      \brief Getter permettant de retourner la pile utilisé.
+      \return La pile de la calculatrice
+      */
     Pile* getPile() const {return _pile;}
-    void setPile(Pile *pile) {_pile = pile;}
+    /*!
+      \brief Méthode permettant de fixer le nombre d'éléments de la pile à afficher.
+      \param i Le nombre d'éléments à afficher
+      */
     void setStackDisplaySpinBox(int i);
+    /*!
+      \brief Méthode permettant de modifier le contenu du champ de saisie par la string en paramètre, et appelle la méthode permettant de traiter cette chaine
+      \param str La chaine de caractères à insérer
+      */
     void setInputLineEdit(const QString &str);
-    void setStackDisplayTextEdit(const QString &);
+    /*!
+      \brief Méthode permettant d'ajouter "str" au contenu déjà présent dans le champ de saisie.
+      \param str La chaine de caractères à ajouter
+      */
+    void setStackDisplayTextEdit(const QString &str);
 private slots:
     void on_IntegerRadioButton_clicked();
     void on_RationalRadioButton_clicked();

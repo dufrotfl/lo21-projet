@@ -29,28 +29,28 @@ public:
     virtual ~NombreNonComplexe() {}
     /*!
      \brief Méthode permettant de faire l'addition entre deux nombres
-     \param nombre La deuxième opérande
+     \param nb La deuxième opérande
      \return La somme des deux nombres
     */
-    NombreNonComplexe* operator+(NombreNonComplexe*);
+    NombreNonComplexe* operator+(NombreNonComplexe* nb);
     /*!
      \brief Méthode permettant de faire la soustraction entre deux nombres
-     \param nombre La deuxième opérande
+     \param nb La deuxième opérande
      \return La différence entre les deux nombres
     */
-    NombreNonComplexe* operator-(NombreNonComplexe*);
+    NombreNonComplexe* operator-(NombreNonComplexe* nb);
     /*!
      \brief Méthode permettant de faire la division entre deux nombres
-     \param nombre La deuxième opérande
+     \param nb La deuxième opérande
      \return Le quotient de la division de ces deux nombres
     */
-    NombreNonComplexe* operator/(NombreNonComplexe*);
+    NombreNonComplexe* operator/(NombreNonComplexe* nb);
     /*!
      \brief Méthode permettant de faire la multiplication entre deux nombres
-     \param nombre La deuxième opérande
+     \param nb La deuxième opérande
      \return Le produit des deux nombres
     */
-    NombreNonComplexe* operator*(NombreNonComplexe*);
+    NombreNonComplexe* operator*(NombreNonComplexe* nb);
     /*!
       \brief Méthode permettant de convertir un @link NombreNonComplexe @endlink en son équivalent @link Entier @endlink
       \return Le pointeur vers l' @link Entier @endlink nouvellement crée
@@ -71,12 +71,11 @@ public:
       \return La valeur réelle
       */
     virtual float getFloatVal() const = 0;
-
     /*!
       \brief Méthode permettant d'effectuer la puissance d'un nombre
-      \param Un entier correspondant à la puissance
+      \param e Un entier correspondant à la puissance
       */
-    virtual void pow(Entier*) = 0;
+    virtual void pow(Entier* e) = 0;
 };
 
 #endif NOMBRENONCOMPLEXE_H

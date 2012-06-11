@@ -10,11 +10,17 @@
 
 /*!
   \class Historique
-  \brief ...
+  \brief Classe abstraite permettant de gérer des objets de type Historique
   */
 class Historique {
 public:
+    /*!
+      \brief Méthode virtuelle pure permettant d'effectuer un "undo" sur la commande courante
+      */
     virtual void undo()=0;
+    /*!
+      \brief Méthode virtuelle pure permettant d'effectuer un "redo" sur la commande courante
+      */
     virtual void redo()=0;
 };
 

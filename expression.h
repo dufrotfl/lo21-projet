@@ -24,13 +24,13 @@ private:
     QString _liste;
 public:
     /*!
-      \brief Crée une expression par défaut
+      \brief Constructeur par défaut
       */
     Expression();
     /*!
-      \brief Crée une expression avec les
+      \brief Constructeur par copie
       */
-    Expression(const QString &);
+    Expression(const QString &str);
     /*!
       \copydoc Constante::clone()
       */

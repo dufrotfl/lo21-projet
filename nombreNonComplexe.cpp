@@ -33,7 +33,6 @@ NombreNonComplexe* NombreNonComplexe::operator/(NombreNonComplexe* nb) {
     if(Settings::getInstance()->getTypeConstante()==Settings::ENTIER) {
         if(nb->toEntier()->getVal()==0)
             throw LogMessage("Division par 0 non autorisée.", 1);
-        qDebug() << nb->toEntier()->getVal();
         return new Entier(toEntier()->getVal()/nb->toEntier()->getVal());
     }
     else if(Settings::getInstance()->getTypeConstante()==Settings::REEL) {

@@ -24,13 +24,16 @@ private:
 	*/
     int _val;
 public:
+    /*!
+      \brief Destructeur de la classe
+      */
     ~Entier() {}
 	/**
-	 \brief Crée un entier avec une valeur par défaut 
+     \brief Constructeur par défaut
 	*/
     Entier():_val(0) {}
 	/**
-	 \brief Crée un entier avec la valeur passée en paramètre
+     \brief Constructeur avec paramètre
      \param v La valeur de l'entier
 	*/
     Entier(int v):_val(v) {}

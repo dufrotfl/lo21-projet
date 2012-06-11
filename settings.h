@@ -9,25 +9,23 @@
 #ifndef SETTINGS_H
 #define SETTINGS_H
 
-/*!
- \enum UtilisationDeComplexe
- \brief Le reglage concernant l'utilisation de complexe.
- */
-
 
 /*!
  \class Settings
- \brief Classe permettant de gerer les paramètres de la page (utilisee dans le cadre de la sauvegarde de contexte notamment)
+ \brief Classe permettant de gerer les paramètres de la calculatrice (utilisee dans le cadre de la sauvegarde de contexte notamment)
  */
 class Settings {
     public:
+    /*!
+     \enum UtilisationDeComplexe
+     \brief Le reglage concernant l'utilisation de complexe.
+     */
     enum UtilisationDeComplexe {
         /*! L'utilisation des complexes est autorisee.*/
         COMPLEXE,
         /*! L'utilisation des complexes n'est pas autorisee.*/
         NON_COMPLEXE
     };
-
     /*!
      \enum Angles
      \brief Le reglage concernant l'unite des angles.
@@ -38,7 +36,6 @@ class Settings {
         /*! Les angles sont exprimees en radians.*/
         RADIANS
     };
-
     /*!
      \enum TypeConstante
      \brief Le reglage concernant le type de constante en cours d'utilisation.
@@ -68,23 +65,36 @@ class Settings {
           Reglages du nombre de valeur de la pile à afficher
           */
         int _nbElemAffichable;
-
+        /**<
+          Instance de la classe Settings
+          */
         static Settings* _instance;
-
-        //! Constructeur sans parametre
+        /*!
+         \brief Constructeur sans parametre
+         */
         Settings();
-
-        Settings(UtilisationDeComplexe, Angles, TypeConstante,int);
+        /*!
+          \brief Constructeur avec parametres
+          \param comp L'utilisation des complexes
+          \param an L'unité des angles
+          \param cons Le type de constante
+          \param nbElem Le nombre d'élément de la pile à afficher dans l'interface
+          */
+        Settings(UtilisationDeComplexe comp, Angles an, TypeConstante cons,int nbElem);
 	
     public :
-
+        /*!
+          \brief Méthode permettant de retourner l'instance de la classe Settings
+          \return L'instance
+          */
         static Settings* getInstance();
-
-        static void freeInstance();
-		
+        /*!
+          \brief Méthode permettant de libérer l'instance
+          */
+        static void freeInstance();		
 		/**
          \brief getter du reglage concernant l'utilisation des complexes
-         \return _utilisationDeComplexe
+         \return L'utilisation ou non des complexes
 		 */
         UtilisationDeComplexe getUtilisationDeComplexe() {
 			return _utilisationDeComplexe;
@@ -98,7 +108,7 @@ class Settings {
 		}		
 		/**
          \brief getter du reglage concernant l'unite des angles
-         \return _angles
+         \return L'unité d'angles utilisée
 		 */
         Angles getAngles() {
 			return _angles;
@@ -113,7 +123,7 @@ class Settings {
 		}		
 		/**
          \brief getter du reglage concernant le type des constantes
-         \return _typeConstante
+         \return Le type de constante utilisé
 		 */
         TypeConstante getTypeConstante() {
 			return _typeConstante;
@@ -127,7 +137,7 @@ class Settings {
         }
         /**
          \brief getter du reglage concernant le nombre d'elements de la pile affichable
-         \return _nbElemAffichable
+         \return Le nombre d'éléments de la pile à afficher
          */
         int getNbElemAffichable() {
             return _nbElemAffichable;

@@ -20,19 +20,19 @@
 class Pile {
 private:
     /**<
-
+        La pile contenant les commandes qui ont été effectuées jusqu'à présent
       */
     QStack<Historique*> * _pileUndo;
     /**<
-
+        La pile contenant les commandes qui ont subi un "undo"
       */
     QStack<Historique*> * _pileRedo;
     /**<
-
+      La pile contenant les éléments temporaires de la pile
       */
     QStack<Constante*> * _pileStockage;
     /**<
-
+        La pile contenant les éléments de la pile
       */
     QStack<Constante*> * _pileAffichage;
     /**<
@@ -55,7 +55,7 @@ public:
     void push(Constante* constante);
     /*!
       \brief Méthode permettant d'enlever un élément de la liste et de la renvoyer
-      \return constante La constante enlevée de la liste
+      \return La constante enlevée de la liste
       */
     Constante* pop() throw (LogMessage);
     /*!
@@ -63,6 +63,9 @@ public:
       \return Le sommet de la pile de type @link Constante @endlink
       */
     Constante* sommet();
+    /*!
+      \brief Méthode permettant de retourner une QStrinf représentant tout les éléments mis bout à bout, cette méthode est notamment utilisé dans la classe @link Contexte @endlink
+      */
     QString getPileString() const;
     /*!
       \brief Méthode permettant de récupérer la taille de la pile contenant les @link Constante @endlink
@@ -71,12 +74,12 @@ public:
     int getPileAffichageSize() const {return _pileAffichage->size();}
     /*!
       \brief Méthode permettant de définir le nombre de @link Constante @endlink qui seront affichées dans la pile d'affichage
-      \param Le nombre d'élément que l'on veut afficher
+      \param i Le nombre d'élément que l'on veut afficher
       */
     void setNbElemAffichable(int i) {_nbElemAffichable=i;}
     /*!
       \brief Méthode permettant d'ajouter un nouvel élément de type @link Historique @endlink dans la liste des historiques
-      \param e L'élement de type Historique à ajouter
+      \param e L'élement de type @link Historique @endlink à ajouter
       */
     void ajouteHistorique(Historique* e) {_pileUndo->push(e);}
     /*!
@@ -93,10 +96,10 @@ public:
     void dup();
     /*!
       \brief Méthode permettant d'échanger l'ordre de deux éléments de la pile
-      \param L'indice du premier élément
-      \param L'indice du deuxième élément
+      \param x L'indice du premier élément
+      \param y L'indice du deuxième élément
       */
-    void swap(int,int);
+    void swap(int x,int y);
     /*!
       \brief Méthode permettant de faire la somme des x premiers éléments de la pile
       \param x Le nombre d'éléments
