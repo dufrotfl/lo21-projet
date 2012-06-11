@@ -31,4 +31,5 @@ void Settings::freeInstance() {
 void Settings::setNbElementAffichable(int nbElement) {
     _nbElemAffichable = nbElement;
     MainWindow::getInstance()->getPile()->setNbElemAffichable(_nbElemAffichable);
+    MainWindow::getInstance()->setStackDisplaySpinBox(_nbElemAffichable);
 }

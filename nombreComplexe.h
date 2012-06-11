@@ -35,6 +35,10 @@ public:
 	 */
     NombreComplexe(NombreNonComplexe* reel, NombreNonComplexe* img) : _reel(reel), _img(img) {}
     /*!
+      \copydoc Constante::clone()
+      */
+    NombreComplexe* clone() const;
+    /*!
 	 \brief Destructeur de l'instance de la classe NombreComplexe
 	*/
     ~NombreComplexe();

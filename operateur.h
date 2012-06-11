@@ -36,6 +36,10 @@ public:
       */
     Operateur(const QString &op, int ar):_operateur(op), _arite(ar) {}
     /*!
+      \copydoc Constante::clone()
+      */
+    Operateur* clone() const;
+    /*!
       \brief Getter de la chaine representant l'operateur
       */
     QString getOperateur() const {return _operateur;}

@@ -25,7 +25,7 @@
   <property name="maximumSize">
    <size>
     <width>800</width>
-    <height>432</height>
+    <height>376</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -456,6 +456,9 @@
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
      <item row="0" column="0">
       <widget class="QPushButton" name="PowPushButton">
        <property name="text">
@@ -562,7 +565,7 @@
       </widget>
      </item>
      <item row="3" column="3">
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="FactPushButton">
        <property name="text">
         <string>!</string>
        </property>
@@ -735,10 +738,16 @@
    <property name="text">
     <string>Annuler</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
   </action>
   <action name="actionR_tablir">
    <property name="text">
     <string>Rétablir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
    </property>
   </action>
  </widget>
@@ -761,25 +770,5 @@
     </hint>
    </hints>
   </connection>
-  <connection>
-   <sender>MainWindow</sender>
-   <signal>keyPressed(QKeyEvent*)</signal>
-   <receiver>MainWindow</receiver>
-   <slot>keyPressEvent(QKeyEvent*)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>399</x>
-     <y>187</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>399</x>
-     <y>187</y>
-    </hint>
-   </hints>
-  </connection>
  </connections>
- <slots>
-  <signal>keyPressed(QKeyEvent*)</signal>
-  <slot>keyPressEvent(QKeyEvent*)</slot>
- </slots>
 </ui>

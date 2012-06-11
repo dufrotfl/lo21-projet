@@ -2,21 +2,493 @@
 ---------------------------------------------------------------------------------------
 ------------------ Fichier de log de l'application Calculatrice -----------------------
 ------------------   Par Sébastien Fradcourt & Florian Dufrot   -----------------------
-------------------   Fichier crée le Sun Jun 03 17:09:56 2012   -----------------------
+------------------   Fichier crée le Thu Jun 07 17:23:30 2012   -----------------------
 ---------------------------------------------------------------------------------------
 
-Date et heure du log: Sun Jun 03 17:09:56 2012
+Date et heure du log: Thu Jun 07 17:23:30 2012
 	Importance : 1
-	Contenu :    Le sommet de la pile n'est pas une Expression.
+	Contenu :    L'opérateur n'est pas autorisé sur des nombres complexes
 
-Date et heure du log: Sun Jun 03 17:20:40 2012
+Date et heure du log: Thu Jun 07 17:24:22 2012
 	Importance : 1
-	Contenu :    Type non reconnu
+	Contenu :    L'opérateur n'est pas autorisé sur des nombres complexes
 
-Date et heure du log: Sun Jun 03 17:37:21 2012
+Date et heure du log: Thu Jun 07 17:31:47 2012
 	Importance : 1
-	Contenu :    Le sommet de la pile n'est pas une Expression.
+	Contenu :    Type non reconnu.
 
-Date et heure du log: Mon Jun 04 09:32:18 2012
+Date et heure du log: Thu Jun 07 17:31:49 2012
 	Importance : 1
-	Contenu :    Mode complexe non sélectionné
+	Contenu :    Type non reconnu.
+
+Date et heure du log: Thu Jun 07 17:31:50 2012
+	Importance : 1
+	Contenu :    Type non reconnu.
+
+Date et heure du log: Thu Jun 07 17:31:51 2012
+	Importance : 1
+	Contenu :    Type non reconnu.
+
+Date et heure du log: Thu Jun 07 17:31:51 2012
+	Importance : 1
+	Contenu :    Type non reconnu.
+
+Date et heure du log: Thu Jun 07 17:31:51 2012
+	Importance : 1
+	Contenu :    Type non reconnu.
+
+Date et heure du log: Thu Jun 07 17:31:51 2012
+	Importance : 1
+	Contenu :    Type non reconnu.
+
+Date et heure du log: Thu Jun 07 17:31:52 2012
+	Importance : 1
+	Contenu :    Type non reconnu.
+
+Date et heure du log: Thu Jun 07 17:31:54 2012
+	Importance : 1
+	Contenu :    L'opérateur n'est pas autorisé sur des nombres complexes
+
+Date et heure du log: Thu Jun 07 17:31:54 2012
+	Importance : 1
+	Contenu :    L'opérateur n'est pas autorisé sur des nombres complexes
+
+Date et heure du log: Thu Jun 07 17:31:58 2012
+	Importance : 1
+	Contenu :    Type non reconnu.
+
+Date et heure du log: Thu Jun 07 17:32:06 2012
+	Importance : 1
+	Contenu :    L'opérateur n'est pas autorisé sur des nombres complexes
+
+Date et heure du log: Thu Jun 07 17:36:08 2012
+	Importance : 1
+	Contenu :    L'opérateur n'est pas autorisé sur des nombres complexes
+
+Date et heure du log: Thu Jun 07 17:36:08 2012
+	Importance : 1
+	Contenu :    L'opérateur n'est pas autorisé sur des nombres complexes
+
+Date et heure du log: Thu Jun 07 17:36:09 2012
+	Importance : 1
+	Contenu :    L'opérateur n'est pas autorisé sur des nombres complexes
+
+Date et heure du log: Thu Jun 07 20:38:06 2012
+	Importance : 1
+	Contenu :    Opérateur d'arité 1 non reconnu.
+
+Date et heure du log: Thu Jun 07 20:39:56 2012
+	Importance : 1
+	Contenu :    Opérateur d'arité 1 non reconnu.
+
+Date et heure du log: Thu Jun 07 20:40:58 2012
+	Importance : 1
+	Contenu :    Opérateur d'arité 1 non reconnu.
+
+Date et heure du log: Thu Jun 07 20:41:01 2012
+	Importance : 1
+	Contenu :    Opérateur d'arité 1 non reconnu.
+
+Date et heure du log: Thu Jun 07 20:41:16 2012
+	Importance : 1
+	Contenu :    Type non reconnu.
+
+Date et heure du log: Sat Jun 09 16:37:12 2012
+	Importance : 1
+	Contenu :    Type non reconnu.
+
+Date et heure du log: Sat Jun 09 16:37:47 2012
+	Importance : 1
+	Contenu :    Opérateur d'arité 1 non reconnu.
+
+Date et heure du log: Sat Jun 09 17:08:08 2012
+	Importance : 1
+	Contenu :    Opérateur d'arité 1 non reconnu.
+
+Date et heure du log: Sat Jun 09 17:08:10 2012
+	Importance : 1
+	Contenu :    Opérateur d'arité 1 non reconnu.
+
+Date et heure du log: Sat Jun 09 17:08:10 2012
+	Importance : 1
+	Contenu :    Opérateur d'arité 1 non reconnu.
+
+Date et heure du log: Sat Jun 09 17:08:10 2012
+	Importance : 1
+	Contenu :    Opérateur d'arité 1 non reconnu.
+
+Date et heure du log: Sat Jun 09 17:13:53 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible de rétablir.
+
+Date et heure du log: Sat Jun 09 17:13:59 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 17:14:00 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 17:41:05 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 17:44:09 2012
+	Importance : 1
+	Contenu :    Pas assez d'élément à dépiler.
+
+Date et heure du log: Sat Jun 09 17:44:10 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible de rétablir.
+
+Date et heure du log: Sat Jun 09 17:58:53 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 17:58:54 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 18:15:01 2012
+	Importance : 1
+	Contenu :    Swap impossible, veuillez vérifier les deux indices ! 
+
+Date et heure du log: Sat Jun 09 18:15:23 2012
+	Importance : 1
+	Contenu :    Swap impossible, veuillez vérifier les deux indices ! 
+
+Date et heure du log: Sat Jun 09 18:15:40 2012
+	Importance : 1
+	Contenu :    Swap impossible, veuillez vérifier les deux indices ! 
+
+Date et heure du log: Sat Jun 09 18:15:57 2012
+	Importance : 1
+	Contenu :    Swap impossible, veuillez vérifier les deux indices ! 
+
+Date et heure du log: Sat Jun 09 18:16:13 2012
+	Importance : 1
+	Contenu :    Swap impossible, veuillez vérifier les deux indices ! 
+
+Date et heure du log: Sat Jun 09 18:16:28 2012
+	Importance : 1
+	Contenu :    Swap impossible, veuillez vérifier les deux indices ! 
+
+Date et heure du log: Sat Jun 09 18:16:31 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 18:16:34 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 18:18:02 2012
+	Importance : 1
+	Contenu :    Division par 0 non autorisée.
+
+Date et heure du log: Sat Jun 09 18:18:07 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 18:18:18 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 18:18:20 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 18:18:23 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 18:18:27 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 18:18:32 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible de rétablir.
+
+Date et heure du log: Sat Jun 09 18:23:29 2012
+	Importance : 1
+	Contenu :    Pas assez d'élément à dépiler.
+
+Date et heure du log: Sat Jun 09 18:23:31 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible de rétablir.
+
+Date et heure du log: Sat Jun 09 18:34:13 2012
+	Importance : 1
+	Contenu :    Swap impossible, veuillez vérifier les deux indices ! 
+
+Date et heure du log: Sat Jun 09 18:37:36 2012
+	Importance : 2
+	Contenu :    Pas assez d'élément pour effectuer le swap
+
+Date et heure du log: Sat Jun 09 18:37:43 2012
+	Importance : 1
+	Contenu :    Swap impossible, veuillez vérifier les deux indices ! 
+
+Date et heure du log: Sat Jun 09 18:37:53 2012
+	Importance : 1
+	Contenu :    Swap impossible, veuillez vérifier les deux indices ! 
+
+Date et heure du log: Sat Jun 09 18:38:44 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible de rétablir.
+
+Date et heure du log: Sat Jun 09 18:39:28 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 18:40:49 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 18:40:51 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible de rétablir.
+
+Date et heure du log: Sat Jun 09 18:40:52 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible de rétablir.
+
+Date et heure du log: Sat Jun 09 18:41:09 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible de rétablir.
+
+Date et heure du log: Sat Jun 09 18:41:15 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 18:41:16 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 18:48:45 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible de rétablir.
+
+Date et heure du log: Sat Jun 09 18:49:31 2012
+	Importance : 1
+	Contenu :    Type non reconnu.
+
+Date et heure du log: Sat Jun 09 18:50:18 2012
+	Importance : 1
+	Contenu :    Type non reconnu.
+
+Date et heure du log: Sat Jun 09 18:50:20 2012
+	Importance : 1
+	Contenu :    Type non reconnu.
+
+Date et heure du log: Sat Jun 09 18:50:24 2012
+	Importance : 1
+	Contenu :    Type non reconnu.
+
+Date et heure du log: Sat Jun 09 18:50:45 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 18:53:10 2012
+	Importance : 1
+	Contenu :    Pas assez d'élément à dépiler.
+
+Date et heure du log: Sat Jun 09 18:53:10 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 18:53:11 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 18:53:11 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 18:53:11 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 19:14:35 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 19:18:33 2012
+	Importance : 1
+	Contenu :    Type non reconnu.
+
+Date et heure du log: Sat Jun 09 20:46:39 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 20:46:40 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 20:47:52 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 20:47:52 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 20:47:53 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 20:47:53 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 20:47:53 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 20:47:53 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 20:47:53 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 20:48:32 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 20:48:44 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 20:49:06 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 20:49:46 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sat Jun 09 20:50:21 2012
+	Importance : 1
+	Contenu :    Pas assez d'élément à dépiler.
+
+Date et heure du log: Sun Jun 10 09:59:42 2012
+	Importance : 1
+	Contenu :    L'opérateur n'est pas autorisé sur des nombres complexes
+
+Date et heure du log: Sun Jun 10 10:01:45 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sun Jun 10 10:05:19 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sun Jun 10 10:05:19 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sun Jun 10 10:05:20 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sun Jun 10 10:05:20 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sun Jun 10 10:05:20 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sun Jun 10 10:08:23 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible de rétablir.
+
+Date et heure du log: Sun Jun 10 10:08:24 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible de rétablir.
+
+Date et heure du log: Sun Jun 10 10:08:24 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible de rétablir.
+
+Date et heure du log: Sun Jun 10 10:08:24 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible de rétablir.
+
+Date et heure du log: Sun Jun 10 10:08:24 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible de rétablir.
+
+Date et heure du log: Sun Jun 10 10:09:31 2012
+	Importance : 1
+	Contenu :    Pas assez d'élément à dépiler.
+
+Date et heure du log: Sun Jun 10 10:12:08 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible de rétablir.
+
+Date et heure du log: Sun Jun 10 10:45:07 2012
+	Importance : 2
+	Contenu :    Aucun élément à dupliquer ! 
+
+Date et heure du log: Sun Jun 10 10:45:13 2012
+	Importance : 2
+	Contenu :    Aucun élément à dupliquer ! 
+
+Date et heure du log: Sun Jun 10 10:45:32 2012
+	Importance : 2
+	Contenu :    Aucun élément à dupliquer ! 
+
+Date et heure du log: Sun Jun 10 10:45:41 2012
+	Importance : 2
+	Contenu :    Aucun élément à dupliquer ! 
+
+Date et heure du log: Sun Jun 10 10:45:48 2012
+	Importance : 2
+	Contenu :    Aucun élément à dupliquer ! 
+
+Date et heure du log: Sun Jun 10 10:45:57 2012
+	Importance : 2
+	Contenu :    Aucun élément à dupliquer ! 
+
+Date et heure du log: Sun Jun 10 10:46:14 2012
+	Importance : 2
+	Contenu :    Aucun élément à dupliquer ! 
+
+Date et heure du log: Sun Jun 10 10:46:21 2012
+	Importance : 2
+	Contenu :    Aucun élément à dupliquer ! 
+
+Date et heure du log: Sun Jun 10 10:46:35 2012
+	Importance : 2
+	Contenu :    Aucun élément à dupliquer ! 
+
+Date et heure du log: Sun Jun 10 10:47:38 2012
+	Importance : 2
+	Contenu :    Aucun élément à dupliquer ! 
+
+Date et heure du log: Sun Jun 10 10:47:48 2012
+	Importance : 2
+	Contenu :    Aucun élément à dupliquer ! 
+
+Date et heure du log: Sun Jun 10 10:56:15 2012
+	Importance : 1
+	Contenu :    Pas assez d'élément à dépiler.
+
+Date et heure du log: Sun Jun 10 10:56:15 2012
+	Importance : 1
+	Contenu :    Pas assez d'élément à dépiler.
+
+Date et heure du log: Sun Jun 10 10:56:16 2012
+	Importance : 2
+	Contenu :    Historique vide, impossible d'annuler.
+
+Date et heure du log: Sun Jun 10 10:57:08 2012
+	Importance : 1
+	Contenu :    Type de la constante non reconnu, veuillez saisir à nouveau l'expression.
+
+Date et heure du log: Sun Jun 10 11:20:50 2012
+	Importance : 1
+	Contenu :    Pas assez d'élément à dépiler.

@@ -40,6 +40,10 @@ public:
       \param r Le réel à copier
       */
     Reel(const Reel &r) { _val = r.getVal(); }
+    /*!
+      \copydoc Constante::clone()
+      */
+    Reel* clone() const;
 	/**
 	 \brief Getter de la valeur du réel
 	 \return La valeur du réel
@@ -57,6 +61,10 @@ public:
 	 \copydoc Nombre::cube()
     */
     void cube() { _val *= _val*_val;}
+    /*!
+      \copydoc NombreNonComplexe::pow()
+      */
+    void pow(Entier*);
     /*!
       \copydoc Constante::toString()
       */

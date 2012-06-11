@@ -10,7 +10,7 @@ NombreNonComplexe* NombreNonComplexe::operator+(NombreNonComplexe* nb) {
         return new Entier(toEntier()->getVal()+nb->toEntier()->getVal());
     else if(Settings::getInstance()->getTypeConstante()==Settings::REEL)
          return new Reel(toReel()->getVal()+nb->toReel()->getVal());
-    else {
+    else if(Settings::getInstance()->getTypeConstante()==Settings::RATIONNEL) {
         Rationnel* tmpRationnel = new Rationnel(toRationnel()->getNumerateur()*nb->toRationnel()->getDenominateur()+nb->toRationnel()->getNumerateur()*toRationnel()->getDenominateur(), toRationnel()->getDenominateur()*nb->toRationnel()->getDenominateur());
         tmpRationnel->simplifier();
         return tmpRationnel;

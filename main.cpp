@@ -6,9 +6,14 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    //Context::getInstance()->chargerContext();
     MainWindow * w = MainWindow::getInstance();
+    try {
+        Context::getInstance()->chargerContext();
+    }
+    catch(LogMessage lm) {
+        LogSystem::getInstance()->addMessage(lm);
+    }
     w->show();
-    //Context::getInstance()->sauvegardeContext();
+    w->freeInstance();
     return a.exec();
 }

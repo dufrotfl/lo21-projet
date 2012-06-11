@@ -9,12 +9,12 @@
 #include "logSystem.h"
 #include "constanteFactory.h"
 #include "QKeyEvent"
+#include <QLineEdit>
+#include "QDebug"
 
 namespace Ui {
 class MainWindow;
 }
-
-
 
 class MainWindow : public QMainWindow
 {
@@ -22,15 +22,20 @@ class MainWindow : public QMainWindow
 
 private:
    Ui::MainWindow* ui;
+   bool showClavier;
    static MainWindow* mw;
    explicit MainWindow(QWidget *parent = 0);
    Pile* _pile;
     ~MainWindow();
+
 public:
     static MainWindow* getInstance() ;
     static void freeInstance();
+    void chargerContexte();
     Pile* getPile() const {return _pile;}
     void setPile(Pile *pile) {_pile = pile;}
+    void setStackDisplaySpinBox(int i);
+    void setInputLineEdit(const QString &str);
     void setStackDisplayTextEdit(const QString &);
 private slots:
     void on_IntegerRadioButton_clicked();
@@ -62,7 +67,6 @@ private slots:
     void on_StackDisplaySizespinBox_valueChanged(int arg1);
     void on_DeletePushButton_clicked();
     void on_InputLineEdit_returnPressed() throw (LogMessage);
-    void on_InputLineEdit_textChanged(const QString &arg1);
     void on_ReturnPushButton_clicked();
     void on_DropPushButton_clicked();
     void on_SumPushButton_clicked();
@@ -70,9 +74,26 @@ private slots:
     void on_DupPushButton_clicked();
     void on_SwapPushButton_clicked();
     void on_ClearPushButton_clicked();
-    void keyPressEvent(QKeyEvent *);
-signals:
-    QKeyEvent* keyPressed(QKeyEvent*);
+    void undo();
+    void redo();
+    void on_PowPushButton_clicked();
+    void on_SqrPushButton_clicked();
+    void on_CubePushButton_clicked();
+    void on_SqrtPushButton_clicked();
+    void on_SignPushButton_clicked();
+    void on_ModPushButton_clicked();
+    void on_SinPushButton_clicked();
+    void on_CosPushButton_clicked();
+    void on_TanPushButton_clicked();
+    void on_SinhPushButton_clicked();
+    void on_CoshPushButton_clicked();
+    void on_TanhPushButton_clicked();
+    void on_LnPushButton_clicked();
+    void on_LogPushButton_clicked();
+    void on_InvPushButton_clicked();
+    void on_FactPushButton_clicked();
+    void on_actionClavier_triggered();
+    void on_actionA_propos_triggered();
 };
 
 #endif // MAINWINDOW_H

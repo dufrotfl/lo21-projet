@@ -71,6 +71,12 @@ public:
       \return La valeur réelle
       */
     virtual float getFloatVal() const = 0;
+
+    /*!
+      \brief Méthode permettant d'effectuer la puissance d'un nombre
+      \param Un entier correspondant à la puissance
+      */
+    virtual void pow(Entier*) = 0;
 };
 
 #endif NOMBRENONCOMPLEXE_H

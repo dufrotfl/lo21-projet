@@ -2,11 +2,13 @@
 #include "mainwindow.h"
 
 void HistoriqueOperateurBinaire::undo() {
-    _constante1=MainWindow::getPile()->pop();
-    _constante2=MainWindow::getPile()->pop();
+    MainWindow::getInstance()->getPile()->pop();
+    MainWindow::getInstance()->getPile()->push(_constante1);
+    MainWindow::getInstance()->getPile()->push(_constante2);
 }
 
 void HistoriqueOperateurBinaire::redo() {
-    MainWindow::getPile()->push(_constante1);
-    MainWindow::getPile()->push(_constante2);
+    MainWindow::getInstance()->getPile()->pop();
+    MainWindow::getInstance()->getPile()->pop();
+    MainWindow::getInstance()->getPile()->push(_resultat);
 }

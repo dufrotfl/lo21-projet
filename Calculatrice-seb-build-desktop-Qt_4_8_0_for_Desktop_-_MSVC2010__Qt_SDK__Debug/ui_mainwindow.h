@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Sun 3. Jun 17:36:06 2012
+** Created: Sun 10. Jun 10:37:15 2012
 **      by: Qt User Interface Compiler version 4.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -98,7 +98,7 @@ public:
     QPushButton *SqrPushButton;
     QPushButton *CubePushButton;
     QPushButton *SqrtPushButton;
-    QPushButton *pushButton;
+    QPushButton *FactPushButton;
     QWidget *gridLayoutWidget_4;
     QGridLayout *PileOpGridLayout;
     QPushButton *SumPushButton;
@@ -128,7 +128,7 @@ public:
         sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
         MainWindow->setSizePolicy(sizePolicy);
         MainWindow->setMinimumSize(QSize(800, 376));
-        MainWindow->setMaximumSize(QSize(800, 432));
+        MainWindow->setMaximumSize(QSize(800, 376));
         actionClavier = new QAction(MainWindow);
         actionClavier->setObjectName(QString::fromUtf8("actionClavier"));
         actionClavier->setCheckable(true);
@@ -340,6 +340,7 @@ public:
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        gridLayout->setSizeConstraint(QLayout::SetDefaultConstraint);
         gridLayout->setContentsMargins(0, 0, 0, 0);
         PowPushButton = new QPushButton(gridLayoutWidget_3);
         PowPushButton->setObjectName(QString::fromUtf8("PowPushButton"));
@@ -416,10 +417,10 @@ public:
 
         gridLayout->addWidget(SqrtPushButton, 0, 3, 1, 1);
 
-        pushButton = new QPushButton(gridLayoutWidget_3);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        FactPushButton = new QPushButton(gridLayoutWidget_3);
+        FactPushButton->setObjectName(QString::fromUtf8("FactPushButton"));
 
-        gridLayout->addWidget(pushButton, 3, 3, 1, 1);
+        gridLayout->addWidget(FactPushButton, 3, 3, 1, 1);
 
         gridLayoutWidget_4 = new QWidget(centralWidget);
         gridLayoutWidget_4->setObjectName(QString::fromUtf8("gridLayoutWidget_4"));
@@ -504,7 +505,6 @@ public:
 
         retranslateUi(MainWindow);
         QObject::connect(actionQuitter, SIGNAL(triggered()), MainWindow, SLOT(close()));
-        QObject::connect(MainWindow, SIGNAL(keyPressed(QKeyEvent*)), MainWindow, SLOT(keyPressEvent(QKeyEvent*)));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
@@ -516,7 +516,9 @@ public:
         actionQuitter->setText(QApplication::translate("MainWindow", "Quitter", 0, QApplication::UnicodeUTF8));
         actionA_propos->setText(QApplication::translate("MainWindow", "A propos", 0, QApplication::UnicodeUTF8));
         actionAnnuler->setText(QApplication::translate("MainWindow", "Annuler", 0, QApplication::UnicodeUTF8));
+        actionAnnuler->setShortcut(QApplication::translate("MainWindow", "Ctrl+Z", 0, QApplication::UnicodeUTF8));
         actionR_tablir->setText(QApplication::translate("MainWindow", "R\303\251tablir", 0, QApplication::UnicodeUTF8));
+        actionR_tablir->setShortcut(QApplication::translate("MainWindow", "Ctrl+Y", 0, QApplication::UnicodeUTF8));
         ReturnPushButton->setText(QApplication::translate("MainWindow", "RETURN", 0, QApplication::UnicodeUTF8));
         ReturnPushButton->setShortcut(QApplication::translate("MainWindow", "Return", 0, QApplication::UnicodeUTF8));
         SevenPushButton->setText(QApplication::translate("MainWindow", "7", 0, QApplication::UnicodeUTF8));
@@ -580,7 +582,7 @@ public:
         SqrPushButton->setText(QApplication::translate("MainWindow", "SQR", 0, QApplication::UnicodeUTF8));
         CubePushButton->setText(QApplication::translate("MainWindow", "CUBE", 0, QApplication::UnicodeUTF8));
         SqrtPushButton->setText(QApplication::translate("MainWindow", "SQRT", 0, QApplication::UnicodeUTF8));
-        pushButton->setText(QApplication::translate("MainWindow", "!", 0, QApplication::UnicodeUTF8));
+        FactPushButton->setText(QApplication::translate("MainWindow", "!", 0, QApplication::UnicodeUTF8));
         SumPushButton->setText(QApplication::translate("MainWindow", "SUM", 0, QApplication::UnicodeUTF8));
         MeanPushButton->setText(QApplication::translate("MainWindow", "MEAN", 0, QApplication::UnicodeUTF8));
         ClearPushButton->setText(QApplication::translate("MainWindow", "CLEAR", 0, QApplication::UnicodeUTF8));

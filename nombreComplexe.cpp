@@ -1,6 +1,12 @@
 #include "nombreComplexe.h"
 #include "entier.h"
 
+NombreComplexe* NombreComplexe::clone() const {
+    NombreNonComplexe * c1 = dynamic_cast<NombreNonComplexe*>(getReel()->clone());
+    NombreNonComplexe * c2 = dynamic_cast<NombreNonComplexe*>(getImg()->clone());
+    return new NombreComplexe(c1, c2);
+}
+
 NombreComplexe::~NombreComplexe() {
     delete _reel;
     delete _img;

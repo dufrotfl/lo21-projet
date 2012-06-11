@@ -1,0 +1,8 @@
+<!DOCTYPE context>
+<Contexte>
+ <Angles>DEGRES</Angles>
+ <TypeConstante>REEL</TypeConstante>
+ <Complexe>NON_COMPLEXE</Complexe>
+ <NbElementAffichable>10</NbElementAffichable>
+ <ContenuPile></ContenuPile>
+</Contexte>

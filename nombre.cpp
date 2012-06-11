@@ -1,4 +1,6 @@
 #include "nombre.h"
+#include "entier.h"
+#include "rationnel.h"
 #include "reel.h"
 #include "nombreComplexe.h"
 #include "expression.h"
@@ -21,7 +23,7 @@ Expression* Nombre::operator*(Expression* e) {
     return *e*this;
 }
 
-Reel* Nombre::Asin() {
+Constante* Nombre::Asin() {
     // on test si c'est un complexe
     // si oui throw logmessage
     // sinon on cast en nombreNonComplexe et on effectue l'opération
@@ -35,10 +37,16 @@ Reel* Nombre::Asin() {
 
     if(Settings::getInstance()->getAngles() == Settings::DEGRES)
         valeur /= 180 / PI;
-    return new Reel(valeur);
+
+    if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
+        return new Entier(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)
+        return new Reel(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::RATIONNEL)
+        return new Rationnel(valeur, 1);
 }
 
-Reel* Nombre::Acos() {
+Constante* Nombre::Acos() {
     // on test si c'est un complexe
     // si oui throw logmessage
     // sinon on cast en nombreNonComplexe et on effectue l'opération
@@ -52,10 +60,15 @@ Reel* Nombre::Acos() {
 
     if(Settings::getInstance()->getAngles() == Settings::DEGRES)
         valeur /= 180 / PI;
-    return new Reel(valeur);
+    if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
+        return new Entier(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)
+        return new Reel(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::RATIONNEL)
+        return new Rationnel(valeur, 1);
 }
 
-Reel* Nombre::Atan() {
+Constante* Nombre::Atan() {
     // on test si c'est un complexe
     // si oui throw logmessage
     // sinon on cast en nombreNonComplexe et on effectue l'opération
@@ -69,10 +82,15 @@ Reel* Nombre::Atan() {
 
     if(Settings::getInstance()->getAngles() == Settings::DEGRES)
         valeur /= 180 / PI;
-    return new Reel(valeur);
+    if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
+        return new Entier(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)
+        return new Reel(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::RATIONNEL)
+        return new Rationnel(valeur, 1);
 }
 
-Reel* Nombre::Asinh() {
+Constante* Nombre::Asinh() {
     // on test si c'est un complexe
     // si oui throw logmessage
     // sinon on cast en nombreNonComplexe et on effectue l'opération
@@ -84,12 +102,15 @@ Reel* Nombre::Asinh() {
     float valeur = 0.0;
     valeur = sinh(nc->getFloatVal());
 
-    if(Settings::getInstance()->getAngles() == Settings::DEGRES)
-        valeur /= 180 / PI;
-    return new Reel(valeur);
+    if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
+        return new Entier(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)
+        return new Reel(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::RATIONNEL)
+        return new Rationnel(valeur, 1);
 }
 
-Reel* Nombre::Acosh() {
+Constante* Nombre::Acosh() {
     // on test si c'est un complexe
     // si oui throw logmessage
     // sinon on cast en nombreNonComplexe et on effectue l'opération
@@ -101,12 +122,15 @@ Reel* Nombre::Acosh() {
     float valeur = 0.0;
     valeur = cosh(nc->getFloatVal());
 
-    if(Settings::getInstance()->getAngles() == Settings::DEGRES)
-        valeur /= 180 / PI;
-    return new Reel(valeur);
+    if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
+        return new Entier(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)
+        return new Reel(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::RATIONNEL)
+        return new Rationnel(valeur, 1);
 }
 
-Reel* Nombre::Atanh() {
+Constante* Nombre::Atanh() {
     // on test si c'est un complexe
     // si oui throw logmessage
     // sinon on cast en nombreNonComplexe et on effectue l'opération
@@ -117,13 +141,15 @@ Reel* Nombre::Atanh() {
     NombreNonComplexe * nc = dynamic_cast<NombreNonComplexe*>(c);
     float valeur = 0.0;
     valeur = tanh(nc->getFloatVal());
-
-    if(Settings::getInstance()->getAngles() == Settings::DEGRES)
-        valeur /= 180 / PI;
-    return new Reel(valeur);
+    if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
+        return new Entier(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)
+        return new Reel(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::RATIONNEL)
+        return new Rationnel(valeur, 1);
 }
 
-Reel* Nombre::Aln() {
+Constante* Nombre::Aln() {
     // on test si c'est un complexe
     // si oui throw logmessage
     // sinon on cast en nombreNonComplexe et on effectue l'opération
@@ -134,10 +160,15 @@ Reel* Nombre::Aln() {
     NombreNonComplexe * nc = dynamic_cast<NombreNonComplexe*>(c);
     float valeur = 0.0;
     valeur = log(nc->getFloatVal());
-    return new Reel(valeur);
+    if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
+        return new Entier(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)
+        return new Reel(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::RATIONNEL)
+        return new Rationnel(valeur, 1);
 }
 
-Reel* Nombre::Alog() {
+Constante* Nombre::Alog() {
     // on test si c'est un complexe
     // si oui throw logmessage
     // sinon on cast en nombreNonComplexe et on effectue l'opération
@@ -148,10 +179,15 @@ Reel* Nombre::Alog() {
     NombreNonComplexe * nc = dynamic_cast<NombreNonComplexe*>(c);
     float valeur = 0.0;
     valeur = log10(nc->getFloatVal());
-    return new Reel(valeur);
+    if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
+        return new Entier(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)
+        return new Reel(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::RATIONNEL)
+        return new Rationnel(valeur, 1);
 }
 
-Reel* Nombre::Ainv() {
+Constante* Nombre::Ainv() {
     // on test si c'est un complexe
     // si oui throw logmessage
     // sinon on cast en nombreNonComplexe et on effectue l'opération
@@ -161,11 +197,20 @@ Reel* Nombre::Ainv() {
     }
     NombreNonComplexe * nc = dynamic_cast<NombreNonComplexe*>(c);
     float valeur = 0.0;
-    valeur = 1/(nc->getFloatVal());
-    return new Reel(valeur);
+    if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER) {
+        valeur = 1/(nc->getFloatVal());
+        return new Entier(valeur);
+    }
+    else if(Settings::getInstance()->getTypeConstante() == Settings::REEL) {
+        valeur = 1/(nc->getFloatVal());
+        return new Reel(valeur);
+    }
+    else if(Settings::getInstance()->getTypeConstante() == Settings::RATIONNEL) {
+        return new Rationnel(1, nc->getFloatVal());
+    }
 }
 
-Reel* Nombre::Asqrt() {
+Constante* Nombre::Asqrt() {
     // on test si c'est un complexe
     // si oui throw logmessage
     // sinon on cast en nombreNonComplexe et on effectue l'opération
@@ -176,6 +221,11 @@ Reel* Nombre::Asqrt() {
     NombreNonComplexe * nc = dynamic_cast<NombreNonComplexe*>(c);
     float valeur = 0.0;
     valeur = sqrt(nc->getFloatVal());
-    return new Reel(valeur);
+    if(Settings::getInstance()->getTypeConstante() == Settings::ENTIER)
+        return new Entier(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::REEL)
+        return new Reel(valeur);
+    else if(Settings::getInstance()->getTypeConstante() == Settings::RATIONNEL)
+        return new Rationnel(valeur, 1);
 }
 

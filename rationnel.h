@@ -44,6 +44,10 @@ public:
       \param r Le rationnel à copier
       */
     Rationnel(const Rationnel &r) { _numerateur = r.getNumerateur(); _denominateur = r.getDenominateur(); }
+    /*!
+      \copydoc Constante::clone()
+      */
+    Rationnel* clone() const;
     /**
 	 \brief Getter du numérateur de rationnel
 	 \return Le numérateur
@@ -66,6 +70,10 @@ public:
 	 \copydoc Nombre::cube()
 	*/
     void cube() { _numerateur *= _numerateur*_numerateur; _denominateur *= _denominateur*_denominateur; }
+    /*!
+      \copydoc NombreNonComplexe::pow()
+      */
+    void pow(Entier*);
     /*!
       \copydoc Constante::toString()
       */

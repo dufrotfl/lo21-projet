@@ -39,17 +39,12 @@ LogSystem::~LogSystem() {
 
 void LogSystem::addMessage(const LogMessage & log) {
     if(log.getDegre()==1)
-        MainWindow::getInstance()->statusBar()->showMessage("Erreur: "+log.getMessage(), 5000);
+        MainWindow::getInstance()->statusBar()->showMessage("Erreur :     "+log.getMessage(), 5000);
     else if(log.getDegre()==2)
-        MainWindow::getInstance()->statusBar()->showMessage("Avertissement: "+log.getMessage(), 5000);
+        MainWindow::getInstance()->statusBar()->showMessage("Avertissement :    "+log.getMessage(), 5000);
 
     if(!_fichier->isOpen())
-        _fichier->open(QIODevice::ReadWrite | QIODevice::Text);
-    QString texte;
-    QTextStream flux(_fichier);
-    // Tant qu'on est pas à la fin
-    while(!flux.atEnd())
-           texte += flux.readLine();
+        _fichier->open(QIODevice::Append | QIODevice::Text);
     // Le message de log que l'on veut insérer
     QString message("\n");
     message+="Date et heure du log: ";

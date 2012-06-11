@@ -60,7 +60,7 @@ public:
     /*!
       \brief Méthode permettant de charger le contexte afin de restaurer les paramètres de la calculatrice et l'état de la pile
       */
-    void chargerContext();
+    void chargerContext() throw (LogMessage);
 };
 
 #endif

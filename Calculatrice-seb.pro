@@ -10,10 +10,17 @@ TARGET = Calculatrice-seb
 TEMPLATE = app
 
 HEADERS += \
-    *.h
+    *.h \
+    historiqueOperateurSwap.h \
+    historiqueOperateurPush.h \
+    historiqueOperateurSumMean.h
 
 SOURCES += \
-    *.cpp
+    *.cpp \
+    historiqueOperateurSwap.cpp \
+    historiqueOperateurPush.cpp \
+    historiqueOperateurSumMean.cpp
 
 FORMS += \
     mainwindow.ui
+QT += xml \

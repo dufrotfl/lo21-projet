@@ -8,6 +8,10 @@ NombreComplexe* Rationnel::toNombreComplexe() {
     return new NombreComplexe(this, new Rationnel(0, 1));
 }
 
+Rationnel* Rationnel::clone() const {
+    return new Rationnel(getNumerateur(), getDenominateur());
+}
+
 int Rationnel::pgcd(int a, int b) const {
     if(a==0 || b==0)
             return 0;
@@ -39,4 +43,9 @@ void Rationnel::simplifier() {
         _denominateur=-_denominateur;
         _numerateur=-_numerateur;
     }
+}
+
+void Rationnel::pow(Entier *e) {
+    for(int i=0; i<e->getVal()-1; i++)
+        sqr();
 }

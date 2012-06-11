@@ -32,6 +32,10 @@ public:
       */
     Expression(const QString &);
     /*!
+      \copydoc Constante::clone()
+      */
+    Expression* clone() const;
+    /*!
       \brief Méthode permettant de retourner la chaine contenant l'expression
       \return La chaine de l'expression
       */

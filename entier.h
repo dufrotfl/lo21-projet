@@ -34,7 +34,10 @@ public:
      \param v La valeur de l'entier
 	*/
     Entier(int v):_val(v) {}
-
+    /*!
+      \copydoc Constante::clone()
+      */
+    Entier* clone() const;
     /**
       \brief Crée un entier par constructeur par copie
       \param e L'entier à copier
@@ -48,7 +51,7 @@ public:
 	/**
 	 \brief Méthode permettant de transformer le nombre en sa factorielle
 	 */
-    void fact() {for(int val_copy=_val-1;val_copy>2; val_copy--) _val*=val_copy;}
+    void fact() {for(int val_copy=_val-1;val_copy>1; val_copy--) _val*=val_copy;}
 	/**
 	 \brief Méthode permettant de transformer le nombre en son reste de la division du nombre par m
 	 \param m Le diviseur
@@ -66,6 +69,10 @@ public:
 	 \copydoc Nombre::cube()
 	*/
     void cube() {_val*=_val*_val;}
+    /*!
+      \copydoc NombreNonComplexe::pow()
+      */
+    void pow(Entier*);
     /*!
       \copydoc Constante::toString()
       */

@@ -7,7 +7,7 @@
 #include "operateur.h"
 #include "settings.h"
 
-Constante* ConstanteFactory::getConstante(const QString &str) throw(LogMessage){
+Constante* ConstanteFactory::getConstante(const QString &str) {
     QString strcopy(str.toUpper());
     /* Teste si la chaine correspond à l'expression régulière ^'.+'$
        càd si c'est une suite de caractères entre simples quotes.
@@ -60,7 +60,9 @@ Constante* ConstanteFactory::getConstante(const QString &str) throw(LogMessage){
     }
     else if(strcopy=="SWAP" || strcopy=="+" || strcopy=="-" || strcopy=="/" || strcopy=="*" || strcopy=="POW" || strcopy=="MOD")
         return new Operateur(strcopy, 2);
-    else if(strcopy=="SUM" || strcopy=="MEAN" || strcopy=="SIN" || strcopy=="COS" || strcopy=="TAN" || strcopy=="SINH" || strcopy=="COSH" || strcopy=="TANH" || strcopy=="LN" || strcopy=="LOG" || strcopy=="INV" || strcopy=="SQRT" || strcopy=="SQR" || strcopy=="CUBE" || strcopy=="!" || strcopy=="EVAL")
+    else if(strcopy=="SUM" || strcopy=="MEAN" || strcopy=="SIN" || strcopy=="COS" || strcopy=="TAN" || strcopy=="SINH" ||
+            strcopy=="COSH" || strcopy=="TANH" || strcopy=="LN" || strcopy=="LOG" || strcopy=="INV" || strcopy=="SQRT" ||
+            strcopy=="SQR" || strcopy=="CUBE" || strcopy=="!" || strcopy=="EVAL" || strcopy=="SIGN")
         return new Operateur(strcopy, 1);
     else if(strcopy=="CLEAR" || strcopy=="DUP" || strcopy=="DROP")
         return new Operateur(strcopy, 0);
@@ -68,6 +70,6 @@ Constante* ConstanteFactory::getConstante(const QString &str) throw(LogMessage){
        alors on envoie une ConstanteFactoryException qui sera transmise à la
        GUI qui s'occupera d'ajouter l'erreur au LogSystem si besoin. */
     else {
-        throw LogMessage("Type non reconnu.", 1);
+        throw LogMessage("Type de la constante non reconnu, veuillez saisir à nouveau l'expression.", 1);
     }
 }
