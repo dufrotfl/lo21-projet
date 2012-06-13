@@ -1,0 +1,146 @@
+\hypertarget{class_historique_operateur_sum_mean}{\section{Historique\-Operateur\-Sum\-Mean Class Reference}
+\label{class_historique_operateur_sum_mean}\index{Historique\-Operateur\-Sum\-Mean@{Historique\-Operateur\-Sum\-Mean}}
+}
+
+
+Classe implémentant l'interface \hyperlink{class_historique}{Historique} et permettant de gérer l'historique des commandes \char`\"{}sum\char`\"{} et \char`\"{}mean\char`\"{}.  
+
+
+
+
+{\ttfamily \#include $<$historique\-Operateur\-Sum\-Mean.\-h$>$}
+
+Inheritance diagram for Historique\-Operateur\-Sum\-Mean\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_historique_operateur_sum_mean}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_historique_operateur_sum_mean_a5955e29d462ddb6143022ae7cff57c59}{Historique\-Operateur\-Sum\-Mean} (Q\-Stack$<$ \hyperlink{class_constante}{Constante} $\ast$ $>$ $\ast$c1)
+\begin{DoxyCompactList}\small\item\em Constructeur avec paramètres. \end{DoxyCompactList}\item 
+\hyperlink{class_historique_operateur_sum_mean_a6f85f3aac55f31dcfa734704b89a8893}{$\sim$\-Historique\-Operateur\-Sum\-Mean} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_historique_operateur_sum_mean_a8ab185c12eef9403a26e40c89ce6a830}{set\-Resultat} (\hyperlink{class_constante}{Constante} $\ast$res)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de stocker le résultat de la commande dans l'attribut \-\_\-resultat de la classe. \end{DoxyCompactList}\item 
+void \hyperlink{class_historique_operateur_sum_mean_a5fe3719f36bea1738a0de3ede63f2bf6}{undo} ()
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle pure permettant d'effectuer un \char`\"{}undo\char`\"{} sur la commande courante.  \end{DoxyCompactList}\item 
+void \hyperlink{class_historique_operateur_sum_mean_a9b6b410f0e49877768d84adfd76da76c}{redo} ()
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle pure permettant d'effectuer un \char`\"{}redo\char`\"{} sur la commande courante.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe implémentant l'interface \hyperlink{class_historique}{Historique} et permettant de gérer l'historique des commandes \char`\"{}sum\char`\"{} et \char`\"{}mean\char`\"{}. 
+
+Definition at line 19 of file historique\-Operateur\-Sum\-Mean.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_historique_operateur_sum_mean_a5955e29d462ddb6143022ae7cff57c59}{\index{Historique\-Operateur\-Sum\-Mean@{Historique\-Operateur\-Sum\-Mean}!Historique\-Operateur\-Sum\-Mean@{Historique\-Operateur\-Sum\-Mean}}
+\index{Historique\-Operateur\-Sum\-Mean@{Historique\-Operateur\-Sum\-Mean}!HistoriqueOperateurSumMean@{Historique\-Operateur\-Sum\-Mean}}
+\subsubsection[{Historique\-Operateur\-Sum\-Mean}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Historique\-Operateur\-Sum\-Mean\-::\-Historique\-Operateur\-Sum\-Mean} (
+\begin{DoxyParamCaption}
+\item[{Q\-Stack$<$ {\bf Constante} $\ast$ $>$ $\ast$}]{c1}
+\end{DoxyParamCaption}
+)}}\label{class_historique_operateur_sum_mean_a5955e29d462ddb6143022ae7cff57c59}
+
+
+Constructeur avec paramètres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em La} & pile contenant l'ensemble des constantes qui sont sommées au cours d'un \char`\"{}sum\char`\"{} ou d'un \char`\"{}mean\char`\"{}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 4 of file historique\-Operateur\-Sum\-Mean.\-cpp.
+
+\hypertarget{class_historique_operateur_sum_mean_a6f85f3aac55f31dcfa734704b89a8893}{\index{Historique\-Operateur\-Sum\-Mean@{Historique\-Operateur\-Sum\-Mean}!$\sim$\-Historique\-Operateur\-Sum\-Mean@{$\sim$\-Historique\-Operateur\-Sum\-Mean}}
+\index{$\sim$\-Historique\-Operateur\-Sum\-Mean@{$\sim$\-Historique\-Operateur\-Sum\-Mean}!HistoriqueOperateurSumMean@{Historique\-Operateur\-Sum\-Mean}}
+\subsubsection[{$\sim$\-Historique\-Operateur\-Sum\-Mean}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Historique\-Operateur\-Sum\-Mean\-::$\sim$\-Historique\-Operateur\-Sum\-Mean} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_historique_operateur_sum_mean_a6f85f3aac55f31dcfa734704b89a8893}
+
+
+Destructeur de la classe. 
+
+
+
+Definition at line 37 of file historique\-Operateur\-Sum\-Mean.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_historique_operateur_sum_mean_a9b6b410f0e49877768d84adfd76da76c}{\index{Historique\-Operateur\-Sum\-Mean@{Historique\-Operateur\-Sum\-Mean}!redo@{redo}}
+\index{redo@{redo}!HistoriqueOperateurSumMean@{Historique\-Operateur\-Sum\-Mean}}
+\subsubsection[{redo}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Historique\-Operateur\-Sum\-Mean\-::redo} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_historique_operateur_sum_mean_a9b6b410f0e49877768d84adfd76da76c}
+
+
+Méthode virtuelle pure permettant d'effectuer un \char`\"{}redo\char`\"{} sur la commande courante.  
+
+
+
+Implements \hyperlink{class_historique_ad9d996361bf9a68280d8c558da1cd182}{Historique}.
+
+
+
+Definition at line 15 of file historique\-Operateur\-Sum\-Mean.\-cpp.
+
+\hypertarget{class_historique_operateur_sum_mean_a8ab185c12eef9403a26e40c89ce6a830}{\index{Historique\-Operateur\-Sum\-Mean@{Historique\-Operateur\-Sum\-Mean}!set\-Resultat@{set\-Resultat}}
+\index{set\-Resultat@{set\-Resultat}!HistoriqueOperateurSumMean@{Historique\-Operateur\-Sum\-Mean}}
+\subsubsection[{set\-Resultat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante}$\ast$ {\bf Historique\-Operateur\-Sum\-Mean\-::set\-Resultat} (
+\begin{DoxyParamCaption}
+\item[{{\bf Constante} $\ast$}]{res}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_historique_operateur_sum_mean_a8ab185c12eef9403a26e40c89ce6a830}
+
+
+Méthode permettant de stocker le résultat de la commande dans l'attribut \-\_\-resultat de la classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em res} & Le résultat de l'opération \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le résultat de l'opération 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file historique\-Operateur\-Sum\-Mean.\-h.
+
+\hypertarget{class_historique_operateur_sum_mean_a5fe3719f36bea1738a0de3ede63f2bf6}{\index{Historique\-Operateur\-Sum\-Mean@{Historique\-Operateur\-Sum\-Mean}!undo@{undo}}
+\index{undo@{undo}!HistoriqueOperateurSumMean@{Historique\-Operateur\-Sum\-Mean}}
+\subsubsection[{undo}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Historique\-Operateur\-Sum\-Mean\-::undo} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_historique_operateur_sum_mean_a5fe3719f36bea1738a0de3ede63f2bf6}
+
+
+Méthode virtuelle pure permettant d'effectuer un \char`\"{}undo\char`\"{} sur la commande courante.  
+
+
+
+Implements \hyperlink{class_historique_ac0247bb67a9535851abe5f76113b4751}{Historique}.
+
+
+
+Definition at line 8 of file historique\-Operateur\-Sum\-Mean.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{historique_operateur_sum_mean_8h}{historique\-Operateur\-Sum\-Mean.\-h}\item 
+\hyperlink{historique_operateur_sum_mean_8cpp}{historique\-Operateur\-Sum\-Mean.\-cpp}\end{DoxyCompactItemize}

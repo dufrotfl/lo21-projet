@@ -1,0 +1,344 @@
+\hypertarget{class_nombre_complexe}{\section{Nombre\-Complexe Class Reference}
+\label{class_nombre_complexe}\index{Nombre\-Complexe@{Nombre\-Complexe}}
+}
+
+
+Classe implémentant l'interface \hyperlink{class_nombre}{Nombre} et permettant de gérer des constantes de type complexe.  
+
+
+
+
+{\ttfamily \#include $<$nombre\-Complexe.\-h$>$}
+
+Inheritance diagram for Nombre\-Complexe\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_nombre_complexe}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_nombre_complexe_a3d8003eb3008536fab415f5155405ed9}{Nombre\-Complexe} ()
+\begin{DoxyCompactList}\small\item\em Crée un nombre complexe. \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_complexe_a263fa61a4b065844b5c535485068ab6a}{Nombre\-Complexe} (\hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} $\ast$reel, \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} $\ast$img)
+\begin{DoxyCompactList}\small\item\em Crée un nombre complexe. \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_complexe}{Nombre\-Complexe} $\ast$ \hyperlink{class_nombre_complexe_a22709b554d12923c00e2b8b984143165}{clone} () const 
+\begin{DoxyCompactList}\small\item\em Méthode permettant de cloner une constante.  \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_complexe_afd7280923a1a68433819525589533925}{$\sim$\-Nombre\-Complexe} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de l'instance de la classe \hyperlink{class_nombre_complexe}{Nombre\-Complexe}. \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} $\ast$ \hyperlink{class_nombre_complexe_aaa09e1bb1d3763ceb40854201bfb5fc1}{get\-Reel} () const 
+\begin{DoxyCompactList}\small\item\em Getter de la partie réelle du nombre complexe. \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} $\ast$ \hyperlink{class_nombre_complexe_a68f4ed9ee0a94b66a79ae38193d81cc2}{get\-Img} () const 
+\begin{DoxyCompactList}\small\item\em Getter de la partie imaginaire du nombre complexe. \end{DoxyCompactList}\item 
+void \hyperlink{class_nombre_complexe_ae81bf4639b5fbbb27f20204720a38489}{sign} ()
+\begin{DoxyCompactList}\small\item\em Methode permettant de transformer le nombre en son opposé.  \end{DoxyCompactList}\item 
+void \hyperlink{class_nombre_complexe_aca52852015c47d4c8246fbf3c9cebd62}{sqr} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de transformer le nombre en son carré.  \end{DoxyCompactList}\item 
+void \hyperlink{class_nombre_complexe_ae6e43b7eec06f92933e8f54571e383e6}{cube} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de transformer le nombre en son cube.  \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_complexe}{Nombre\-Complexe} $\ast$ \hyperlink{class_nombre_complexe_aaf3c52fc91d6dd209646e5d89303f95c}{operator+} (\hyperlink{class_nombre_complexe}{Nombre\-Complexe} $\ast$)
+\begin{DoxyCompactList}\small\item\em \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_complexe}{Nombre\-Complexe} $\ast$ \hyperlink{class_nombre_complexe_a9fde2a658cf4e30b0f0dea703e602eda}{operator-\/} (\hyperlink{class_nombre_complexe}{Nombre\-Complexe} $\ast$)
+\begin{DoxyCompactList}\small\item\em \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_complexe}{Nombre\-Complexe} $\ast$ \hyperlink{class_nombre_complexe_a3cdf1c1db44e7d1f24ab8b488d2c60fe}{operator/} (\hyperlink{class_nombre_complexe}{Nombre\-Complexe} $\ast$)
+\begin{DoxyCompactList}\small\item\em \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_complexe}{Nombre\-Complexe} $\ast$ \hyperlink{class_nombre_complexe_afb4f76914d5a115d8ac7b38cef388d01}{operator$\ast$} (\hyperlink{class_nombre_complexe}{Nombre\-Complexe} $\ast$)
+\begin{DoxyCompactList}\small\item\em \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_nombre_complexe_a2b02fa6dc1f9f3d889f69db7a9143f84}{to\-String} () const 
+\begin{DoxyCompactList}\small\item\em Fonction permettant de renvoyer une chaine comprenant la valuation de la constante associé, cette fonction est utilisée dans le cadre de l'affichage des constantes dans la pile.  \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_complexe}{Nombre\-Complexe} $\ast$ \hyperlink{class_nombre_complexe_a10a9ca96f5d1a1d6ebff4099befca807}{to\-Nombre\-Complexe} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de convertir un \hyperlink{class_nombre}{Nombre} en son équivalent en \hyperlink{class_nombre_complexe}{Nombre\-Complexe}.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe implémentant l'interface \hyperlink{class_nombre}{Nombre} et permettant de gérer des constantes de type complexe. 
+
+Definition at line 17 of file nombre\-Complexe.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_nombre_complexe_a3d8003eb3008536fab415f5155405ed9}{\index{Nombre\-Complexe@{Nombre\-Complexe}!Nombre\-Complexe@{Nombre\-Complexe}}
+\index{Nombre\-Complexe@{Nombre\-Complexe}!NombreComplexe@{Nombre\-Complexe}}
+\subsubsection[{Nombre\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Complexe\-::\-Nombre\-Complexe} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_nombre_complexe_a3d8003eb3008536fab415f5155405ed9}
+
+
+Crée un nombre complexe. 
+
+
+
+Definition at line 31 of file nombre\-Complexe.\-h.
+
+\hypertarget{class_nombre_complexe_a263fa61a4b065844b5c535485068ab6a}{\index{Nombre\-Complexe@{Nombre\-Complexe}!Nombre\-Complexe@{Nombre\-Complexe}}
+\index{Nombre\-Complexe@{Nombre\-Complexe}!NombreComplexe@{Nombre\-Complexe}}
+\subsubsection[{Nombre\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Complexe\-::\-Nombre\-Complexe} (
+\begin{DoxyParamCaption}
+\item[{{\bf Nombre\-Non\-Complexe} $\ast$}]{reel, }
+\item[{{\bf Nombre\-Non\-Complexe} $\ast$}]{img}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_nombre_complexe_a263fa61a4b065844b5c535485068ab6a}
+
+
+Crée un nombre complexe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reel} & Partie réelle du nombre complexe \\
+\hline
+{\em img} & Partie imaginaire du nombre complexe \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file nombre\-Complexe.\-h.
+
+\hypertarget{class_nombre_complexe_afd7280923a1a68433819525589533925}{\index{Nombre\-Complexe@{Nombre\-Complexe}!$\sim$\-Nombre\-Complexe@{$\sim$\-Nombre\-Complexe}}
+\index{$\sim$\-Nombre\-Complexe@{$\sim$\-Nombre\-Complexe}!NombreComplexe@{Nombre\-Complexe}}
+\subsubsection[{$\sim$\-Nombre\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Complexe\-::$\sim$\-Nombre\-Complexe} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_nombre_complexe_afd7280923a1a68433819525589533925}
+
+
+Destructeur de l'instance de la classe \hyperlink{class_nombre_complexe}{Nombre\-Complexe}. 
+
+
+
+Definition at line 10 of file nombre\-Complexe.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_nombre_complexe_a22709b554d12923c00e2b8b984143165}{\index{Nombre\-Complexe@{Nombre\-Complexe}!clone@{clone}}
+\index{clone@{clone}!NombreComplexe@{Nombre\-Complexe}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Complexe} $\ast$ {\bf Nombre\-Complexe\-::clone} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_nombre_complexe_a22709b554d12923c00e2b8b984143165}
+
+
+Méthode permettant de cloner une constante.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em Le} & pointeur vers la constante clonée \\
+\hline
+\end{DoxyParams}
+ 
+
+Implements \hyperlink{class_constante_a5769ea385161e02bd2d1bcadefc2c510}{Constante}.
+
+
+
+Definition at line 4 of file nombre\-Complexe.\-cpp.
+
+\hypertarget{class_nombre_complexe_ae6e43b7eec06f92933e8f54571e383e6}{\index{Nombre\-Complexe@{Nombre\-Complexe}!cube@{cube}}
+\index{cube@{cube}!NombreComplexe@{Nombre\-Complexe}}
+\subsubsection[{cube}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Nombre\-Complexe\-::cube} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_nombre_complexe_ae6e43b7eec06f92933e8f54571e383e6}
+
+
+Méthode permettant de transformer le nombre en son cube.  
+
+
+
+Implements \hyperlink{class_nombre_aed65cb1449858c078e91610afb3a6447}{Nombre}.
+
+
+
+Definition at line 29 of file nombre\-Complexe.\-cpp.
+
+\hypertarget{class_nombre_complexe_a68f4ed9ee0a94b66a79ae38193d81cc2}{\index{Nombre\-Complexe@{Nombre\-Complexe}!get\-Img@{get\-Img}}
+\index{get\-Img@{get\-Img}!NombreComplexe@{Nombre\-Complexe}}
+\subsubsection[{get\-Img}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Non\-Complexe}$\ast$ {\bf Nombre\-Complexe\-::get\-Img} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_nombre_complexe_a68f4ed9ee0a94b66a79ae38193d81cc2}
+
+
+Getter de la partie imaginaire du nombre complexe. 
+
+\begin{DoxyReturn}{Returns}
+La partie imaginaire du nombre complexe 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file nombre\-Complexe.\-h.
+
+\hypertarget{class_nombre_complexe_aaa09e1bb1d3763ceb40854201bfb5fc1}{\index{Nombre\-Complexe@{Nombre\-Complexe}!get\-Reel@{get\-Reel}}
+\index{get\-Reel@{get\-Reel}!NombreComplexe@{Nombre\-Complexe}}
+\subsubsection[{get\-Reel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Non\-Complexe}$\ast$ {\bf Nombre\-Complexe\-::get\-Reel} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_nombre_complexe_aaa09e1bb1d3763ceb40854201bfb5fc1}
+
+
+Getter de la partie réelle du nombre complexe. 
+
+\begin{DoxyReturn}{Returns}
+La partie réelle du nombre complexe 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file nombre\-Complexe.\-h.
+
+\hypertarget{class_nombre_complexe_afb4f76914d5a115d8ac7b38cef388d01}{\index{Nombre\-Complexe@{Nombre\-Complexe}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!NombreComplexe@{Nombre\-Complexe}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Complexe} $\ast$ Nombre\-Complexe\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Nombre\-Complexe} $\ast$}]{nc}
+\end{DoxyParamCaption}
+)}}\label{class_nombre_complexe_afb4f76914d5a115d8ac7b38cef388d01}
+
+
+
+
+
+
+Definition at line 60 of file nombre\-Complexe.\-cpp.
+
+\hypertarget{class_nombre_complexe_aaf3c52fc91d6dd209646e5d89303f95c}{\index{Nombre\-Complexe@{Nombre\-Complexe}!operator+@{operator+}}
+\index{operator+@{operator+}!NombreComplexe@{Nombre\-Complexe}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Complexe} $\ast$ Nombre\-Complexe\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Nombre\-Complexe} $\ast$}]{nc}
+\end{DoxyParamCaption}
+)}}\label{class_nombre_complexe_aaf3c52fc91d6dd209646e5d89303f95c}
+
+
+
+
+
+
+Definition at line 42 of file nombre\-Complexe.\-cpp.
+
+\hypertarget{class_nombre_complexe_a9fde2a658cf4e30b0f0dea703e602eda}{\index{Nombre\-Complexe@{Nombre\-Complexe}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!NombreComplexe@{Nombre\-Complexe}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Complexe} $\ast$ Nombre\-Complexe\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Nombre\-Complexe} $\ast$}]{nc}
+\end{DoxyParamCaption}
+)}}\label{class_nombre_complexe_a9fde2a658cf4e30b0f0dea703e602eda}
+
+
+
+
+
+
+Definition at line 46 of file nombre\-Complexe.\-cpp.
+
+\hypertarget{class_nombre_complexe_a3cdf1c1db44e7d1f24ab8b488d2c60fe}{\index{Nombre\-Complexe@{Nombre\-Complexe}!operator/@{operator/}}
+\index{operator/@{operator/}!NombreComplexe@{Nombre\-Complexe}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Complexe} $\ast$ Nombre\-Complexe\-::operator/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Nombre\-Complexe} $\ast$}]{nc}
+\end{DoxyParamCaption}
+)}}\label{class_nombre_complexe_a3cdf1c1db44e7d1f24ab8b488d2c60fe}
+
+
+
+
+
+
+Definition at line 50 of file nombre\-Complexe.\-cpp.
+
+\hypertarget{class_nombre_complexe_ae81bf4639b5fbbb27f20204720a38489}{\index{Nombre\-Complexe@{Nombre\-Complexe}!sign@{sign}}
+\index{sign@{sign}!NombreComplexe@{Nombre\-Complexe}}
+\subsubsection[{sign}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Nombre\-Complexe\-::sign} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_nombre_complexe_ae81bf4639b5fbbb27f20204720a38489}
+
+
+Methode permettant de transformer le nombre en son opposé.  
+
+
+
+Implements \hyperlink{class_nombre_a718d616bbf2e5e8f133df958e8bb3d7f}{Nombre}.
+
+
+
+Definition at line 15 of file nombre\-Complexe.\-cpp.
+
+\hypertarget{class_nombre_complexe_aca52852015c47d4c8246fbf3c9cebd62}{\index{Nombre\-Complexe@{Nombre\-Complexe}!sqr@{sqr}}
+\index{sqr@{sqr}!NombreComplexe@{Nombre\-Complexe}}
+\subsubsection[{sqr}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Nombre\-Complexe\-::sqr} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_nombre_complexe_aca52852015c47d4c8246fbf3c9cebd62}
+
+
+Méthode permettant de transformer le nombre en son carré.  
+
+
+
+Implements \hyperlink{class_nombre_a5be0e66e9bbec508d236ba8dbe1eb6bc}{Nombre}.
+
+
+
+Definition at line 20 of file nombre\-Complexe.\-cpp.
+
+\hypertarget{class_nombre_complexe_a10a9ca96f5d1a1d6ebff4099befca807}{\index{Nombre\-Complexe@{Nombre\-Complexe}!to\-Nombre\-Complexe@{to\-Nombre\-Complexe}}
+\index{to\-Nombre\-Complexe@{to\-Nombre\-Complexe}!NombreComplexe@{Nombre\-Complexe}}
+\subsubsection[{to\-Nombre\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Complexe}$\ast$ {\bf Nombre\-Complexe\-::to\-Nombre\-Complexe} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_nombre_complexe_a10a9ca96f5d1a1d6ebff4099befca807}
+
+
+Méthode permettant de convertir un \hyperlink{class_nombre}{Nombre} en son équivalent en \hyperlink{class_nombre_complexe}{Nombre\-Complexe}.  
+
+\begin{DoxyReturn}{Returns}
+Le pointeur vers le nombre\-Complexe nouvellement crée 
+\end{DoxyReturn}
+ 
+
+Implements \hyperlink{class_nombre_a11092e1fcde81c05b4c518398baf3691}{Nombre}.
+
+
+
+Definition at line 91 of file nombre\-Complexe.\-h.
+
+\hypertarget{class_nombre_complexe_a2b02fa6dc1f9f3d889f69db7a9143f84}{\index{Nombre\-Complexe@{Nombre\-Complexe}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!NombreComplexe@{Nombre\-Complexe}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String {\bf Nombre\-Complexe\-::to\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_nombre_complexe_a2b02fa6dc1f9f3d889f69db7a9143f84}
+
+
+Fonction permettant de renvoyer une chaine comprenant la valuation de la constante associé, cette fonction est utilisée dans le cadre de l'affichage des constantes dans la pile.  
+
+\begin{DoxyReturn}{Returns}
+La chaine à afficher dans la pile 
+\end{DoxyReturn}
+ 
+
+Implements \hyperlink{class_constante_ad5ea6850196ee9f86b74c74009a87ab1}{Constante}.
+
+
+
+Definition at line 38 of file nombre\-Complexe.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{nombre_complexe_8h}{nombre\-Complexe.\-h}\item 
+\hyperlink{nombre_complexe_8cpp}{nombre\-Complexe.\-cpp}\end{DoxyCompactItemize}

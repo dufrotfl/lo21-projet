@@ -14,7 +14,7 @@
 
 /*!
   \class Expression
-  \brief Classe implémentant l'interface de @link Constante @endlink et permettant la gestion d'un expression
+  \brief Classe implémentant l'interface de @link Constante @endlink et permettant la gestion d'un expression.
   */
 class Expression : public Constante {
 private:
@@ -24,11 +24,11 @@ private:
     QString _liste;
 public:
     /*!
-      \brief Constructeur par défaut
+      \brief Constructeur par défaut.
       */
     Expression();
     /*!
-      \brief Constructeur par copie
+      \brief Constructeur par copie.
       */
     Expression(const QString &str);
     /*!
@@ -36,39 +36,39 @@ public:
       */
     Expression* clone() const;
     /*!
-      \brief Méthode permettant de retourner la chaine contenant l'expression
+      \brief Méthode permettant de retourner la chaine contenant l'expression.
       \return La chaine de l'expression
       */
     QString getListe() const {return _liste;}
     /*!
-      \brief Méthode permettant de modifier la chaine contenant l'expression
+      \brief Méthode permettant de modifier la chaine contenant l'expression.
       \param La nouvelle chaine de l'expression
       */
     void setListe(const QString &str) { _liste=str;}
     /*!
-      \copydoc Constance::toString()
+      \copydoc Constante::toString()
       */
     QString toString() const;
     /*!
-      \brief Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('+')
+      \brief Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('+').
       \param c La constante à insérer dans l'expression
       \return L'expression ressortissante de l'opération
       */
     Expression* operator+(Constante* c);
     /*!
-      \brief Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('-')
+      \brief Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('-').
       \param c La constante à insérer dans l'expression
       \return L'expression ressortissante de l'opération
       */
     Expression* operator-(Constante* c);
     /*!
-      \brief Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('*')
+      \brief Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('*').
       \param c La constante à insérer dans l'expression
       \return L'expression ressortissante de l'opération
       */
     Expression* operator*(Constante* c);
     /*!
-      \brief Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('/')
+      \brief Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('/').
       \param c La constante à insérer dans l'expression
       \return L'expression ressortissante de l'opération
       */

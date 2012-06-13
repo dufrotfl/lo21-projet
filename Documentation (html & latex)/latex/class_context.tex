@@ -1,0 +1,105 @@
+\hypertarget{class_context}{\section{Context Class Reference}
+\label{class_context}\index{Context@{Context}}
+}
+
+
+Classe (utilisant le Design Pattern Singleton) permettant de gérer l'écriture du context afin de pouvoir le recharger lors de l'ouverture de l'application.  
+
+
+
+
+{\ttfamily \#include $<$context.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_context_ae81f5eb81363ce52af77a029e62cbf7e}{sauvegarde\-Context} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de stocker le contexte en mémoire afin de pouvoir le recharger après. \end{DoxyCompactList}\item 
+void \hyperlink{class_context_a8e6cf6dafb4a736dd08b906cd38e6e0e}{charger\-Context} ()  throw (\-Log\-Message)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de charger le contexte afin de restaurer les paramètres de la calculatrice et l'état de la pile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_context}{Context} $\ast$ \hyperlink{class_context_ad0c275450890b2a68186ad6d0095874b}{get\-Instance} ()
+\begin{DoxyCompactList}\small\item\em Getter de l'unique instance de \hyperlink{class_context}{Context}, si elle existe pas, on la crée. \end{DoxyCompactList}\item 
+static void \hyperlink{class_context_ab14d1e5bfb783d5f42eba7c6b2930c08}{free\-Instance} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de libérer l'unique instance de \hyperlink{class_context}{Context}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe (utilisant le Design Pattern Singleton) permettant de gérer l'écriture du context afin de pouvoir le recharger lors de l'ouverture de l'application. 
+
+Definition at line 21 of file context.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_context_a8e6cf6dafb4a736dd08b906cd38e6e0e}{\index{Context@{Context}!charger\-Context@{charger\-Context}}
+\index{charger\-Context@{charger\-Context}!Context@{Context}}
+\subsubsection[{charger\-Context}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Context\-::charger\-Context} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throw ({\bf Log\-Message})}}\label{class_context_a8e6cf6dafb4a736dd08b906cd38e6e0e}
+
+
+Méthode permettant de charger le contexte afin de restaurer les paramètres de la calculatrice et l'état de la pile. 
+
+
+
+Definition at line 87 of file context.\-cpp.
+
+\hypertarget{class_context_ab14d1e5bfb783d5f42eba7c6b2930c08}{\index{Context@{Context}!free\-Instance@{free\-Instance}}
+\index{free\-Instance@{free\-Instance}!Context@{Context}}
+\subsubsection[{free\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Context\-::free\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_context_ab14d1e5bfb783d5f42eba7c6b2930c08}
+
+
+Méthode permettant de libérer l'unique instance de \hyperlink{class_context}{Context}. 
+
+
+
+Definition at line 17 of file context.\-cpp.
+
+\hypertarget{class_context_ad0c275450890b2a68186ad6d0095874b}{\index{Context@{Context}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!Context@{Context}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Context} $\ast$ {\bf Context\-::get\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_context_ad0c275450890b2a68186ad6d0095874b}
+
+
+Getter de l'unique instance de \hyperlink{class_context}{Context}, si elle existe pas, on la crée. 
+
+\begin{DoxyReturn}{Returns}
+L'unique instance de \hyperlink{class_context}{Context} 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file context.\-cpp.
+
+\hypertarget{class_context_ae81f5eb81363ce52af77a029e62cbf7e}{\index{Context@{Context}!sauvegarde\-Context@{sauvegarde\-Context}}
+\index{sauvegarde\-Context@{sauvegarde\-Context}!Context@{Context}}
+\subsubsection[{sauvegarde\-Context}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Context\-::sauvegarde\-Context} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_context_ae81f5eb81363ce52af77a029e62cbf7e}
+
+
+Méthode permettant de stocker le contexte en mémoire afin de pouvoir le recharger après. 
+
+
+
+Definition at line 22 of file context.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{context_8h}{context.\-h}\item 
+\hyperlink{context_8cpp}{context.\-cpp}\end{DoxyCompactItemize}

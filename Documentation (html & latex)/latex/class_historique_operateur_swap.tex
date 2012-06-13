@@ -1,0 +1,124 @@
+\hypertarget{class_historique_operateur_swap}{\section{Historique\-Operateur\-Swap Class Reference}
+\label{class_historique_operateur_swap}\index{Historique\-Operateur\-Swap@{Historique\-Operateur\-Swap}}
+}
+
+
+Classe implémentant l'interface \hyperlink{class_historique}{Historique} et permettant de gérer l'historique de la commande swap.  
+
+
+
+
+{\ttfamily \#include $<$historique\-Operateur\-Swap.\-h$>$}
+
+Inheritance diagram for Historique\-Operateur\-Swap\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_historique_operateur_swap}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_historique_operateur_swap_a8aea2c943abc6254d02e62eb8375928b}{Historique\-Operateur\-Swap} (\hyperlink{class_entier}{Entier} $\ast$c1, \hyperlink{class_entier}{Entier} $\ast$c2)
+\begin{DoxyCompactList}\small\item\em Constructeur avec paramètres. \end{DoxyCompactList}\item 
+\hyperlink{class_historique_operateur_swap_a00892a4ad9594143a3c955022d281041}{$\sim$\-Historique\-Operateur\-Swap} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe. \end{DoxyCompactList}\item 
+void \hyperlink{class_historique_operateur_swap_a71cad4d42084faee7a61f21fe93178be}{undo} ()
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle pure permettant d'effectuer un \char`\"{}undo\char`\"{} sur la commande courante.  \end{DoxyCompactList}\item 
+void \hyperlink{class_historique_operateur_swap_a48aaa552de5396f614974709b5a61e99}{redo} ()
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle pure permettant d'effectuer un \char`\"{}redo\char`\"{} sur la commande courante.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe implémentant l'interface \hyperlink{class_historique}{Historique} et permettant de gérer l'historique de la commande swap. 
+
+Definition at line 18 of file historique\-Operateur\-Swap.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_historique_operateur_swap_a8aea2c943abc6254d02e62eb8375928b}{\index{Historique\-Operateur\-Swap@{Historique\-Operateur\-Swap}!Historique\-Operateur\-Swap@{Historique\-Operateur\-Swap}}
+\index{Historique\-Operateur\-Swap@{Historique\-Operateur\-Swap}!HistoriqueOperateurSwap@{Historique\-Operateur\-Swap}}
+\subsubsection[{Historique\-Operateur\-Swap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Historique\-Operateur\-Swap\-::\-Historique\-Operateur\-Swap} (
+\begin{DoxyParamCaption}
+\item[{{\bf Entier} $\ast$}]{c1, }
+\item[{{\bf Entier} $\ast$}]{c2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_historique_operateur_swap_a8aea2c943abc6254d02e62eb8375928b}
+
+
+Constructeur avec paramètres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c1} & Le premier indice du swap \\
+\hline
+{\em c2} & Le second indice du swap \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 33 of file historique\-Operateur\-Swap.\-h.
+
+\hypertarget{class_historique_operateur_swap_a00892a4ad9594143a3c955022d281041}{\index{Historique\-Operateur\-Swap@{Historique\-Operateur\-Swap}!$\sim$\-Historique\-Operateur\-Swap@{$\sim$\-Historique\-Operateur\-Swap}}
+\index{$\sim$\-Historique\-Operateur\-Swap@{$\sim$\-Historique\-Operateur\-Swap}!HistoriqueOperateurSwap@{Historique\-Operateur\-Swap}}
+\subsubsection[{$\sim$\-Historique\-Operateur\-Swap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Historique\-Operateur\-Swap\-::$\sim$\-Historique\-Operateur\-Swap} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_historique_operateur_swap_a00892a4ad9594143a3c955022d281041}
+
+
+Destructeur de la classe. 
+
+
+
+Definition at line 37 of file historique\-Operateur\-Swap.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_historique_operateur_swap_a48aaa552de5396f614974709b5a61e99}{\index{Historique\-Operateur\-Swap@{Historique\-Operateur\-Swap}!redo@{redo}}
+\index{redo@{redo}!HistoriqueOperateurSwap@{Historique\-Operateur\-Swap}}
+\subsubsection[{redo}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Historique\-Operateur\-Swap\-::redo} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_historique_operateur_swap_a48aaa552de5396f614974709b5a61e99}
+
+
+Méthode virtuelle pure permettant d'effectuer un \char`\"{}redo\char`\"{} sur la commande courante.  
+
+
+
+Implements \hyperlink{class_historique_ad9d996361bf9a68280d8c558da1cd182}{Historique}.
+
+
+
+Definition at line 8 of file historique\-Operateur\-Swap.\-cpp.
+
+\hypertarget{class_historique_operateur_swap_a71cad4d42084faee7a61f21fe93178be}{\index{Historique\-Operateur\-Swap@{Historique\-Operateur\-Swap}!undo@{undo}}
+\index{undo@{undo}!HistoriqueOperateurSwap@{Historique\-Operateur\-Swap}}
+\subsubsection[{undo}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Historique\-Operateur\-Swap\-::undo} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_historique_operateur_swap_a71cad4d42084faee7a61f21fe93178be}
+
+
+Méthode virtuelle pure permettant d'effectuer un \char`\"{}undo\char`\"{} sur la commande courante.  
+
+
+
+Implements \hyperlink{class_historique_ac0247bb67a9535851abe5f76113b4751}{Historique}.
+
+
+
+Definition at line 4 of file historique\-Operateur\-Swap.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{historique_operateur_swap_8h}{historique\-Operateur\-Swap.\-h}\item 
+\hyperlink{historique_operateur_swap_8cpp}{historique\-Operateur\-Swap.\-cpp}\end{DoxyCompactItemize}

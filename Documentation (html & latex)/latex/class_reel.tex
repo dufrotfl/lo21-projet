@@ -1,0 +1,325 @@
+\hypertarget{class_reel}{\section{Reel Class Reference}
+\label{class_reel}\index{Reel@{Reel}}
+}
+
+
+Classe implémentant l'interface de \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} et permettant de gérer les constantes de type reel.  
+
+
+
+
+{\ttfamily \#include $<$reel.\-h$>$}
+
+Inheritance diagram for Reel\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_reel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_reel_a0033bef2a051ce3d8890c51ed10c27a0}{$\sim$\-Reel} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe. \end{DoxyCompactList}\item 
+\hyperlink{class_reel_a3656fa67f060d2808dc07f337030b537}{Reel} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_reel_a282d209abfa27c95802314cf7be000d6}{Reel} (float val)
+\begin{DoxyCompactList}\small\item\em Constructeur avec paramètre. \end{DoxyCompactList}\item 
+\hyperlink{class_reel_ac2134d63a195829000fa0aa500fbd7f0}{Reel} (const \hyperlink{class_reel}{Reel} \&r)
+\begin{DoxyCompactList}\small\item\em Constructeur par copie. \end{DoxyCompactList}\item 
+\hyperlink{class_reel}{Reel} $\ast$ \hyperlink{class_reel_ab53c7d10a93c702bd7ccde897fc396df}{clone} () const 
+\begin{DoxyCompactList}\small\item\em Méthode permettant de cloner une constante.  \end{DoxyCompactList}\item 
+float \hyperlink{class_reel_a66d6f1cfe4fa7665f7f83e242a816a5a}{get\-Val} () const 
+\begin{DoxyCompactList}\small\item\em Getter de la valeur du réel. \end{DoxyCompactList}\item 
+void \hyperlink{class_reel_ab86c394e2e4a6729ecafba23e65915ad}{sign} ()
+\begin{DoxyCompactList}\small\item\em Methode permettant de transformer le nombre en son opposé.  \end{DoxyCompactList}\item 
+void \hyperlink{class_reel_a612dd1edfce0d6fa687ab4cbfc700d07}{sqr} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de transformer le nombre en son carré.  \end{DoxyCompactList}\item 
+void \hyperlink{class_reel_ac46be5621787809b3fea257b54fee83f}{cube} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de transformer le nombre en son cube.  \end{DoxyCompactList}\item 
+void \hyperlink{class_reel_a11fda3f1bd3cdac610d3a2aeec2fc7ed}{pow} (\hyperlink{class_entier}{Entier} $\ast$)
+\begin{DoxyCompactList}\small\item\em Méthode permettant d'effectuer la puissance d'un nombre.  \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_reel_a990e8324822ba3dbc64fc7ff727411e2}{to\-String} () const 
+\begin{DoxyCompactList}\small\item\em Fonction permettant de renvoyer une chaine comprenant la valuation de la constante associé, cette fonction est utilisée dans le cadre de l'affichage des constantes dans la pile.  \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_complexe}{Nombre\-Complexe} $\ast$ \hyperlink{class_reel_a3ba5e47699a1ccff32075a588afda91e}{to\-Nombre\-Complexe} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de convertir un \hyperlink{class_nombre}{Nombre} en son équivalent en \hyperlink{class_nombre_complexe}{Nombre\-Complexe}.  \end{DoxyCompactList}\item 
+float \hyperlink{class_reel_a9d2e05f1f59ad433c3eafb2da7e09f86}{get\-Float\-Val} () const 
+\begin{DoxyCompactList}\small\item\em Méthode permettant de récupérer la valeur du \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} sous la forme d'un réel.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe implémentant l'interface de \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} et permettant de gérer les constantes de type reel. 
+
+Definition at line 21 of file reel.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_reel_a0033bef2a051ce3d8890c51ed10c27a0}{\index{Reel@{Reel}!$\sim$\-Reel@{$\sim$\-Reel}}
+\index{$\sim$\-Reel@{$\sim$\-Reel}!Reel@{Reel}}
+\subsubsection[{$\sim$\-Reel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reel\-::$\sim$\-Reel} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_reel_a0033bef2a051ce3d8890c51ed10c27a0}
+
+
+Destructeur de la classe. 
+
+
+
+Definition at line 31 of file reel.\-h.
+
+\hypertarget{class_reel_a3656fa67f060d2808dc07f337030b537}{\index{Reel@{Reel}!Reel@{Reel}}
+\index{Reel@{Reel}!Reel@{Reel}}
+\subsubsection[{Reel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reel\-::\-Reel} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_reel_a3656fa67f060d2808dc07f337030b537}
+
+
+Constructeur par défaut. 
+
+
+
+Definition at line 35 of file reel.\-h.
+
+\hypertarget{class_reel_a282d209abfa27c95802314cf7be000d6}{\index{Reel@{Reel}!Reel@{Reel}}
+\index{Reel@{Reel}!Reel@{Reel}}
+\subsubsection[{Reel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reel\-::\-Reel} (
+\begin{DoxyParamCaption}
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_reel_a282d209abfa27c95802314cf7be000d6}
+
+
+Constructeur avec paramètre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & La valeur du réel \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file reel.\-h.
+
+\hypertarget{class_reel_ac2134d63a195829000fa0aa500fbd7f0}{\index{Reel@{Reel}!Reel@{Reel}}
+\index{Reel@{Reel}!Reel@{Reel}}
+\subsubsection[{Reel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reel\-::\-Reel} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Reel} \&}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_reel_ac2134d63a195829000fa0aa500fbd7f0}
+
+
+Constructeur par copie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Le réel à copier \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 45 of file reel.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_reel_ab53c7d10a93c702bd7ccde897fc396df}{\index{Reel@{Reel}!clone@{clone}}
+\index{clone@{clone}!Reel@{Reel}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reel} $\ast$ {\bf Reel\-::clone} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_reel_ab53c7d10a93c702bd7ccde897fc396df}
+
+
+Méthode permettant de cloner une constante.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em Le} & pointeur vers la constante clonée \\
+\hline
+\end{DoxyParams}
+ 
+
+Implements \hyperlink{class_constante_a5769ea385161e02bd2d1bcadefc2c510}{Constante}.
+
+
+
+Definition at line 10 of file reel.\-cpp.
+
+\hypertarget{class_reel_ac46be5621787809b3fea257b54fee83f}{\index{Reel@{Reel}!cube@{cube}}
+\index{cube@{cube}!Reel@{Reel}}
+\subsubsection[{cube}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Reel\-::cube} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_reel_ac46be5621787809b3fea257b54fee83f}
+
+
+Méthode permettant de transformer le nombre en son cube.  
+
+
+
+Implements \hyperlink{class_nombre_aed65cb1449858c078e91610afb3a6447}{Nombre}.
+
+
+
+Definition at line 66 of file reel.\-h.
+
+\hypertarget{class_reel_a9d2e05f1f59ad433c3eafb2da7e09f86}{\index{Reel@{Reel}!get\-Float\-Val@{get\-Float\-Val}}
+\index{get\-Float\-Val@{get\-Float\-Val}!Reel@{Reel}}
+\subsubsection[{get\-Float\-Val}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Reel\-::get\-Float\-Val} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_reel_a9d2e05f1f59ad433c3eafb2da7e09f86}
+
+
+Méthode permettant de récupérer la valeur du \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} sous la forme d'un réel.  
+
+\begin{DoxyReturn}{Returns}
+La valeur réelle 
+\end{DoxyReturn}
+ 
+
+Implements \hyperlink{class_nombre_non_complexe_ad148f1e2a4626ecf279e91d04d1aff24}{Nombre\-Non\-Complexe}.
+
+
+
+Definition at line 82 of file reel.\-h.
+
+\hypertarget{class_reel_a66d6f1cfe4fa7665f7f83e242a816a5a}{\index{Reel@{Reel}!get\-Val@{get\-Val}}
+\index{get\-Val@{get\-Val}!Reel@{Reel}}
+\subsubsection[{get\-Val}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Reel\-::get\-Val} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_reel_a66d6f1cfe4fa7665f7f83e242a816a5a}
+
+
+Getter de la valeur du réel. 
+
+\begin{DoxyReturn}{Returns}
+La valeur du réel 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file reel.\-h.
+
+\hypertarget{class_reel_a11fda3f1bd3cdac610d3a2aeec2fc7ed}{\index{Reel@{Reel}!pow@{pow}}
+\index{pow@{pow}!Reel@{Reel}}
+\subsubsection[{pow}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Reel\-::pow} (
+\begin{DoxyParamCaption}
+\item[{{\bf Entier} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_reel_a11fda3f1bd3cdac610d3a2aeec2fc7ed}
+
+
+Méthode permettant d'effectuer la puissance d'un nombre.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Un entier correspondant à la puissance \\
+\hline
+\end{DoxyParams}
+ 
+
+Implements \hyperlink{class_nombre_non_complexe_a859175bae737e01e73316632f1083d07}{Nombre\-Non\-Complexe}.
+
+
+
+Definition at line 14 of file reel.\-cpp.
+
+\hypertarget{class_reel_ab86c394e2e4a6729ecafba23e65915ad}{\index{Reel@{Reel}!sign@{sign}}
+\index{sign@{sign}!Reel@{Reel}}
+\subsubsection[{sign}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Reel\-::sign} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_reel_ab86c394e2e4a6729ecafba23e65915ad}
+
+
+Methode permettant de transformer le nombre en son opposé.  
+
+
+
+Implements \hyperlink{class_nombre_a718d616bbf2e5e8f133df958e8bb3d7f}{Nombre}.
+
+
+
+Definition at line 58 of file reel.\-h.
+
+\hypertarget{class_reel_a612dd1edfce0d6fa687ab4cbfc700d07}{\index{Reel@{Reel}!sqr@{sqr}}
+\index{sqr@{sqr}!Reel@{Reel}}
+\subsubsection[{sqr}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Reel\-::sqr} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_reel_a612dd1edfce0d6fa687ab4cbfc700d07}
+
+
+Méthode permettant de transformer le nombre en son carré.  
+
+
+
+Implements \hyperlink{class_nombre_a5be0e66e9bbec508d236ba8dbe1eb6bc}{Nombre}.
+
+
+
+Definition at line 62 of file reel.\-h.
+
+\hypertarget{class_reel_a3ba5e47699a1ccff32075a588afda91e}{\index{Reel@{Reel}!to\-Nombre\-Complexe@{to\-Nombre\-Complexe}}
+\index{to\-Nombre\-Complexe@{to\-Nombre\-Complexe}!Reel@{Reel}}
+\subsubsection[{to\-Nombre\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Complexe} $\ast$ {\bf Reel\-::to\-Nombre\-Complexe} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_reel_a3ba5e47699a1ccff32075a588afda91e}
+
+
+Méthode permettant de convertir un \hyperlink{class_nombre}{Nombre} en son équivalent en \hyperlink{class_nombre_complexe}{Nombre\-Complexe}.  
+
+\begin{DoxyReturn}{Returns}
+Le pointeur vers le nombre\-Complexe nouvellement crée 
+\end{DoxyReturn}
+ 
+
+Implements \hyperlink{class_nombre_a11092e1fcde81c05b4c518398baf3691}{Nombre}.
+
+
+
+Definition at line 6 of file reel.\-cpp.
+
+\hypertarget{class_reel_a990e8324822ba3dbc64fc7ff727411e2}{\index{Reel@{Reel}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Reel@{Reel}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String {\bf Reel\-::to\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_reel_a990e8324822ba3dbc64fc7ff727411e2}
+
+
+Fonction permettant de renvoyer une chaine comprenant la valuation de la constante associé, cette fonction est utilisée dans le cadre de l'affichage des constantes dans la pile.  
+
+\begin{DoxyReturn}{Returns}
+La chaine à afficher dans la pile 
+\end{DoxyReturn}
+ 
+
+Implements \hyperlink{class_constante_ad5ea6850196ee9f86b74c74009a87ab1}{Constante}.
+
+
+
+Definition at line 74 of file reel.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{reel_8h}{reel.\-h}\item 
+\hyperlink{reel_8cpp}{reel.\-cpp}\end{DoxyCompactItemize}

@@ -13,7 +13,7 @@
 
 /*!
  \class LogMessage
- \brief Classe permettant de gérer un message de Log (son contenu et son degre d'importance)
+ \brief Classe permettant de gérer un message de Log (son contenu et son degre d'importance).
  */
 class LogMessage {
 private:
@@ -31,11 +31,11 @@ private:
     QString _date;
 public:
 	/*!
-      \brief Constructeur par défaut
+      \brief Constructeur par défaut.
       */
     LogMessage();
     /*!
-      \brief Constructeur avec paramètres
+      \brief Constructeur avec paramètres.
       \param mes string
       \param degre int
       */
@@ -46,18 +46,18 @@ public:
         _date = ctime(&temps_act);
     }
     /*!
-      \brief Getter du contenu du message
-      \return le contenu du message
+      \brief Getter du contenu du message.
+      \return Le contenu du message
       */
     QString getMessage() const { return _message; }
     /*!
-      \brief Getter de l'importance du message
-      \return l'importance du message
+      \brief Getter de l'importance du message.
+      \return L'importance du message
       */
     int getDegre() const { return _degre; }
     /*!
-      \brief Getter de la date du message
-      \return la date du message
+      \brief Getter de la date du message.
+      \return La date du message
       */
     QString getDate() const { return _date; }
 };

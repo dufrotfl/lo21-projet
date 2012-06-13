@@ -12,7 +12,7 @@
 
 /*!
  \class Settings
- \brief Classe permettant de gerer les paramètres de la calculatrice (utilisee dans le cadre de la sauvegarde de contexte notamment)
+ \brief Classe (utilisant le Design Pattern Singleton) permettant de gerer les paramètres de la calculatrice (utilisee dans le cadre de la sauvegarde de contexte notamment).
  */
 class Settings {
     public:
@@ -70,80 +70,82 @@ class Settings {
           */
         static Settings* _instance;
         /*!
-         \brief Constructeur sans parametre
+         \brief Constructeur sans parametre.
          */
         Settings();
         /*!
-          \brief Constructeur avec parametres
+          \brief Constructeur avec parametres.
           \param comp L'utilisation des complexes
           \param an L'unité des angles
           \param cons Le type de constante
           \param nbElem Le nombre d'élément de la pile à afficher dans l'interface
           */
         Settings(UtilisationDeComplexe comp, Angles an, TypeConstante cons,int nbElem);
-	
+		/*!
+		\brief Destructeur
+		*/
+		~Settings() {}
     public :
         /*!
-          \brief Méthode permettant de retourner l'instance de la classe Settings
+          \brief Méthode permettant de retourner l'instance de la classe Settings.
           \return L'instance
           */
         static Settings* getInstance();
         /*!
-          \brief Méthode permettant de libérer l'instance
+          \brief Méthode permettant de libérer l'instance.
           */
         static void freeInstance();		
 		/**
-         \brief getter du reglage concernant l'utilisation des complexes
+         \brief getter du reglage concernant l'utilisation des complexes.
          \return L'utilisation ou non des complexes
 		 */
         UtilisationDeComplexe getUtilisationDeComplexe() {
 			return _utilisationDeComplexe;
 		}		
 		/**
-         \brief setter du reglage concernant l'utilisation des complexes
+         \brief setter du reglage concernant l'utilisation des complexes.
          \param comp UtilisationDeComplexe
 		 */
 		void setUtilisationDeComplexe(UtilisationDeComplexe comp) {
 			_utilisationDeComplexe = comp;
 		}		
 		/**
-         \brief getter du reglage concernant l'unite des angles
+         \brief getter du reglage concernant l'unite des angles.
          \return L'unité d'angles utilisée
 		 */
         Angles getAngles() {
 			return _angles;
-		}
-		
+		}		
 		/**
-         \brief setter du reglage concernant l'unite des angles
+         \brief setter du reglage concernant l'unite des angles.
          \param an Angles
 		 */
 		void setAngles(Angles an) {
 			_angles = an;
 		}		
 		/**
-         \brief getter du reglage concernant le type des constantes
+         \brief getter du reglage concernant le type des constantes.
          \return Le type de constante utilisé
 		 */
         TypeConstante getTypeConstante() {
 			return _typeConstante;
 		}		
 		/**
-         \brief setter du reglage concernant le type des constantes
+         \brief setter du reglage concernant le type des constantes.
          \param co TypeConstante
 		 */
 		void setTypeConstante(TypeConstante co) {
 			_typeConstante = co;
         }
         /**
-         \brief getter du reglage concernant le nombre d'elements de la pile affichable
+         \brief getter du reglage concernant le nombre d'elements de la pile affichable.
          \return Le nombre d'éléments de la pile à afficher
          */
         int getNbElemAffichable() {
             return _nbElemAffichable;
         }
         /**
-         \brief setter du reglage concernant le nombre d'éléments à afficher dans la pile
+         \brief setter du reglage concernant le nombre d'éléments à afficher dans la pile.
          \param nbElement Nombre d'éléments de la pile à afficher
          */
         void setNbElementAffichable(int nbElement);

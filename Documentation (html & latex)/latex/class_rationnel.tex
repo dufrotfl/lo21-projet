@@ -1,0 +1,393 @@
+\hypertarget{class_rationnel}{\section{Rationnel Class Reference}
+\label{class_rationnel}\index{Rationnel@{Rationnel}}
+}
+
+
+Classe implémentant l'interface de \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} et permettant de gérer les constantes de type rationnel.  
+
+
+
+
+{\ttfamily \#include $<$rationnel.\-h$>$}
+
+Inheritance diagram for Rationnel\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_rationnel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_rationnel_ab0257aa2fd1b258506ec6d2a268612c6}{$\sim$\-Rationnel} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe. \end{DoxyCompactList}\item 
+\hyperlink{class_rationnel_a9adcf96ff1018a7d795f76a224914c7f}{Rationnel} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_rationnel_a38fd7be3f71d2034feaa7f40c12484d9}{Rationnel} (int n, int d)  throw (\-Log\-Message)
+\begin{DoxyCompactList}\small\item\em Constructeur avec paramètres. \end{DoxyCompactList}\item 
+\hyperlink{class_rationnel_a245659f15aa0b370996df2d7f3924d4d}{Rationnel} (const \hyperlink{class_rationnel}{Rationnel} \&r)
+\begin{DoxyCompactList}\small\item\em Crée un rationnel avec un constructeur par copie. \end{DoxyCompactList}\item 
+\hyperlink{class_rationnel}{Rationnel} $\ast$ \hyperlink{class_rationnel_a422ec3e0c4465d08c4e9deceda6c442c}{clone} () const 
+\begin{DoxyCompactList}\small\item\em Méthode permettant de cloner une constante.  \end{DoxyCompactList}\item 
+int \hyperlink{class_rationnel_a9686c11efed9acc67668975b918b4a32}{get\-Numerateur} () const 
+\begin{DoxyCompactList}\small\item\em Getter du numérateur de rationnel. \end{DoxyCompactList}\item 
+int \hyperlink{class_rationnel_ad77310859dce16410da112ba3c15b16d}{get\-Denominateur} () const 
+\begin{DoxyCompactList}\small\item\em Getter du dénominateur de rationnel. \end{DoxyCompactList}\item 
+void \hyperlink{class_rationnel_a723b922369bb264764b319fde37068d7}{sign} ()
+\begin{DoxyCompactList}\small\item\em Methode permettant de transformer le nombre en son opposé.  \end{DoxyCompactList}\item 
+void \hyperlink{class_rationnel_acb4195e9590b74f9895398f69acc7692}{sqr} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de transformer le nombre en son carré.  \end{DoxyCompactList}\item 
+void \hyperlink{class_rationnel_a72bf5e2bac1e10990d44783b8d2d7ab1}{cube} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de transformer le nombre en son cube.  \end{DoxyCompactList}\item 
+void \hyperlink{class_rationnel_a1d8ffa87d6fff2c6eade5e28533e5e78}{pow} (\hyperlink{class_entier}{Entier} $\ast$)
+\begin{DoxyCompactList}\small\item\em Méthode permettant d'effectuer la puissance d'un nombre.  \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_rationnel_a41bc89d21ce161818f67ccfe296766c0}{to\-String} () const 
+\begin{DoxyCompactList}\small\item\em Fonction permettant de renvoyer une chaine comprenant la valuation de la constante associé, cette fonction est utilisée dans le cadre de l'affichage des constantes dans la pile.  \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_complexe}{Nombre\-Complexe} $\ast$ \hyperlink{class_rationnel_a06771fbd968456d02a56480ba3a12bc6}{to\-Nombre\-Complexe} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de convertir un \hyperlink{class_nombre}{Nombre} en son équivalent en \hyperlink{class_nombre_complexe}{Nombre\-Complexe}.  \end{DoxyCompactList}\item 
+float \hyperlink{class_rationnel_a026cd9c023e23034313140d592b6f38f}{get\-Float\-Val} () const 
+\begin{DoxyCompactList}\small\item\em Méthode permettant de récupérer la valeur du \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} sous la forme d'un réel.  \end{DoxyCompactList}\item 
+int \hyperlink{class_rationnel_aced52c94493f4ec44492e3c8dcc07632}{pgcd} (int a, int b) const 
+\begin{DoxyCompactList}\small\item\em Méthode permettant de renvoyer le pgcd des deux nombres passés en paramètres. \end{DoxyCompactList}\item 
+void \hyperlink{class_rationnel_a12ee060e5fca5f4291b222983d727268}{simplifier} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de simplifier l'objet appelant(le rationnel) en appliquant le pgcd et ainsi simplifier le rationnel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe implémentant l'interface de \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} et permettant de gérer les constantes de type rationnel. 
+
+Definition at line 20 of file rationnel.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_rationnel_ab0257aa2fd1b258506ec6d2a268612c6}{\index{Rationnel@{Rationnel}!$\sim$\-Rationnel@{$\sim$\-Rationnel}}
+\index{$\sim$\-Rationnel@{$\sim$\-Rationnel}!Rationnel@{Rationnel}}
+\subsubsection[{$\sim$\-Rationnel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rationnel\-::$\sim$\-Rationnel} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_rationnel_ab0257aa2fd1b258506ec6d2a268612c6}
+
+
+Destructeur de la classe. 
+
+
+
+Definition at line 34 of file rationnel.\-h.
+
+\hypertarget{class_rationnel_a9adcf96ff1018a7d795f76a224914c7f}{\index{Rationnel@{Rationnel}!Rationnel@{Rationnel}}
+\index{Rationnel@{Rationnel}!Rationnel@{Rationnel}}
+\subsubsection[{Rationnel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rationnel\-::\-Rationnel} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_rationnel_a9adcf96ff1018a7d795f76a224914c7f}
+
+
+Constructeur par défaut. 
+
+
+
+Definition at line 38 of file rationnel.\-h.
+
+\hypertarget{class_rationnel_a38fd7be3f71d2034feaa7f40c12484d9}{\index{Rationnel@{Rationnel}!Rationnel@{Rationnel}}
+\index{Rationnel@{Rationnel}!Rationnel@{Rationnel}}
+\subsubsection[{Rationnel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rationnel\-::\-Rationnel} (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{d}
+\end{DoxyParamCaption}
+)  throw ({\bf Log\-Message})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_rationnel_a38fd7be3f71d2034feaa7f40c12484d9}
+
+
+Constructeur avec paramètres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Le numérateur du rationnel \\
+\hline
+{\em d} & Le dénominateur du rationnel \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file rationnel.\-h.
+
+\hypertarget{class_rationnel_a245659f15aa0b370996df2d7f3924d4d}{\index{Rationnel@{Rationnel}!Rationnel@{Rationnel}}
+\index{Rationnel@{Rationnel}!Rationnel@{Rationnel}}
+\subsubsection[{Rationnel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rationnel\-::\-Rationnel} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rationnel} \&}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_rationnel_a245659f15aa0b370996df2d7f3924d4d}
+
+
+Crée un rationnel avec un constructeur par copie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Le rationnel à copier \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 49 of file rationnel.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_rationnel_a422ec3e0c4465d08c4e9deceda6c442c}{\index{Rationnel@{Rationnel}!clone@{clone}}
+\index{clone@{clone}!Rationnel@{Rationnel}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rationnel} $\ast$ {\bf Rationnel\-::clone} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_rationnel_a422ec3e0c4465d08c4e9deceda6c442c}
+
+
+Méthode permettant de cloner une constante.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em Le} & pointeur vers la constante clonée \\
+\hline
+\end{DoxyParams}
+ 
+
+Implements \hyperlink{class_constante_a5769ea385161e02bd2d1bcadefc2c510}{Constante}.
+
+
+
+Definition at line 11 of file rationnel.\-cpp.
+
+\hypertarget{class_rationnel_a72bf5e2bac1e10990d44783b8d2d7ab1}{\index{Rationnel@{Rationnel}!cube@{cube}}
+\index{cube@{cube}!Rationnel@{Rationnel}}
+\subsubsection[{cube}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Rationnel\-::cube} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_rationnel_a72bf5e2bac1e10990d44783b8d2d7ab1}
+
+
+Méthode permettant de transformer le nombre en son cube.  
+
+
+
+Implements \hyperlink{class_nombre_aed65cb1449858c078e91610afb3a6447}{Nombre}.
+
+
+
+Definition at line 75 of file rationnel.\-h.
+
+\hypertarget{class_rationnel_ad77310859dce16410da112ba3c15b16d}{\index{Rationnel@{Rationnel}!get\-Denominateur@{get\-Denominateur}}
+\index{get\-Denominateur@{get\-Denominateur}!Rationnel@{Rationnel}}
+\subsubsection[{get\-Denominateur}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Rationnel\-::get\-Denominateur} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_rationnel_ad77310859dce16410da112ba3c15b16d}
+
+
+Getter du dénominateur de rationnel. 
+
+\begin{DoxyReturn}{Returns}
+Le dénominateur 
+\end{DoxyReturn}
+
+
+Definition at line 63 of file rationnel.\-h.
+
+\hypertarget{class_rationnel_a026cd9c023e23034313140d592b6f38f}{\index{Rationnel@{Rationnel}!get\-Float\-Val@{get\-Float\-Val}}
+\index{get\-Float\-Val@{get\-Float\-Val}!Rationnel@{Rationnel}}
+\subsubsection[{get\-Float\-Val}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Rationnel\-::get\-Float\-Val} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_rationnel_a026cd9c023e23034313140d592b6f38f}
+
+
+Méthode permettant de récupérer la valeur du \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} sous la forme d'un réel.  
+
+\begin{DoxyReturn}{Returns}
+La valeur réelle 
+\end{DoxyReturn}
+ 
+
+Implements \hyperlink{class_nombre_non_complexe_ad148f1e2a4626ecf279e91d04d1aff24}{Nombre\-Non\-Complexe}.
+
+
+
+Definition at line 91 of file rationnel.\-h.
+
+\hypertarget{class_rationnel_a9686c11efed9acc67668975b918b4a32}{\index{Rationnel@{Rationnel}!get\-Numerateur@{get\-Numerateur}}
+\index{get\-Numerateur@{get\-Numerateur}!Rationnel@{Rationnel}}
+\subsubsection[{get\-Numerateur}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Rationnel\-::get\-Numerateur} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_rationnel_a9686c11efed9acc67668975b918b4a32}
+
+
+Getter du numérateur de rationnel. 
+
+\begin{DoxyReturn}{Returns}
+Le numérateur 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file rationnel.\-h.
+
+\hypertarget{class_rationnel_aced52c94493f4ec44492e3c8dcc07632}{\index{Rationnel@{Rationnel}!pgcd@{pgcd}}
+\index{pgcd@{pgcd}!Rationnel@{Rationnel}}
+\subsubsection[{pgcd}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Rationnel\-::pgcd} (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+) const}}\label{class_rationnel_aced52c94493f4ec44492e3c8dcc07632}
+
+
+Méthode permettant de renvoyer le pgcd des deux nombres passés en paramètres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & La première opérande \\
+\hline
+{\em b} & La seconde opérande \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le pgcd des deux nombres 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file rationnel.\-cpp.
+
+\hypertarget{class_rationnel_a1d8ffa87d6fff2c6eade5e28533e5e78}{\index{Rationnel@{Rationnel}!pow@{pow}}
+\index{pow@{pow}!Rationnel@{Rationnel}}
+\subsubsection[{pow}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Rationnel\-::pow} (
+\begin{DoxyParamCaption}
+\item[{{\bf Entier} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_rationnel_a1d8ffa87d6fff2c6eade5e28533e5e78}
+
+
+Méthode permettant d'effectuer la puissance d'un nombre.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Un entier correspondant à la puissance \\
+\hline
+\end{DoxyParams}
+ 
+
+Implements \hyperlink{class_nombre_non_complexe_a859175bae737e01e73316632f1083d07}{Nombre\-Non\-Complexe}.
+
+
+
+Definition at line 45 of file rationnel.\-cpp.
+
+\hypertarget{class_rationnel_a723b922369bb264764b319fde37068d7}{\index{Rationnel@{Rationnel}!sign@{sign}}
+\index{sign@{sign}!Rationnel@{Rationnel}}
+\subsubsection[{sign}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Rationnel\-::sign} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_rationnel_a723b922369bb264764b319fde37068d7}
+
+
+Methode permettant de transformer le nombre en son opposé.  
+
+
+
+Implements \hyperlink{class_nombre_a718d616bbf2e5e8f133df958e8bb3d7f}{Nombre}.
+
+
+
+Definition at line 67 of file rationnel.\-h.
+
+\hypertarget{class_rationnel_a12ee060e5fca5f4291b222983d727268}{\index{Rationnel@{Rationnel}!simplifier@{simplifier}}
+\index{simplifier@{simplifier}!Rationnel@{Rationnel}}
+\subsubsection[{simplifier}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Rationnel\-::simplifier} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rationnel_a12ee060e5fca5f4291b222983d727268}
+
+
+Méthode permettant de simplifier l'objet appelant(le rationnel) en appliquant le pgcd et ainsi simplifier le rationnel. 
+
+
+
+Definition at line 31 of file rationnel.\-cpp.
+
+\hypertarget{class_rationnel_acb4195e9590b74f9895398f69acc7692}{\index{Rationnel@{Rationnel}!sqr@{sqr}}
+\index{sqr@{sqr}!Rationnel@{Rationnel}}
+\subsubsection[{sqr}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Rationnel\-::sqr} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_rationnel_acb4195e9590b74f9895398f69acc7692}
+
+
+Méthode permettant de transformer le nombre en son carré.  
+
+
+
+Implements \hyperlink{class_nombre_a5be0e66e9bbec508d236ba8dbe1eb6bc}{Nombre}.
+
+
+
+Definition at line 71 of file rationnel.\-h.
+
+\hypertarget{class_rationnel_a06771fbd968456d02a56480ba3a12bc6}{\index{Rationnel@{Rationnel}!to\-Nombre\-Complexe@{to\-Nombre\-Complexe}}
+\index{to\-Nombre\-Complexe@{to\-Nombre\-Complexe}!Rationnel@{Rationnel}}
+\subsubsection[{to\-Nombre\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Complexe} $\ast$ {\bf Rationnel\-::to\-Nombre\-Complexe} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_rationnel_a06771fbd968456d02a56480ba3a12bc6}
+
+
+Méthode permettant de convertir un \hyperlink{class_nombre}{Nombre} en son équivalent en \hyperlink{class_nombre_complexe}{Nombre\-Complexe}.  
+
+\begin{DoxyReturn}{Returns}
+Le pointeur vers le nombre\-Complexe nouvellement crée 
+\end{DoxyReturn}
+ 
+
+Implements \hyperlink{class_nombre_a11092e1fcde81c05b4c518398baf3691}{Nombre}.
+
+
+
+Definition at line 7 of file rationnel.\-cpp.
+
+\hypertarget{class_rationnel_a41bc89d21ce161818f67ccfe296766c0}{\index{Rationnel@{Rationnel}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Rationnel@{Rationnel}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String {\bf Rationnel\-::to\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_rationnel_a41bc89d21ce161818f67ccfe296766c0}
+
+
+Fonction permettant de renvoyer une chaine comprenant la valuation de la constante associé, cette fonction est utilisée dans le cadre de l'affichage des constantes dans la pile.  
+
+\begin{DoxyReturn}{Returns}
+La chaine à afficher dans la pile 
+\end{DoxyReturn}
+ 
+
+Implements \hyperlink{class_constante_ad5ea6850196ee9f86b74c74009a87ab1}{Constante}.
+
+
+
+Definition at line 83 of file rationnel.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rationnel_8h}{rationnel.\-h}\item 
+\hyperlink{rationnel_8cpp}{rationnel.\-cpp}\end{DoxyCompactItemize}

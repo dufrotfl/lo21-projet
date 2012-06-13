@@ -1,0 +1,259 @@
+\hypertarget{class_nombre_non_complexe}{\section{Nombre\-Non\-Complexe Class Reference}
+\label{class_nombre_non_complexe}\index{Nombre\-Non\-Complexe@{Nombre\-Non\-Complexe}}
+}
+
+
+Classe qui étend l'interface \hyperlink{class_nombre}{Nombre} et permettant de gérer des constantes de type non complexe (\hyperlink{class_entier}{Entier}, \hyperlink{class_rationnel}{Rationnel}, \hyperlink{class_reel}{Reel}).  
+
+
+
+
+{\ttfamily \#include $<$nombre\-Non\-Complexe.\-h$>$}
+
+Inheritance diagram for Nombre\-Non\-Complexe\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_nombre_non_complexe}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_nombre_non_complexe_ad623268a2e87fb652342a984ccc70a7c}{$\sim$\-Nombre\-Non\-Complexe} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de l'instance de la classe \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe}. \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} $\ast$ \hyperlink{class_nombre_non_complexe_a6081b502145e109bbed9d13a8685fead}{operator+} (\hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} $\ast$nb)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de faire l'addition entre deux nombres. \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} $\ast$ \hyperlink{class_nombre_non_complexe_aeac1f3ad9a6e1e55690e1a28a4efa1e6}{operator-\/} (\hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} $\ast$nb)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de faire la soustraction entre deux nombres. \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} $\ast$ \hyperlink{class_nombre_non_complexe_a73e31c766e28427c829514ffbaaf67ce}{operator/} (\hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} $\ast$nb)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de faire la division entre deux nombres. \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} $\ast$ \hyperlink{class_nombre_non_complexe_a4ad5d4e68de267426a1d4d11bd079315}{operator$\ast$} (\hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} $\ast$nb)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de faire la multiplication entre deux nombres. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_entier}{Entier} $\ast$ \hyperlink{class_nombre_non_complexe_a01370f18cfc8304cba476f21dab9f53c}{to\-Entier} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de convertir un \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} en son équivalent \hyperlink{class_entier}{Entier}. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_rationnel}{Rationnel} $\ast$ \hyperlink{class_nombre_non_complexe_a9f4b8526b3c58d7c4a8531e15e08940e}{to\-Rationnel} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de convertir un \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} en son équivalent \hyperlink{class_rationnel}{Rationnel}. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_reel}{Reel} $\ast$ \hyperlink{class_nombre_non_complexe_a6a573025d221b8fe3d85484a11bcffe0}{to\-Reel} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de convertir un \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} en son équivalent \hyperlink{class_reel}{Reel}. \end{DoxyCompactList}\item 
+virtual float \hyperlink{class_nombre_non_complexe_ad148f1e2a4626ecf279e91d04d1aff24}{get\-Float\-Val} () const =0
+\begin{DoxyCompactList}\small\item\em Méthode permettant de récupérer la valeur du \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} sous la forme d'un réel. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_nombre_non_complexe_a859175bae737e01e73316632f1083d07}{pow} (\hyperlink{class_entier}{Entier} $\ast$e)=0
+\begin{DoxyCompactList}\small\item\em Méthode permettant d'effectuer la puissance d'un nombre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe qui étend l'interface \hyperlink{class_nombre}{Nombre} et permettant de gérer des constantes de type non complexe (\hyperlink{class_entier}{Entier}, \hyperlink{class_rationnel}{Rationnel}, \hyperlink{class_reel}{Reel}). 
+
+Definition at line 23 of file nombre\-Non\-Complexe.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_nombre_non_complexe_ad623268a2e87fb652342a984ccc70a7c}{\index{Nombre\-Non\-Complexe@{Nombre\-Non\-Complexe}!$\sim$\-Nombre\-Non\-Complexe@{$\sim$\-Nombre\-Non\-Complexe}}
+\index{$\sim$\-Nombre\-Non\-Complexe@{$\sim$\-Nombre\-Non\-Complexe}!NombreNonComplexe@{Nombre\-Non\-Complexe}}
+\subsubsection[{$\sim$\-Nombre\-Non\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Nombre\-Non\-Complexe\-::$\sim$\-Nombre\-Non\-Complexe} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_nombre_non_complexe_ad623268a2e87fb652342a984ccc70a7c}
+
+
+Destructeur de l'instance de la classe \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe}. 
+
+
+
+Definition at line 29 of file nombre\-Non\-Complexe.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_nombre_non_complexe_ad148f1e2a4626ecf279e91d04d1aff24}{\index{Nombre\-Non\-Complexe@{Nombre\-Non\-Complexe}!get\-Float\-Val@{get\-Float\-Val}}
+\index{get\-Float\-Val@{get\-Float\-Val}!NombreNonComplexe@{Nombre\-Non\-Complexe}}
+\subsubsection[{get\-Float\-Val}]{\setlength{\rightskip}{0pt plus 5cm}virtual float {\bf Nombre\-Non\-Complexe\-::get\-Float\-Val} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_nombre_non_complexe_ad148f1e2a4626ecf279e91d04d1aff24}
+
+
+Méthode permettant de récupérer la valeur du \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} sous la forme d'un réel. 
+
+\begin{DoxyReturn}{Returns}
+La valeur réelle 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_rationnel_a026cd9c023e23034313140d592b6f38f}{Rationnel}, \hyperlink{class_entier_a4ce7f7cddbaa2a28d244444d18ef55dc}{Entier}, and \hyperlink{class_reel_a9d2e05f1f59ad433c3eafb2da7e09f86}{Reel}.
+
+\hypertarget{class_nombre_non_complexe_a4ad5d4e68de267426a1d4d11bd079315}{\index{Nombre\-Non\-Complexe@{Nombre\-Non\-Complexe}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!NombreNonComplexe@{Nombre\-Non\-Complexe}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Non\-Complexe} $\ast$ Nombre\-Non\-Complexe\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Nombre\-Non\-Complexe} $\ast$}]{nb}
+\end{DoxyParamCaption}
+)}}\label{class_nombre_non_complexe_a4ad5d4e68de267426a1d4d11bd079315}
+
+
+Méthode permettant de faire la multiplication entre deux nombres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb} & La deuxième opérande \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le produit des deux nombres 
+\end{DoxyReturn}
+
+
+Definition at line 52 of file nombre\-Non\-Complexe.\-cpp.
+
+\hypertarget{class_nombre_non_complexe_a6081b502145e109bbed9d13a8685fead}{\index{Nombre\-Non\-Complexe@{Nombre\-Non\-Complexe}!operator+@{operator+}}
+\index{operator+@{operator+}!NombreNonComplexe@{Nombre\-Non\-Complexe}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Non\-Complexe} $\ast$ Nombre\-Non\-Complexe\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Nombre\-Non\-Complexe} $\ast$}]{nb}
+\end{DoxyParamCaption}
+)}}\label{class_nombre_non_complexe_a6081b502145e109bbed9d13a8685fead}
+
+
+Méthode permettant de faire l'addition entre deux nombres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb} & La deuxième opérande \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La somme des deux nombres 
+\end{DoxyReturn}
+
+
+Definition at line 8 of file nombre\-Non\-Complexe.\-cpp.
+
+\hypertarget{class_nombre_non_complexe_aeac1f3ad9a6e1e55690e1a28a4efa1e6}{\index{Nombre\-Non\-Complexe@{Nombre\-Non\-Complexe}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!NombreNonComplexe@{Nombre\-Non\-Complexe}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Non\-Complexe} $\ast$ Nombre\-Non\-Complexe\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Nombre\-Non\-Complexe} $\ast$}]{nb}
+\end{DoxyParamCaption}
+)}}\label{class_nombre_non_complexe_aeac1f3ad9a6e1e55690e1a28a4efa1e6}
+
+
+Méthode permettant de faire la soustraction entre deux nombres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb} & La deuxième opérande \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La différence entre les deux nombres 
+\end{DoxyReturn}
+
+
+Definition at line 20 of file nombre\-Non\-Complexe.\-cpp.
+
+\hypertarget{class_nombre_non_complexe_a73e31c766e28427c829514ffbaaf67ce}{\index{Nombre\-Non\-Complexe@{Nombre\-Non\-Complexe}!operator/@{operator/}}
+\index{operator/@{operator/}!NombreNonComplexe@{Nombre\-Non\-Complexe}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Non\-Complexe} $\ast$ Nombre\-Non\-Complexe\-::operator/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Nombre\-Non\-Complexe} $\ast$}]{nb}
+\end{DoxyParamCaption}
+)}}\label{class_nombre_non_complexe_a73e31c766e28427c829514ffbaaf67ce}
+
+
+Méthode permettant de faire la division entre deux nombres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb} & La deuxième opérande \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le quotient de la division de ces deux nombres 
+\end{DoxyReturn}
+
+
+Definition at line 32 of file nombre\-Non\-Complexe.\-cpp.
+
+\hypertarget{class_nombre_non_complexe_a859175bae737e01e73316632f1083d07}{\index{Nombre\-Non\-Complexe@{Nombre\-Non\-Complexe}!pow@{pow}}
+\index{pow@{pow}!NombreNonComplexe@{Nombre\-Non\-Complexe}}
+\subsubsection[{pow}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf Nombre\-Non\-Complexe\-::pow} (
+\begin{DoxyParamCaption}
+\item[{{\bf Entier} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_nombre_non_complexe_a859175bae737e01e73316632f1083d07}
+
+
+Méthode permettant d'effectuer la puissance d'un nombre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Un entier correspondant à la puissance \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_rationnel_a1d8ffa87d6fff2c6eade5e28533e5e78}{Rationnel}, \hyperlink{class_entier_ae44b026487bcd10fab16696eff3b49a8}{Entier}, and \hyperlink{class_reel_a11fda3f1bd3cdac610d3a2aeec2fc7ed}{Reel}.
+
+\hypertarget{class_nombre_non_complexe_a01370f18cfc8304cba476f21dab9f53c}{\index{Nombre\-Non\-Complexe@{Nombre\-Non\-Complexe}!to\-Entier@{to\-Entier}}
+\index{to\-Entier@{to\-Entier}!NombreNonComplexe@{Nombre\-Non\-Complexe}}
+\subsubsection[{to\-Entier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entier} $\ast$ {\bf Nombre\-Non\-Complexe\-::to\-Entier} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_nombre_non_complexe_a01370f18cfc8304cba476f21dab9f53c}
+
+
+Méthode permettant de convertir un \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} en son équivalent \hyperlink{class_entier}{Entier}. 
+
+\begin{DoxyReturn}{Returns}
+Le pointeur vers l' \hyperlink{class_entier}{Entier} nouvellement crée 
+\end{DoxyReturn}
+
+
+Definition at line 61 of file nombre\-Non\-Complexe.\-cpp.
+
+\hypertarget{class_nombre_non_complexe_a9f4b8526b3c58d7c4a8531e15e08940e}{\index{Nombre\-Non\-Complexe@{Nombre\-Non\-Complexe}!to\-Rationnel@{to\-Rationnel}}
+\index{to\-Rationnel@{to\-Rationnel}!NombreNonComplexe@{Nombre\-Non\-Complexe}}
+\subsubsection[{to\-Rationnel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rationnel} $\ast$ {\bf Nombre\-Non\-Complexe\-::to\-Rationnel} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_nombre_non_complexe_a9f4b8526b3c58d7c4a8531e15e08940e}
+
+
+Méthode permettant de convertir un \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} en son équivalent \hyperlink{class_rationnel}{Rationnel}. 
+
+\begin{DoxyReturn}{Returns}
+Le pointeur vers le \hyperlink{class_rationnel}{Rationnel} nouvellement crée 
+\end{DoxyReturn}
+
+
+Definition at line 76 of file nombre\-Non\-Complexe.\-cpp.
+
+\hypertarget{class_nombre_non_complexe_a6a573025d221b8fe3d85484a11bcffe0}{\index{Nombre\-Non\-Complexe@{Nombre\-Non\-Complexe}!to\-Reel@{to\-Reel}}
+\index{to\-Reel@{to\-Reel}!NombreNonComplexe@{Nombre\-Non\-Complexe}}
+\subsubsection[{to\-Reel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reel} $\ast$ {\bf Nombre\-Non\-Complexe\-::to\-Reel} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_nombre_non_complexe_a6a573025d221b8fe3d85484a11bcffe0}
+
+
+Méthode permettant de convertir un \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} en son équivalent \hyperlink{class_reel}{Reel}. 
+
+\begin{DoxyReturn}{Returns}
+Le pointeur vers le \hyperlink{class_reel}{Reel} nouvellement crée 
+\end{DoxyReturn}
+
+
+Definition at line 91 of file nombre\-Non\-Complexe.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{nombre_non_complexe_8h}{nombre\-Non\-Complexe.\-h}\item 
+\hyperlink{nombre_non_complexe_8cpp}{nombre\-Non\-Complexe.\-cpp}\end{DoxyCompactItemize}

@@ -16,7 +16,7 @@ using namespace std;
 
 /*!
  \class Context
- \brief Classe Permettant de gérer l'écriture du context afin de pouvoir le recharger lors de l'ouverture de l'application
+ \brief Classe (utilisant le Design Pattern Singleton) permettant de gérer l'écriture du context afin de pouvoir le recharger lors de l'ouverture de l'application.
 */
 class Context {
 private:
@@ -25,21 +25,21 @@ private:
 	*/
     static Context* _instance;
 	/*!
-	 \brief Constructeur par défaut
+	 \brief Constructeur par défaut.
 	*/
     Context();
     /*!
-     \brief Contructeur par copie (On le définit dans le header afin d'interdire l'utilisation de celui-ci)
+     \brief Contructeur par copie (On le définit dans le header afin d'interdire l'utilisation de celui-ci).
      \param c Le context à copier
     */
     Context(const Context& c);
 	/*!
-	 \brief Operateur d'affectation (On le définit dans le header afin d'interdire l'utilisation de celui-ci)
+	 \brief Operateur d'affectation (On le définit dans le header afin d'interdire l'utilisation de celui-ci).
      \param c Le context à copier
 	*/
     void operator=(const Context& c);
 	/*!
-     \brief Destructeur de la classe
+     \brief Destructeur de la classe.
 	*/
     ~Context() {}
 public:

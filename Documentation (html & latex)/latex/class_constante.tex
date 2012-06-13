@@ -1,0 +1,98 @@
+\hypertarget{class_constante}{\section{Constante Class Reference}
+\label{class_constante}\index{Constante@{Constante}}
+}
+
+
+Interface (utilisant le design pattern composite) permettant de gérer les différents types de valeurs qui peuvent être empilées sur la pile.  
+
+
+
+
+{\ttfamily \#include $<$constante.\-h$>$}
+
+Inheritance diagram for Constante\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.943662cm]{class_constante}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_constante_af747f270ad3d50813786a1b013bac959}{$\sim$\-Constante} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de l'instance de la classe \hyperlink{class_constante}{Constante}. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_constante_a5769ea385161e02bd2d1bcadefc2c510}{clone} () const =0
+\begin{DoxyCompactList}\small\item\em Méthode permettant de cloner une constante. \end{DoxyCompactList}\item 
+virtual Q\-String \hyperlink{class_constante_ad5ea6850196ee9f86b74c74009a87ab1}{to\-String} () const =0
+\begin{DoxyCompactList}\small\item\em Fonction permettant de renvoyer une chaine comprenant la valuation de la constante associé, cette fonction est utilisée dans le cadre de l'affichage des constantes dans la pile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface (utilisant le design pattern composite) permettant de gérer les différents types de valeurs qui peuvent être empilées sur la pile. 
+
+Definition at line 18 of file constante.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_constante_af747f270ad3d50813786a1b013bac959}{\index{Constante@{Constante}!$\sim$\-Constante@{$\sim$\-Constante}}
+\index{$\sim$\-Constante@{$\sim$\-Constante}!Constante@{Constante}}
+\subsubsection[{$\sim$\-Constante}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Constante\-::$\sim$\-Constante} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_constante_af747f270ad3d50813786a1b013bac959}
+
+
+Destructeur de l'instance de la classe \hyperlink{class_constante}{Constante}. 
+
+
+
+Definition at line 24 of file constante.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_constante_a5769ea385161e02bd2d1bcadefc2c510}{\index{Constante@{Constante}!clone@{clone}}
+\index{clone@{clone}!Constante@{Constante}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Constante}$\ast$ {\bf Constante\-::clone} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_constante_a5769ea385161e02bd2d1bcadefc2c510}
+
+
+Méthode permettant de cloner une constante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Le} & pointeur vers la constante clonée \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_rationnel_a422ec3e0c4465d08c4e9deceda6c442c}{Rationnel}, \hyperlink{class_reel_ab53c7d10a93c702bd7ccde897fc396df}{Reel}, \hyperlink{class_entier_aca1eef6372c8d74274bffd435888ef57}{Entier}, \hyperlink{class_operateur_a77814d91250ee0c65501cea7d135b76c}{Operateur}, \hyperlink{class_nombre_complexe_a22709b554d12923c00e2b8b984143165}{Nombre\-Complexe}, and \hyperlink{class_expression_ad357e8bb1174b3582833ebcbf6d6e232}{Expression}.
+
+\hypertarget{class_constante_ad5ea6850196ee9f86b74c74009a87ab1}{\index{Constante@{Constante}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Constante@{Constante}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}virtual Q\-String {\bf Constante\-::to\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_constante_ad5ea6850196ee9f86b74c74009a87ab1}
+
+
+Fonction permettant de renvoyer une chaine comprenant la valuation de la constante associé, cette fonction est utilisée dans le cadre de l'affichage des constantes dans la pile. 
+
+\begin{DoxyReturn}{Returns}
+La chaine à afficher dans la pile 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_nombre_complexe_a2b02fa6dc1f9f3d889f69db7a9143f84}{Nombre\-Complexe}, \hyperlink{class_rationnel_a41bc89d21ce161818f67ccfe296766c0}{Rationnel}, \hyperlink{class_entier_aa960356dfeae8af6dfa2cd25136a1a6f}{Entier}, \hyperlink{class_reel_a990e8324822ba3dbc64fc7ff727411e2}{Reel}, \hyperlink{class_operateur_ad49ae9c67adcd3af3a9be0e2bc13c629}{Operateur}, and \hyperlink{class_expression_a60e6e305cdd8e878df2e3081ae15a4d0}{Expression}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{constante_8h}{constante.\-h}\end{DoxyCompactItemize}

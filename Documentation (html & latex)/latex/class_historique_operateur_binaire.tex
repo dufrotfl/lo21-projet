@@ -1,0 +1,149 @@
+\hypertarget{class_historique_operateur_binaire}{\section{Historique\-Operateur\-Binaire Class Reference}
+\label{class_historique_operateur_binaire}\index{Historique\-Operateur\-Binaire@{Historique\-Operateur\-Binaire}}
+}
+
+
+Classe implémentant l'interface \hyperlink{class_historique}{Historique} et permettant de gérer l'historique de toute les commandes binaires.  
+
+
+
+
+{\ttfamily \#include $<$historique\-Operateur\-Binaire.\-h$>$}
+
+Inheritance diagram for Historique\-Operateur\-Binaire\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_historique_operateur_binaire}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_historique_operateur_binaire_a547071f22bad19ad473c5a7c8d16cc5f}{Historique\-Operateur\-Binaire} (\hyperlink{class_constante}{Constante} $\ast$c1, \hyperlink{class_constante}{Constante} $\ast$c2)
+\begin{DoxyCompactList}\small\item\em Constructeur avec parametres. \end{DoxyCompactList}\item 
+\hyperlink{class_historique_operateur_binaire_a233825f39453cb95ae94a0bfed43f1d8}{$\sim$\-Historique\-Operateur\-Binaire} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_historique_operateur_binaire_ae8739b2a5c70e438233776b7fff5de14}{set\-Resultat} (\hyperlink{class_constante}{Constante} $\ast$res)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de stocker le résultat de la commande dans l'attribut \-\_\-resultat de la classe. \end{DoxyCompactList}\item 
+void \hyperlink{class_historique_operateur_binaire_a5ac8414021420980cf41f69ab3d0ae0c}{undo} ()
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle pure permettant d'effectuer un \char`\"{}undo\char`\"{} sur la commande courante.  \end{DoxyCompactList}\item 
+void \hyperlink{class_historique_operateur_binaire_a31568768a3917965d205ef7da3d01d9c}{redo} ()
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle pure permettant d'effectuer un \char`\"{}redo\char`\"{} sur la commande courante.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe implémentant l'interface \hyperlink{class_historique}{Historique} et permettant de gérer l'historique de toute les commandes binaires. 
+
+Definition at line 18 of file historique\-Operateur\-Binaire.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_historique_operateur_binaire_a547071f22bad19ad473c5a7c8d16cc5f}{\index{Historique\-Operateur\-Binaire@{Historique\-Operateur\-Binaire}!Historique\-Operateur\-Binaire@{Historique\-Operateur\-Binaire}}
+\index{Historique\-Operateur\-Binaire@{Historique\-Operateur\-Binaire}!HistoriqueOperateurBinaire@{Historique\-Operateur\-Binaire}}
+\subsubsection[{Historique\-Operateur\-Binaire}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Historique\-Operateur\-Binaire\-::\-Historique\-Operateur\-Binaire} (
+\begin{DoxyParamCaption}
+\item[{{\bf Constante} $\ast$}]{c1, }
+\item[{{\bf Constante} $\ast$}]{c2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_historique_operateur_binaire_a547071f22bad19ad473c5a7c8d16cc5f}
+
+
+Constructeur avec parametres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c1} & La première opérande de la commande \\
+\hline
+{\em c2} & La seconde opérande de la commande \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file historique\-Operateur\-Binaire.\-h.
+
+\hypertarget{class_historique_operateur_binaire_a233825f39453cb95ae94a0bfed43f1d8}{\index{Historique\-Operateur\-Binaire@{Historique\-Operateur\-Binaire}!$\sim$\-Historique\-Operateur\-Binaire@{$\sim$\-Historique\-Operateur\-Binaire}}
+\index{$\sim$\-Historique\-Operateur\-Binaire@{$\sim$\-Historique\-Operateur\-Binaire}!HistoriqueOperateurBinaire@{Historique\-Operateur\-Binaire}}
+\subsubsection[{$\sim$\-Historique\-Operateur\-Binaire}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Historique\-Operateur\-Binaire\-::$\sim$\-Historique\-Operateur\-Binaire} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_historique_operateur_binaire_a233825f39453cb95ae94a0bfed43f1d8}
+
+
+Destructeur de la classe. 
+
+
+
+Definition at line 41 of file historique\-Operateur\-Binaire.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_historique_operateur_binaire_a31568768a3917965d205ef7da3d01d9c}{\index{Historique\-Operateur\-Binaire@{Historique\-Operateur\-Binaire}!redo@{redo}}
+\index{redo@{redo}!HistoriqueOperateurBinaire@{Historique\-Operateur\-Binaire}}
+\subsubsection[{redo}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Historique\-Operateur\-Binaire\-::redo} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_historique_operateur_binaire_a31568768a3917965d205ef7da3d01d9c}
+
+
+Méthode virtuelle pure permettant d'effectuer un \char`\"{}redo\char`\"{} sur la commande courante.  
+
+
+
+Implements \hyperlink{class_historique_ad9d996361bf9a68280d8c558da1cd182}{Historique}.
+
+
+
+Definition at line 10 of file historique\-Operateur\-Binaire.\-cpp.
+
+\hypertarget{class_historique_operateur_binaire_ae8739b2a5c70e438233776b7fff5de14}{\index{Historique\-Operateur\-Binaire@{Historique\-Operateur\-Binaire}!set\-Resultat@{set\-Resultat}}
+\index{set\-Resultat@{set\-Resultat}!HistoriqueOperateurBinaire@{Historique\-Operateur\-Binaire}}
+\subsubsection[{set\-Resultat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante}$\ast$ {\bf Historique\-Operateur\-Binaire\-::set\-Resultat} (
+\begin{DoxyParamCaption}
+\item[{{\bf Constante} $\ast$}]{res}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_historique_operateur_binaire_ae8739b2a5c70e438233776b7fff5de14}
+
+
+Méthode permettant de stocker le résultat de la commande dans l'attribut \-\_\-resultat de la classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em res} & Le résultat de l'opération \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le résultat de l'opération 
+\end{DoxyReturn}
+
+
+Definition at line 47 of file historique\-Operateur\-Binaire.\-h.
+
+\hypertarget{class_historique_operateur_binaire_a5ac8414021420980cf41f69ab3d0ae0c}{\index{Historique\-Operateur\-Binaire@{Historique\-Operateur\-Binaire}!undo@{undo}}
+\index{undo@{undo}!HistoriqueOperateurBinaire@{Historique\-Operateur\-Binaire}}
+\subsubsection[{undo}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Historique\-Operateur\-Binaire\-::undo} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_historique_operateur_binaire_a5ac8414021420980cf41f69ab3d0ae0c}
+
+
+Méthode virtuelle pure permettant d'effectuer un \char`\"{}undo\char`\"{} sur la commande courante.  
+
+
+
+Implements \hyperlink{class_historique_ac0247bb67a9535851abe5f76113b4751}{Historique}.
+
+
+
+Definition at line 4 of file historique\-Operateur\-Binaire.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{historique_operateur_binaire_8h}{historique\-Operateur\-Binaire.\-h}\item 
+\hyperlink{historique_operateur_binaire_8cpp}{historique\-Operateur\-Binaire.\-cpp}\end{DoxyCompactItemize}

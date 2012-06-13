@@ -1,0 +1,146 @@
+\hypertarget{class_historique_operateur_unaire}{\section{Historique\-Operateur\-Unaire Class Reference}
+\label{class_historique_operateur_unaire}\index{Historique\-Operateur\-Unaire@{Historique\-Operateur\-Unaire}}
+}
+
+
+Classe implémentant l'interface \hyperlink{class_historique}{Historique} et permettant de gérer l'historique des commandes unaires.  
+
+
+
+
+{\ttfamily \#include $<$historique\-Operateur\-Unaire.\-h$>$}
+
+Inheritance diagram for Historique\-Operateur\-Unaire\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_historique_operateur_unaire}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_historique_operateur_unaire_a9cc77c41baf02f48499556f38a32cdfc}{Historique\-Operateur\-Unaire} (\hyperlink{class_constante}{Constante} $\ast$c1)
+\begin{DoxyCompactList}\small\item\em Le constructeur avec paramètres. \end{DoxyCompactList}\item 
+\hyperlink{class_historique_operateur_unaire_aa3cde907f3765b17ea0769efad4adb63}{$\sim$\-Historique\-Operateur\-Unaire} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_historique_operateur_unaire_a5b538df2478095236db252ea80106163}{set\-Resultat} (\hyperlink{class_constante}{Constante} $\ast$res)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de stocker le résultat de la commande dans l'attribut \-\_\-resultat de la classe. \end{DoxyCompactList}\item 
+void \hyperlink{class_historique_operateur_unaire_aebd86086fd2ce41cd529035a8140c262}{undo} ()
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle pure permettant d'effectuer un \char`\"{}undo\char`\"{} sur la commande courante.  \end{DoxyCompactList}\item 
+void \hyperlink{class_historique_operateur_unaire_a57f9d18a4a6ece2a9bb4797003c6f6bc}{redo} ()
+\begin{DoxyCompactList}\small\item\em Méthode virtuelle pure permettant d'effectuer un \char`\"{}redo\char`\"{} sur la commande courante.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe implémentant l'interface \hyperlink{class_historique}{Historique} et permettant de gérer l'historique des commandes unaires. 
+
+Definition at line 18 of file historique\-Operateur\-Unaire.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_historique_operateur_unaire_a9cc77c41baf02f48499556f38a32cdfc}{\index{Historique\-Operateur\-Unaire@{Historique\-Operateur\-Unaire}!Historique\-Operateur\-Unaire@{Historique\-Operateur\-Unaire}}
+\index{Historique\-Operateur\-Unaire@{Historique\-Operateur\-Unaire}!HistoriqueOperateurUnaire@{Historique\-Operateur\-Unaire}}
+\subsubsection[{Historique\-Operateur\-Unaire}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Historique\-Operateur\-Unaire\-::\-Historique\-Operateur\-Unaire} (
+\begin{DoxyParamCaption}
+\item[{{\bf Constante} $\ast$}]{c1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_historique_operateur_unaire_a9cc77c41baf02f48499556f38a32cdfc}
+
+
+Le constructeur avec paramètres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c1} & L'opérande de l'opération \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 32 of file historique\-Operateur\-Unaire.\-h.
+
+\hypertarget{class_historique_operateur_unaire_aa3cde907f3765b17ea0769efad4adb63}{\index{Historique\-Operateur\-Unaire@{Historique\-Operateur\-Unaire}!$\sim$\-Historique\-Operateur\-Unaire@{$\sim$\-Historique\-Operateur\-Unaire}}
+\index{$\sim$\-Historique\-Operateur\-Unaire@{$\sim$\-Historique\-Operateur\-Unaire}!HistoriqueOperateurUnaire@{Historique\-Operateur\-Unaire}}
+\subsubsection[{$\sim$\-Historique\-Operateur\-Unaire}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Historique\-Operateur\-Unaire\-::$\sim$\-Historique\-Operateur\-Unaire} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_historique_operateur_unaire_aa3cde907f3765b17ea0769efad4adb63}
+
+
+Destructeur de la classe. 
+
+
+
+Definition at line 36 of file historique\-Operateur\-Unaire.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_historique_operateur_unaire_a57f9d18a4a6ece2a9bb4797003c6f6bc}{\index{Historique\-Operateur\-Unaire@{Historique\-Operateur\-Unaire}!redo@{redo}}
+\index{redo@{redo}!HistoriqueOperateurUnaire@{Historique\-Operateur\-Unaire}}
+\subsubsection[{redo}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Historique\-Operateur\-Unaire\-::redo} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_historique_operateur_unaire_a57f9d18a4a6ece2a9bb4797003c6f6bc}
+
+
+Méthode virtuelle pure permettant d'effectuer un \char`\"{}redo\char`\"{} sur la commande courante.  
+
+
+
+Implements \hyperlink{class_historique_ad9d996361bf9a68280d8c558da1cd182}{Historique}.
+
+
+
+Definition at line 9 of file historique\-Operateur\-Unaire.\-cpp.
+
+\hypertarget{class_historique_operateur_unaire_a5b538df2478095236db252ea80106163}{\index{Historique\-Operateur\-Unaire@{Historique\-Operateur\-Unaire}!set\-Resultat@{set\-Resultat}}
+\index{set\-Resultat@{set\-Resultat}!HistoriqueOperateurUnaire@{Historique\-Operateur\-Unaire}}
+\subsubsection[{set\-Resultat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante}$\ast$ {\bf Historique\-Operateur\-Unaire\-::set\-Resultat} (
+\begin{DoxyParamCaption}
+\item[{{\bf Constante} $\ast$}]{res}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_historique_operateur_unaire_a5b538df2478095236db252ea80106163}
+
+
+Méthode permettant de stocker le résultat de la commande dans l'attribut \-\_\-resultat de la classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em res} & Le résultat de l'opération \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le résultat de l'opération 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file historique\-Operateur\-Unaire.\-h.
+
+\hypertarget{class_historique_operateur_unaire_aebd86086fd2ce41cd529035a8140c262}{\index{Historique\-Operateur\-Unaire@{Historique\-Operateur\-Unaire}!undo@{undo}}
+\index{undo@{undo}!HistoriqueOperateurUnaire@{Historique\-Operateur\-Unaire}}
+\subsubsection[{undo}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Historique\-Operateur\-Unaire\-::undo} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_historique_operateur_unaire_aebd86086fd2ce41cd529035a8140c262}
+
+
+Méthode virtuelle pure permettant d'effectuer un \char`\"{}undo\char`\"{} sur la commande courante.  
+
+
+
+Implements \hyperlink{class_historique_ac0247bb67a9535851abe5f76113b4751}{Historique}.
+
+
+
+Definition at line 4 of file historique\-Operateur\-Unaire.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{historique_operateur_unaire_8h}{historique\-Operateur\-Unaire.\-h}\item 
+\hyperlink{historique_operateur_unaire_8cpp}{historique\-Operateur\-Unaire.\-cpp}\end{DoxyCompactItemize}

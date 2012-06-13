@@ -16,7 +16,7 @@ class NombreComplexe;
 
 /*!
  \class Reel
- \brief Classe implémentant l'interface de @link NombreNonComplexe @endlink
+ \brief Classe implémentant l'interface de @link NombreNonComplexe @endlink et permettant de gérer les constantes de type reel.
 */
 class Reel : public NombreNonComplexe {
 private:
@@ -25,18 +25,21 @@ private:
 	*/
     float _val;
 public:
+	/**
+	 \brief Destructeur de la classe.
+	*/
     ~Reel() {}
 	/**
-	 \brief Crée un réel avec les valeurs par défaut 
+	 \brief Constructeur par défaut.
 	*/
     Reel() : _val(0.0) {}
 	/**
-	 \brief Crée un réel avec la valeur passée en paramètre
+	 \brief Constructeur avec paramètre.
 	 \param val La valeur du réel
 	*/
     Reel(float val) : _val(val) {}
     /**
-      \brief Crée un réel avec un constructeur par copie
+      \brief Constructeur par copie.
       \param r Le réel à copier
       */
     Reel(const Reel &r) { _val = r.getVal(); }
@@ -45,7 +48,7 @@ public:
       */
     Reel* clone() const;
 	/**
-	 \brief Getter de la valeur du réel
+	 \brief Getter de la valeur du réel.
 	 \return La valeur du réel
 	 */
     float getVal() const {return _val;}

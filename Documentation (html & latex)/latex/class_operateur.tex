@@ -1,0 +1,196 @@
+\hypertarget{class_operateur}{\section{Operateur Class Reference}
+\label{class_operateur}\index{Operateur@{Operateur}}
+}
+
+
+Classe (utilisant le design pattern strategy) implémentant l'interface de \hyperlink{class_constante}{Constante} et permettant de gérer les constantes de type opérateur (+,-\/,/,$\ast$, sin, cos, etc...).  
+
+
+
+
+{\ttfamily \#include $<$operateur.\-h$>$}
+
+Inheritance diagram for Operateur\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_operateur}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_operateur_a94687115012fbac2cb9b3019bf613398}{Operateur} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_operateur_a3c456363e365eb379607da810738482d}{Operateur} (const Q\-String \&op, int ar)
+\begin{DoxyCompactList}\small\item\em Constructeur avec paramètres. \end{DoxyCompactList}\item 
+\hyperlink{class_operateur}{Operateur} $\ast$ \hyperlink{class_operateur_a77814d91250ee0c65501cea7d135b76c}{clone} () const 
+\begin{DoxyCompactList}\small\item\em Méthode permettant de cloner une constante.  \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_operateur_afdae3d8564054da4d8a8a05efa86a172}{get\-Operateur} () const 
+\begin{DoxyCompactList}\small\item\em Getter de la chaine representant l'operateur. \end{DoxyCompactList}\item 
+int \hyperlink{class_operateur_a91dfb13c9feb888dc50873ed53cae210}{get\-Arite} () const 
+\begin{DoxyCompactList}\small\item\em Getter de l'int representant l'arité \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_operateur_ad49ae9c67adcd3af3a9be0e2bc13c629}{to\-String} () const 
+\begin{DoxyCompactList}\small\item\em Fonction permettant de renvoyer une chaine comprenant la valuation de la constante associé, cette fonction est utilisée dans le cadre de l'affichage des constantes dans la pile.  \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_operateur_a8e517c5d95b239024d8d757d4e79ddf2}{call} (\hyperlink{class_constante}{Constante} $\ast$c1=0, \hyperlink{class_constante}{Constante} $\ast$c2=0)
+\begin{DoxyCompactList}\small\item\em Méthode permettant d'appeler la bonne méthode en fonction de l'opérateur et des deux constantes associées. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe (utilisant le design pattern strategy) implémentant l'interface de \hyperlink{class_constante}{Constante} et permettant de gérer les constantes de type opérateur (+,-\/,/,$\ast$, sin, cos, etc...). 
+
+Definition at line 18 of file operateur.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_operateur_a94687115012fbac2cb9b3019bf613398}{\index{Operateur@{Operateur}!Operateur@{Operateur}}
+\index{Operateur@{Operateur}!Operateur@{Operateur}}
+\subsubsection[{Operateur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Operateur\-::\-Operateur} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_operateur_a94687115012fbac2cb9b3019bf613398}
+
+
+Constructeur par défaut. 
+
+\hypertarget{class_operateur_a3c456363e365eb379607da810738482d}{\index{Operateur@{Operateur}!Operateur@{Operateur}}
+\index{Operateur@{Operateur}!Operateur@{Operateur}}
+\subsubsection[{Operateur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Operateur\-::\-Operateur} (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{op, }
+\item[{int}]{ar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_operateur_a3c456363e365eb379607da810738482d}
+
+
+Constructeur avec paramètres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op} & La chaine représentant l'opérateur \\
+\hline
+{\em ar} & L'arité de l'opérateur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file operateur.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_operateur_a8e517c5d95b239024d8d757d4e79ddf2}{\index{Operateur@{Operateur}!call@{call}}
+\index{call@{call}!Operateur@{Operateur}}
+\subsubsection[{call}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante} $\ast$ {\bf Operateur\-::call} (
+\begin{DoxyParamCaption}
+\item[{{\bf Constante} $\ast$}]{c1 = {\ttfamily 0}, }
+\item[{{\bf Constante} $\ast$}]{c2 = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_operateur_a8e517c5d95b239024d8d757d4e79ddf2}
+
+
+Méthode permettant d'appeler la bonne méthode en fonction de l'opérateur et des deux constantes associées. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c1} & La première opérande (présente dans le cas d'une opération unaire \& binaire) \\
+\hline
+{\em c2} & La seconde opérande (présente dans le cas d'une opération binaire) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le résultat de type \hyperlink{class_constante}{Constante} après avoir appliqué l'opération 
+\end{DoxyReturn}
+
+
+Definition at line 17 of file operateur.\-cpp.
+
+\hypertarget{class_operateur_a77814d91250ee0c65501cea7d135b76c}{\index{Operateur@{Operateur}!clone@{clone}}
+\index{clone@{clone}!Operateur@{Operateur}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Operateur} $\ast$ {\bf Operateur\-::clone} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_operateur_a77814d91250ee0c65501cea7d135b76c}
+
+
+Méthode permettant de cloner une constante.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em Le} & pointeur vers la constante clonée \\
+\hline
+\end{DoxyParams}
+ 
+
+Implements \hyperlink{class_constante_a5769ea385161e02bd2d1bcadefc2c510}{Constante}.
+
+
+
+Definition at line 13 of file operateur.\-cpp.
+
+\hypertarget{class_operateur_a91dfb13c9feb888dc50873ed53cae210}{\index{Operateur@{Operateur}!get\-Arite@{get\-Arite}}
+\index{get\-Arite@{get\-Arite}!Operateur@{Operateur}}
+\subsubsection[{get\-Arite}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Operateur\-::get\-Arite} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_operateur_a91dfb13c9feb888dc50873ed53cae210}
+
+
+Getter de l'int representant l'arité 
+
+\begin{DoxyReturn}{Returns}
+L'arité de l'opérateur 
+\end{DoxyReturn}
+
+
+Definition at line 52 of file operateur.\-h.
+
+\hypertarget{class_operateur_afdae3d8564054da4d8a8a05efa86a172}{\index{Operateur@{Operateur}!get\-Operateur@{get\-Operateur}}
+\index{get\-Operateur@{get\-Operateur}!Operateur@{Operateur}}
+\subsubsection[{get\-Operateur}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String {\bf Operateur\-::get\-Operateur} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_operateur_afdae3d8564054da4d8a8a05efa86a172}
+
+
+Getter de la chaine representant l'operateur. 
+
+\begin{DoxyReturn}{Returns}
+La chaine correspondant à l'opérateur 
+\end{DoxyReturn}
+
+
+Definition at line 47 of file operateur.\-h.
+
+\hypertarget{class_operateur_ad49ae9c67adcd3af3a9be0e2bc13c629}{\index{Operateur@{Operateur}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Operateur@{Operateur}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String {\bf Operateur\-::to\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_operateur_ad49ae9c67adcd3af3a9be0e2bc13c629}
+
+
+Fonction permettant de renvoyer une chaine comprenant la valuation de la constante associé, cette fonction est utilisée dans le cadre de l'affichage des constantes dans la pile.  
+
+\begin{DoxyReturn}{Returns}
+La chaine à afficher dans la pile 
+\end{DoxyReturn}
+ 
+
+Implements \hyperlink{class_constante_ad5ea6850196ee9f86b74c74009a87ab1}{Constante}.
+
+
+
+Definition at line 56 of file operateur.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{operateur_8h}{operateur.\-h}\item 
+\hyperlink{operateur_8cpp}{operateur.\-cpp}\end{DoxyCompactItemize}

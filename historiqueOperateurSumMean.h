@@ -14,7 +14,7 @@
 
 /*!
   \class HistoriqueOperateurSumMean
-  \brief Classe implémentant l'interface @link Historique @endlink et permettant de gérer l'historique des commandes "sum" et "mean"
+  \brief Classe implémentant l'interface @link Historique @endlink et permettant de gérer l'historique des commandes "sum" et "mean".
   */
 class HistoriqueOperateurSumMean : public Historique {
     /**<
@@ -28,15 +28,15 @@ class HistoriqueOperateurSumMean : public Historique {
 public:
     /*!
       \brief Constructeur avec paramètres
-      \param La pile contenant l'ensemble des constantes qui sont sommées au cours d'un "sum" ou d'un "mean"
+      \param La pile contenant l'ensemble des constantes qui sont sommées au cours d'un "sum" ou d'un "mean".
       */
     HistoriqueOperateurSumMean(QStack<Constante*>* c1);
     /*!
-      \brief Destructeur de la classe
+      \brief Destructeur de la classe.
       */
     ~HistoriqueOperateurSumMean() {delete _tabConstante;}
     /*!
-      \brief Méthode permettant de stocker le résultat de la commande dans l'attribut _resultat de la classe
+      \brief Méthode permettant de stocker le résultat de la commande dans l'attribut _resultat de la classe.
       \param res Le résultat de l'opération
       \return Le résultat de l'opération
       */

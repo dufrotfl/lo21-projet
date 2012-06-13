@@ -15,7 +15,7 @@ class NombreComplexe;
 
 /*!
  \class Rationnel
- \brief Classe implémentant l'interface de @link NombreNonComplexe @endlink
+ \brief Classe implémentant l'interface de @link NombreNonComplexe @endlink et permettant de gérer les constantes de type rationnel
 */
 class Rationnel : public NombreNonComplexe {
 private:
@@ -28,19 +28,22 @@ private:
 	*/
     int _denominateur;
 public:
+	/*!
+	\brief Destructeur de la classe.
+	*/
     ~Rationnel() {}
 	/**
-	 \brief Crée un rationnel avec les valeurs par défaut 
+	 \brief Constructeur par défaut.
 	*/
     Rationnel():_numerateur(0),_denominateur(1) {}
 	/**
-	 \brief Crée un rationnel avec les valeurs passées en paramètres
+	 \brief Constructeur avec paramètres.
 	 \param n Le numérateur du rationnel
 	 \param d Le dénominateur du rationnel
 	*/
     Rationnel(int n, int d) throw(LogMessage):_numerateur(n), _denominateur(d) {if(d==0) throw LogMessage("Division par 0 non autorisée.", 1); simplifier();}
     /**
-      \brief Crée un rationnel avec un constructeur par copie
+      \brief Crée un rationnel avec un constructeur par copie.
       \param r Le rationnel à copier
       */
     Rationnel(const Rationnel &r) { _numerateur = r.getNumerateur(); _denominateur = r.getDenominateur(); }
@@ -49,12 +52,12 @@ public:
       */
     Rationnel* clone() const;
     /**
-	 \brief Getter du numérateur de rationnel
+	 \brief Getter du numérateur de rationnel.
 	 \return Le numérateur
 	 */
     int getNumerateur() const {return _numerateur;}
 	/**
-	 \brief Getter du dénominateur de rationnel
+	 \brief Getter du dénominateur de rationnel.
 	 \return Le dénominateur
 	 */
     int getDenominateur() const {return _denominateur;}
@@ -87,14 +90,14 @@ public:
       */
     float getFloatVal() const { return (float)_numerateur/(float)_denominateur;}
     /*!
-      \brief Méthode permettant de renvoyer le pgcd des deux nombres passés en paramètres
+      \brief Méthode permettant de renvoyer le pgcd des deux nombres passés en paramètres.
       \param a La première opérande
       \param b La seconde opérande
       \return Le pgcd des deux nombres
       */
     int pgcd(int a, int b) const;
     /*!
-      \brief Méthode permettant de simplifier l'objet appelant(le rationnel) en appliquant le pgcd et ainsi simplifier le rationnel
+      \brief Méthode permettant de simplifier l'objet appelant(le rationnel) en appliquant le pgcd et ainsi simplifier le rationnel.
       */
     void simplifier();
 };

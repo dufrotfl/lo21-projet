@@ -1,0 +1,382 @@
+\hypertarget{class_pile}{\section{Pile Class Reference}
+\label{class_pile}\index{Pile@{Pile}}
+}
+
+
+Classe permettant de gérer la pile d'éléments et également l'historique de cette pile.  
+
+
+
+
+{\ttfamily \#include $<$pile.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_pile_ab44e927107b28f5f3ac7697d10e0a739}{Pile} ()
+\begin{DoxyCompactList}\small\item\em Initialise la pile avec des valeurs par défauts. \end{DoxyCompactList}\item 
+\hyperlink{class_pile_ab2d1398d675586ff34994e2b109df152}{$\sim$\-Pile} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la \hyperlink{class_pile}{Pile}. \end{DoxyCompactList}\item 
+void \hyperlink{class_pile_a1bf6eb327e81b7eab70c0d3699a11d44}{push} (\hyperlink{class_constante}{Constante} $\ast$constante)
+\begin{DoxyCompactList}\small\item\em Méthode permettant d'ajouter un élément à la liste. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_pile_a2bbdc329f485cd017f8cbf88456ae68a}{pop} ()  throw (\-Log\-Message)
+\begin{DoxyCompactList}\small\item\em Méthode permettant d'enlever un élément de la liste et de la renvoyer. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_pile_ab379695209bed07fbcd9d2ca6ee6cf84}{sommet} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de retourner le sommet de la pile. \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_pile_ad6dfffef3f69d3e51177ed9c5086907c}{get\-Pile\-String} () const 
+\begin{DoxyCompactList}\small\item\em Méthode permettant de retourner une Q\-Strinf représentant tout les éléments mis bout à bout, cette méthode est notamment utilisé dans la classe \hyperlink{}{Contexte}. \end{DoxyCompactList}\item 
+int \hyperlink{class_pile_a9dc49f9322d3869843843d4a4fd13a5e}{get\-Pile\-Affichage\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Méthode permettant de récupérer la taille de la pile contenant les \hyperlink{class_constante}{Constante}. \end{DoxyCompactList}\item 
+void \hyperlink{class_pile_ab1af47a73ec38e317baca0263ba58365}{set\-Nb\-Elem\-Affichable} (int i)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de définir le nombre de \hyperlink{class_constante}{Constante} qui seront affichées dans la pile d'affichage. \end{DoxyCompactList}\item 
+void \hyperlink{class_pile_abcfa651f8ef3f2b42ecbbfc8e23b1cbd}{ajoute\-Historique} (\hyperlink{class_historique}{Historique} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Méthode permettant d'ajouter un nouvel élément de type \hyperlink{class_historique}{Historique} dans la liste des historiques. \end{DoxyCompactList}\item 
+void \hyperlink{class_pile_a7488ed257c6ceb16ed57a9fffb0726d5}{drop} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de supprimer le dernier élément insérer dans la pile. \end{DoxyCompactList}\item 
+void \hyperlink{class_pile_aa3991438f190580607d7bbbd50ecc0c3}{clear} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de nettoyer tout les éléments de la pile. \end{DoxyCompactList}\item 
+void \hyperlink{class_pile_a081f7843d01cae1f0f7be7d92e46d5d2}{dup} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de dupliquer le sommet de la pile. \end{DoxyCompactList}\item 
+void \hyperlink{class_pile_a1a19ce2a4a6a76286fae8243a1f9e247}{swap} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Méthode permettant d'échanger l'ordre de deux éléments de la pile. \end{DoxyCompactList}\item 
+void \hyperlink{class_pile_ae09e2cf01c21b58a6c2c4efee101c158}{sum} (int x)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de faire la somme des x premiers éléments de la pile. \end{DoxyCompactList}\item 
+void \hyperlink{class_pile_a1daebba5bd1d6c6d79de63728cc892a9}{mean} (int x)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de faire la moyenne des x premiers éléments de la pile. \end{DoxyCompactList}\item 
+void \hyperlink{class_pile_aa8319a2921d86236d135cff700a5f833}{redo} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de rétablir la derniere opération qui a été annulée. \end{DoxyCompactList}\item 
+void \hyperlink{class_pile_af91a4b277236024aa5aab9ef410881bb}{undo} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant d'annuler la derniere opération qui a été effectuée. \end{DoxyCompactList}\item 
+void \hyperlink{class_pile_aed9e5c3126ffdde3b35217f8235df938}{affiche} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant d'afficher les éléments contenus dans la pile dans l'interface graphique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe permettant de gérer la pile d'éléments et également l'historique de cette pile. 
+
+Definition at line 20 of file pile.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_pile_ab44e927107b28f5f3ac7697d10e0a739}{\index{Pile@{Pile}!Pile@{Pile}}
+\index{Pile@{Pile}!Pile@{Pile}}
+\subsubsection[{Pile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pile\-::\-Pile} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_ab44e927107b28f5f3ac7697d10e0a739}
+
+
+Initialise la pile avec des valeurs par défauts. 
+
+
+
+Definition at line 9 of file pile.\-cpp.
+
+\hypertarget{class_pile_ab2d1398d675586ff34994e2b109df152}{\index{Pile@{Pile}!$\sim$\-Pile@{$\sim$\-Pile}}
+\index{$\sim$\-Pile@{$\sim$\-Pile}!Pile@{Pile}}
+\subsubsection[{$\sim$\-Pile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pile\-::$\sim$\-Pile} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_ab2d1398d675586ff34994e2b109df152}
+
+
+Destructeur de la \hyperlink{class_pile}{Pile}. 
+
+
+
+Definition at line 17 of file pile.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pile_aed9e5c3126ffdde3b35217f8235df938}{\index{Pile@{Pile}!affiche@{affiche}}
+\index{affiche@{affiche}!Pile@{Pile}}
+\subsubsection[{affiche}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Pile\-::affiche} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_aed9e5c3126ffdde3b35217f8235df938}
+
+
+Méthode permettant d'afficher les éléments contenus dans la pile dans l'interface graphique. 
+
+
+
+Definition at line 152 of file pile.\-cpp.
+
+\hypertarget{class_pile_abcfa651f8ef3f2b42ecbbfc8e23b1cbd}{\index{Pile@{Pile}!ajoute\-Historique@{ajoute\-Historique}}
+\index{ajoute\-Historique@{ajoute\-Historique}!Pile@{Pile}}
+\subsubsection[{ajoute\-Historique}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Pile\-::ajoute\-Historique} (
+\begin{DoxyParamCaption}
+\item[{{\bf Historique} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_pile_abcfa651f8ef3f2b42ecbbfc8e23b1cbd}
+
+
+Méthode permettant d'ajouter un nouvel élément de type \hyperlink{class_historique}{Historique} dans la liste des historiques. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & L'élement de type \hyperlink{class_historique}{Historique} à ajouter \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file pile.\-h.
+
+\hypertarget{class_pile_aa3991438f190580607d7bbbd50ecc0c3}{\index{Pile@{Pile}!clear@{clear}}
+\index{clear@{clear}!Pile@{Pile}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Pile\-::clear} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_aa3991438f190580607d7bbbd50ecc0c3}
+
+
+Méthode permettant de nettoyer tout les éléments de la pile. 
+
+
+
+Definition at line 28 of file pile.\-cpp.
+
+\hypertarget{class_pile_a7488ed257c6ceb16ed57a9fffb0726d5}{\index{Pile@{Pile}!drop@{drop}}
+\index{drop@{drop}!Pile@{Pile}}
+\subsubsection[{drop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Pile\-::drop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a7488ed257c6ceb16ed57a9fffb0726d5}
+
+
+Méthode permettant de supprimer le dernier élément insérer dans la pile. 
+
+
+
+Definition at line 33 of file pile.\-cpp.
+
+\hypertarget{class_pile_a081f7843d01cae1f0f7be7d92e46d5d2}{\index{Pile@{Pile}!dup@{dup}}
+\index{dup@{dup}!Pile@{Pile}}
+\subsubsection[{dup}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Pile\-::dup} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a081f7843d01cae1f0f7be7d92e46d5d2}
+
+
+Méthode permettant de dupliquer le sommet de la pile. 
+
+
+
+Definition at line 39 of file pile.\-cpp.
+
+\hypertarget{class_pile_a9dc49f9322d3869843843d4a4fd13a5e}{\index{Pile@{Pile}!get\-Pile\-Affichage\-Size@{get\-Pile\-Affichage\-Size}}
+\index{get\-Pile\-Affichage\-Size@{get\-Pile\-Affichage\-Size}!Pile@{Pile}}
+\subsubsection[{get\-Pile\-Affichage\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Pile\-::get\-Pile\-Affichage\-Size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_pile_a9dc49f9322d3869843843d4a4fd13a5e}
+
+
+Méthode permettant de récupérer la taille de la pile contenant les \hyperlink{class_constante}{Constante}. 
+
+\begin{DoxyReturn}{Returns}
+La taille de la pile 
+\end{DoxyReturn}
+
+
+Definition at line 74 of file pile.\-h.
+
+\hypertarget{class_pile_ad6dfffef3f69d3e51177ed9c5086907c}{\index{Pile@{Pile}!get\-Pile\-String@{get\-Pile\-String}}
+\index{get\-Pile\-String@{get\-Pile\-String}!Pile@{Pile}}
+\subsubsection[{get\-Pile\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String {\bf Pile\-::get\-Pile\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_pile_ad6dfffef3f69d3e51177ed9c5086907c}
+
+
+Méthode permettant de retourner une Q\-Strinf représentant tout les éléments mis bout à bout, cette méthode est notamment utilisé dans la classe \hyperlink{}{Contexte}. 
+
+
+
+Definition at line 166 of file pile.\-cpp.
+
+\hypertarget{class_pile_a1daebba5bd1d6c6d79de63728cc892a9}{\index{Pile@{Pile}!mean@{mean}}
+\index{mean@{mean}!Pile@{Pile}}
+\subsubsection[{mean}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Pile\-::mean} (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a1daebba5bd1d6c6d79de63728cc892a9}
+
+
+Méthode permettant de faire la moyenne des x premiers éléments de la pile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Le nombre d'éléments \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 48 of file pile.\-cpp.
+
+\hypertarget{class_pile_a2bbdc329f485cd017f8cbf88456ae68a}{\index{Pile@{Pile}!pop@{pop}}
+\index{pop@{pop}!Pile@{Pile}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante} $\ast$ {\bf Pile\-::pop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throw ({\bf Log\-Message})}}\label{class_pile_a2bbdc329f485cd017f8cbf88456ae68a}
+
+
+Méthode permettant d'enlever un élément de la liste et de la renvoyer. 
+
+\begin{DoxyReturn}{Returns}
+La constante enlevée de la liste 
+\end{DoxyReturn}
+
+
+Definition at line 138 of file pile.\-cpp.
+
+\hypertarget{class_pile_a1bf6eb327e81b7eab70c0d3699a11d44}{\index{Pile@{Pile}!push@{push}}
+\index{push@{push}!Pile@{Pile}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Pile\-::push} (
+\begin{DoxyParamCaption}
+\item[{{\bf Constante} $\ast$}]{constante}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a1bf6eb327e81b7eab70c0d3699a11d44}
+
+
+Méthode permettant d'ajouter un élément à la liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em constante} & La constante à ajouter à la liste \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 147 of file pile.\-cpp.
+
+\hypertarget{class_pile_aa8319a2921d86236d135cff700a5f833}{\index{Pile@{Pile}!redo@{redo}}
+\index{redo@{redo}!Pile@{Pile}}
+\subsubsection[{redo}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Pile\-::redo} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_aa8319a2921d86236d135cff700a5f833}
+
+
+Méthode permettant de rétablir la derniere opération qui a été annulée. 
+
+
+
+Definition at line 110 of file pile.\-cpp.
+
+\hypertarget{class_pile_ab1af47a73ec38e317baca0263ba58365}{\index{Pile@{Pile}!set\-Nb\-Elem\-Affichable@{set\-Nb\-Elem\-Affichable}}
+\index{set\-Nb\-Elem\-Affichable@{set\-Nb\-Elem\-Affichable}!Pile@{Pile}}
+\subsubsection[{set\-Nb\-Elem\-Affichable}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Pile\-::set\-Nb\-Elem\-Affichable} (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_pile_ab1af47a73ec38e317baca0263ba58365}
+
+
+Méthode permettant de définir le nombre de \hyperlink{class_constante}{Constante} qui seront affichées dans la pile d'affichage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Le nombre d'élément que l'on veut afficher \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 79 of file pile.\-h.
+
+\hypertarget{class_pile_ab379695209bed07fbcd9d2ca6ee6cf84}{\index{Pile@{Pile}!sommet@{sommet}}
+\index{sommet@{sommet}!Pile@{Pile}}
+\subsubsection[{sommet}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante} $\ast$ {\bf Pile\-::sommet} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_ab379695209bed07fbcd9d2ca6ee6cf84}
+
+
+Méthode permettant de retourner le sommet de la pile. 
+
+\begin{DoxyReturn}{Returns}
+Le sommet de la pile de type \hyperlink{class_constante}{Constante} 
+\end{DoxyReturn}
+
+
+Definition at line 130 of file pile.\-cpp.
+
+\hypertarget{class_pile_ae09e2cf01c21b58a6c2c4efee101c158}{\index{Pile@{Pile}!sum@{sum}}
+\index{sum@{sum}!Pile@{Pile}}
+\subsubsection[{sum}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Pile\-::sum} (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{class_pile_ae09e2cf01c21b58a6c2c4efee101c158}
+
+
+Méthode permettant de faire la somme des x premiers éléments de la pile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Le nombre d'éléments \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 78 of file pile.\-cpp.
+
+\hypertarget{class_pile_a1a19ce2a4a6a76286fae8243a1f9e247}{\index{Pile@{Pile}!swap@{swap}}
+\index{swap@{swap}!Pile@{Pile}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Pile\-::swap} (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a1a19ce2a4a6a76286fae8243a1f9e247}
+
+
+Méthode permettant d'échanger l'ordre de deux éléments de la pile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & L'indice du premier élément \\
+\hline
+{\em y} & L'indice du deuxième élément \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 100 of file pile.\-cpp.
+
+\hypertarget{class_pile_af91a4b277236024aa5aab9ef410881bb}{\index{Pile@{Pile}!undo@{undo}}
+\index{undo@{undo}!Pile@{Pile}}
+\subsubsection[{undo}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Pile\-::undo} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_af91a4b277236024aa5aab9ef410881bb}
+
+
+Méthode permettant d'annuler la derniere opération qui a été effectuée. 
+
+
+
+Definition at line 120 of file pile.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{pile_8h}{pile.\-h}\item 
+\hyperlink{pile_8cpp}{pile.\-cpp}\end{DoxyCompactItemize}

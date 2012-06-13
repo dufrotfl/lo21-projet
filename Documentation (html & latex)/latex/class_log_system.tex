@@ -1,0 +1,136 @@
+\hypertarget{class_log_system}{\section{Log\-System Class Reference}
+\label{class_log_system}\index{Log\-System@{Log\-System}}
+}
+
+
+Classe (utilisant le Design Pattern Singleton) permettant de gérer l'écriture des messages de log dans le fichier correspondant.  
+
+
+
+
+{\ttfamily \#include $<$log\-System.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_log_system_a38444fac316292c4288405ae11491cd4}{add\-Message} (const \hyperlink{class_log_message}{Log\-Message} \&log)
+\begin{DoxyCompactList}\small\item\em Méthode permettant d'écrire un message\-Log dans le fichier de Log. \end{DoxyCompactList}\item 
+void \hyperlink{class_log_system_ae207ba8afc4d2ea32a7e3e8c8dcf2048}{reset} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de réinitialiser le fichier de log. \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_log_system_aa80c476e8d2bd057887665f5438735a0}{initialisation\-Fichier} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant d'établir l'entête du fichier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_log_system}{Log\-System} $\ast$ \hyperlink{class_log_system_a787ad45b69b64fb8f883555bd4f0ba93}{get\-Instance} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant d'accéder à l'instance de la classe \hyperlink{class_log_system}{Log\-System}. \end{DoxyCompactList}\item 
+static void \hyperlink{class_log_system_ace6193771588639979fb177c4fa47b4e}{free\-Instance} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de libérer l'instance de la classe \hyperlink{class_log_system}{Log\-System}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe (utilisant le Design Pattern Singleton) permettant de gérer l'écriture des messages de log dans le fichier correspondant. 
+
+Definition at line 20 of file log\-System.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_log_system_a38444fac316292c4288405ae11491cd4}{\index{Log\-System@{Log\-System}!add\-Message@{add\-Message}}
+\index{add\-Message@{add\-Message}!LogSystem@{Log\-System}}
+\subsubsection[{add\-Message}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Log\-System\-::add\-Message} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Log\-Message} \&}]{log}
+\end{DoxyParamCaption}
+)}}\label{class_log_system_a38444fac316292c4288405ae11491cd4}
+
+
+Méthode permettant d'écrire un message\-Log dans le fichier de Log. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & Le message à ajouter dans le fichier de log mais aussi sur l'interface graphique. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file log\-System.\-cpp.
+
+\hypertarget{class_log_system_ace6193771588639979fb177c4fa47b4e}{\index{Log\-System@{Log\-System}!free\-Instance@{free\-Instance}}
+\index{free\-Instance@{free\-Instance}!LogSystem@{Log\-System}}
+\subsubsection[{free\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Log\-System\-::free\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_log_system_ace6193771588639979fb177c4fa47b4e}
+
+
+Méthode permettant de libérer l'instance de la classe \hyperlink{class_log_system}{Log\-System}. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file log\-System.\-cpp.
+
+\hypertarget{class_log_system_a787ad45b69b64fb8f883555bd4f0ba93}{\index{Log\-System@{Log\-System}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!LogSystem@{Log\-System}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Log\-System} $\ast$ {\bf Log\-System\-::get\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_log_system_a787ad45b69b64fb8f883555bd4f0ba93}
+
+
+Méthode permettant d'accéder à l'instance de la classe \hyperlink{class_log_system}{Log\-System}. 
+
+\begin{DoxyReturn}{Returns}
+instance de \hyperlink{class_log_system}{Log\-System} 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file log\-System.\-cpp.
+
+\hypertarget{class_log_system_aa80c476e8d2bd057887665f5438735a0}{\index{Log\-System@{Log\-System}!initialisation\-Fichier@{initialisation\-Fichier}}
+\index{initialisation\-Fichier@{initialisation\-Fichier}!LogSystem@{Log\-System}}
+\subsubsection[{initialisation\-Fichier}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String {\bf Log\-System\-::initialisation\-Fichier} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_log_system_aa80c476e8d2bd057887665f5438735a0}
+
+
+Méthode permettant d'établir l'entête du fichier. 
+
+\begin{DoxyReturn}{Returns}
+La chaine contenant l'entete du fichier 
+\end{DoxyReturn}
+
+
+Definition at line 72 of file log\-System.\-cpp.
+
+\hypertarget{class_log_system_ae207ba8afc4d2ea32a7e3e8c8dcf2048}{\index{Log\-System@{Log\-System}!reset@{reset}}
+\index{reset@{reset}!LogSystem@{Log\-System}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Log\-System\-::reset} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_log_system_ae207ba8afc4d2ea32a7e3e8c8dcf2048}
+
+
+Méthode permettant de réinitialiser le fichier de log. 
+
+
+
+Definition at line 64 of file log\-System.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{log_system_8h}{log\-System.\-h}\item 
+\hyperlink{log_system_8cpp}{log\-System.\-cpp}\end{DoxyCompactItemize}

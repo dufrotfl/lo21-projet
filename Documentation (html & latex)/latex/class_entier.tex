@@ -1,0 +1,364 @@
+\hypertarget{class_entier}{\section{Entier Class Reference}
+\label{class_entier}\index{Entier@{Entier}}
+}
+
+
+Classe implémentant l'interface de \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} et permettant de gérer des constantes de type entier.  
+
+
+
+
+{\ttfamily \#include $<$entier.\-h$>$}
+
+Inheritance diagram for Entier\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_entier}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_entier_a397ae64c08010e930f7d5c7275724f97}{$\sim$\-Entier} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe. \end{DoxyCompactList}\item 
+\hyperlink{class_entier_a1f0c17b51099803a73a4ec240c5587db}{Entier} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_entier_a778672cb4b285a4b69b683f1c27a1340}{Entier} (int v)
+\begin{DoxyCompactList}\small\item\em Constructeur avec paramètre. \end{DoxyCompactList}\item 
+\hyperlink{class_entier}{Entier} $\ast$ \hyperlink{class_entier_aca1eef6372c8d74274bffd435888ef57}{clone} () const 
+\begin{DoxyCompactList}\small\item\em Méthode permettant de cloner une constante.  \end{DoxyCompactList}\item 
+\hyperlink{class_entier_a5302773b98799a8d46381a0a7a0e6f01}{Entier} (const \hyperlink{class_entier}{Entier} \&e)
+\begin{DoxyCompactList}\small\item\em Crée un entier par constructeur par copie. \end{DoxyCompactList}\item 
+int \hyperlink{class_entier_ac6b87a29547b9814078220abb1b492fd}{get\-Val} () const 
+\begin{DoxyCompactList}\small\item\em Getter de la valeur de l'entier. \end{DoxyCompactList}\item 
+void \hyperlink{class_entier_a15a3d4166f1182bd87d0c1ee523d1deb}{fact} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de transformer le nombre en sa factorielle. \end{DoxyCompactList}\item 
+void \hyperlink{class_entier_a0f4e0e38e773c7af216e8aca968f6db6}{mod} (int m)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de transformer le nombre en son reste de la division du nombre par m. \end{DoxyCompactList}\item 
+void \hyperlink{class_entier_a91748c3918f8eed1c188f5175328cf1a}{sign} ()
+\begin{DoxyCompactList}\small\item\em Methode permettant de transformer le nombre en son opposé.  \end{DoxyCompactList}\item 
+void \hyperlink{class_entier_a66dff979b86690f26360fd3a93b25537}{sqr} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de transformer le nombre en son carré.  \end{DoxyCompactList}\item 
+void \hyperlink{class_entier_a8fbf1379f26622554393e48df17867fd}{cube} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de transformer le nombre en son cube.  \end{DoxyCompactList}\item 
+void \hyperlink{class_entier_ae44b026487bcd10fab16696eff3b49a8}{pow} (\hyperlink{class_entier}{Entier} $\ast$)
+\begin{DoxyCompactList}\small\item\em Méthode permettant d'effectuer la puissance d'un nombre.  \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_entier_aa960356dfeae8af6dfa2cd25136a1a6f}{to\-String} () const 
+\begin{DoxyCompactList}\small\item\em Fonction permettant de renvoyer une chaine comprenant la valuation de la constante associé, cette fonction est utilisée dans le cadre de l'affichage des constantes dans la pile.  \end{DoxyCompactList}\item 
+float \hyperlink{class_entier_a4ce7f7cddbaa2a28d244444d18ef55dc}{get\-Float\-Val} () const 
+\begin{DoxyCompactList}\small\item\em Méthode permettant de récupérer la valeur du \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} sous la forme d'un réel.  \end{DoxyCompactList}\item 
+\hyperlink{class_nombre_complexe}{Nombre\-Complexe} $\ast$ \hyperlink{class_entier_abadca482fe27a3302f874e9e7c109579}{to\-Nombre\-Complexe} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de convertir un \hyperlink{class_nombre}{Nombre} en son équivalent en \hyperlink{class_nombre_complexe}{Nombre\-Complexe}.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe implémentant l'interface de \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} et permettant de gérer des constantes de type entier. 
+
+Definition at line 20 of file entier.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_entier_a397ae64c08010e930f7d5c7275724f97}{\index{Entier@{Entier}!$\sim$\-Entier@{$\sim$\-Entier}}
+\index{$\sim$\-Entier@{$\sim$\-Entier}!Entier@{Entier}}
+\subsubsection[{$\sim$\-Entier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entier\-::$\sim$\-Entier} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_entier_a397ae64c08010e930f7d5c7275724f97}
+
+
+Destructeur de la classe. 
+
+
+
+Definition at line 30 of file entier.\-h.
+
+\hypertarget{class_entier_a1f0c17b51099803a73a4ec240c5587db}{\index{Entier@{Entier}!Entier@{Entier}}
+\index{Entier@{Entier}!Entier@{Entier}}
+\subsubsection[{Entier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entier\-::\-Entier} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_entier_a1f0c17b51099803a73a4ec240c5587db}
+
+
+Constructeur par défaut. 
+
+
+
+Definition at line 34 of file entier.\-h.
+
+\hypertarget{class_entier_a778672cb4b285a4b69b683f1c27a1340}{\index{Entier@{Entier}!Entier@{Entier}}
+\index{Entier@{Entier}!Entier@{Entier}}
+\subsubsection[{Entier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entier\-::\-Entier} (
+\begin{DoxyParamCaption}
+\item[{int}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_entier_a778672cb4b285a4b69b683f1c27a1340}
+
+
+Constructeur avec paramètre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & La valeur de l'entier \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file entier.\-h.
+
+\hypertarget{class_entier_a5302773b98799a8d46381a0a7a0e6f01}{\index{Entier@{Entier}!Entier@{Entier}}
+\index{Entier@{Entier}!Entier@{Entier}}
+\subsubsection[{Entier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entier\-::\-Entier} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Entier} \&}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_entier_a5302773b98799a8d46381a0a7a0e6f01}
+
+
+Crée un entier par constructeur par copie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & L'entier à copier \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 48 of file entier.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_entier_aca1eef6372c8d74274bffd435888ef57}{\index{Entier@{Entier}!clone@{clone}}
+\index{clone@{clone}!Entier@{Entier}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entier} $\ast$ {\bf Entier\-::clone} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_entier_aca1eef6372c8d74274bffd435888ef57}
+
+
+Méthode permettant de cloner une constante.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em Le} & pointeur vers la constante clonée \\
+\hline
+\end{DoxyParams}
+ 
+
+Implements \hyperlink{class_constante_a5769ea385161e02bd2d1bcadefc2c510}{Constante}.
+
+
+
+Definition at line 10 of file entier.\-cpp.
+
+\hypertarget{class_entier_a8fbf1379f26622554393e48df17867fd}{\index{Entier@{Entier}!cube@{cube}}
+\index{cube@{cube}!Entier@{Entier}}
+\subsubsection[{cube}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Entier\-::cube} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_entier_a8fbf1379f26622554393e48df17867fd}
+
+
+Méthode permettant de transformer le nombre en son cube.  
+
+
+
+Implements \hyperlink{class_nombre_aed65cb1449858c078e91610afb3a6447}{Nombre}.
+
+
+
+Definition at line 74 of file entier.\-h.
+
+\hypertarget{class_entier_a15a3d4166f1182bd87d0c1ee523d1deb}{\index{Entier@{Entier}!fact@{fact}}
+\index{fact@{fact}!Entier@{Entier}}
+\subsubsection[{fact}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Entier\-::fact} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_entier_a15a3d4166f1182bd87d0c1ee523d1deb}
+
+
+Méthode permettant de transformer le nombre en sa factorielle. 
+
+
+
+Definition at line 57 of file entier.\-h.
+
+\hypertarget{class_entier_a4ce7f7cddbaa2a28d244444d18ef55dc}{\index{Entier@{Entier}!get\-Float\-Val@{get\-Float\-Val}}
+\index{get\-Float\-Val@{get\-Float\-Val}!Entier@{Entier}}
+\subsubsection[{get\-Float\-Val}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Entier\-::get\-Float\-Val} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_entier_a4ce7f7cddbaa2a28d244444d18ef55dc}
+
+
+Méthode permettant de récupérer la valeur du \hyperlink{class_nombre_non_complexe}{Nombre\-Non\-Complexe} sous la forme d'un réel.  
+
+\begin{DoxyReturn}{Returns}
+La valeur réelle 
+\end{DoxyReturn}
+ 
+
+Implements \hyperlink{class_nombre_non_complexe_ad148f1e2a4626ecf279e91d04d1aff24}{Nombre\-Non\-Complexe}.
+
+
+
+Definition at line 86 of file entier.\-h.
+
+\hypertarget{class_entier_ac6b87a29547b9814078220abb1b492fd}{\index{Entier@{Entier}!get\-Val@{get\-Val}}
+\index{get\-Val@{get\-Val}!Entier@{Entier}}
+\subsubsection[{get\-Val}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Entier\-::get\-Val} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_entier_ac6b87a29547b9814078220abb1b492fd}
+
+
+Getter de la valeur de l'entier. 
+
+\begin{DoxyReturn}{Returns}
+La valeur de l'entier 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file entier.\-h.
+
+\hypertarget{class_entier_a0f4e0e38e773c7af216e8aca968f6db6}{\index{Entier@{Entier}!mod@{mod}}
+\index{mod@{mod}!Entier@{Entier}}
+\subsubsection[{mod}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Entier\-::mod} (
+\begin{DoxyParamCaption}
+\item[{int}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_entier_a0f4e0e38e773c7af216e8aca968f6db6}
+
+
+Méthode permettant de transformer le nombre en son reste de la division du nombre par m. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Le diviseur \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 62 of file entier.\-h.
+
+\hypertarget{class_entier_ae44b026487bcd10fab16696eff3b49a8}{\index{Entier@{Entier}!pow@{pow}}
+\index{pow@{pow}!Entier@{Entier}}
+\subsubsection[{pow}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Entier\-::pow} (
+\begin{DoxyParamCaption}
+\item[{{\bf Entier} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_entier_ae44b026487bcd10fab16696eff3b49a8}
+
+
+Méthode permettant d'effectuer la puissance d'un nombre.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Un entier correspondant à la puissance \\
+\hline
+\end{DoxyParams}
+ 
+
+Implements \hyperlink{class_nombre_non_complexe_a859175bae737e01e73316632f1083d07}{Nombre\-Non\-Complexe}.
+
+
+
+Definition at line 14 of file entier.\-cpp.
+
+\hypertarget{class_entier_a91748c3918f8eed1c188f5175328cf1a}{\index{Entier@{Entier}!sign@{sign}}
+\index{sign@{sign}!Entier@{Entier}}
+\subsubsection[{sign}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Entier\-::sign} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_entier_a91748c3918f8eed1c188f5175328cf1a}
+
+
+Methode permettant de transformer le nombre en son opposé.  
+
+
+
+Implements \hyperlink{class_nombre_a718d616bbf2e5e8f133df958e8bb3d7f}{Nombre}.
+
+
+
+Definition at line 66 of file entier.\-h.
+
+\hypertarget{class_entier_a66dff979b86690f26360fd3a93b25537}{\index{Entier@{Entier}!sqr@{sqr}}
+\index{sqr@{sqr}!Entier@{Entier}}
+\subsubsection[{sqr}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Entier\-::sqr} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_entier_a66dff979b86690f26360fd3a93b25537}
+
+
+Méthode permettant de transformer le nombre en son carré.  
+
+
+
+Implements \hyperlink{class_nombre_a5be0e66e9bbec508d236ba8dbe1eb6bc}{Nombre}.
+
+
+
+Definition at line 70 of file entier.\-h.
+
+\hypertarget{class_entier_abadca482fe27a3302f874e9e7c109579}{\index{Entier@{Entier}!to\-Nombre\-Complexe@{to\-Nombre\-Complexe}}
+\index{to\-Nombre\-Complexe@{to\-Nombre\-Complexe}!Entier@{Entier}}
+\subsubsection[{to\-Nombre\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nombre\-Complexe} $\ast$ {\bf Entier\-::to\-Nombre\-Complexe} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_entier_abadca482fe27a3302f874e9e7c109579}
+
+
+Méthode permettant de convertir un \hyperlink{class_nombre}{Nombre} en son équivalent en \hyperlink{class_nombre_complexe}{Nombre\-Complexe}.  
+
+\begin{DoxyReturn}{Returns}
+Le pointeur vers le nombre\-Complexe nouvellement crée 
+\end{DoxyReturn}
+ 
+
+Implements \hyperlink{class_nombre_a11092e1fcde81c05b4c518398baf3691}{Nombre}.
+
+
+
+Definition at line 6 of file entier.\-cpp.
+
+\hypertarget{class_entier_aa960356dfeae8af6dfa2cd25136a1a6f}{\index{Entier@{Entier}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Entier@{Entier}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String {\bf Entier\-::to\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_entier_aa960356dfeae8af6dfa2cd25136a1a6f}
+
+
+Fonction permettant de renvoyer une chaine comprenant la valuation de la constante associé, cette fonction est utilisée dans le cadre de l'affichage des constantes dans la pile.  
+
+\begin{DoxyReturn}{Returns}
+La chaine à afficher dans la pile 
+\end{DoxyReturn}
+ 
+
+Implements \hyperlink{class_constante_ad5ea6850196ee9f86b74c74009a87ab1}{Constante}.
+
+
+
+Definition at line 82 of file entier.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{entier_8h}{entier.\-h}\item 
+\hyperlink{entier_8cpp}{entier.\-cpp}\end{DoxyCompactItemize}

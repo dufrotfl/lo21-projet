@@ -22,12 +22,12 @@ class HistoriqueOperateurPush : public Historique {
     Constante* _constante1;
 public:
     /*!
-      \brief Constructeur avec paramètre
+      \brief Constructeur avec paramètre.
       \param c1 La constante qui est insérée au cours d'un push
       */
     HistoriqueOperateurPush(Constante* c1):_constante1(c1->clone()) {}
     /*!
-      \brief Destructeur de la classe
+      \brief Destructeur de la classe.
       */
     ~HistoriqueOperateurPush() {delete _constante1;}
     /*!

@@ -1,0 +1,323 @@
+\hypertarget{class_settings}{\section{Settings Class Reference}
+\label{class_settings}\index{Settings@{Settings}}
+}
+
+
+Classe (utilisant le Design Pattern Singleton) permettant de gerer les paramètres de la calculatrice (utilisee dans le cadre de la sauvegarde de contexte notamment).  
+
+
+
+
+{\ttfamily \#include $<$settings.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_settings_adb4ecdba67a8afd48e814d158660a1b3}{Utilisation\-De\-Complexe} \{ \hyperlink{class_settings_adb4ecdba67a8afd48e814d158660a1b3ab3f9ae5d2d8d1dbba5157cebb6eba9b1}{C\-O\-M\-P\-L\-E\-X\-E}, 
+\hyperlink{class_settings_adb4ecdba67a8afd48e814d158660a1b3a13cf89257e83656f5747caea9cbd5b4a}{N\-O\-N\-\_\-\-C\-O\-M\-P\-L\-E\-X\-E}
+ \}
+\begin{DoxyCompactList}\small\item\em Le reglage concernant l'utilisation de complexe. \end{DoxyCompactList}\item 
+enum \hyperlink{class_settings_a7c410b290dcc4eb1374afde392f60bfc}{Angles} \{ \hyperlink{class_settings_a7c410b290dcc4eb1374afde392f60bfca1b0c8eaf991d4d335a3832f2a9796a35}{D\-E\-G\-R\-E\-S}, 
+\hyperlink{class_settings_a7c410b290dcc4eb1374afde392f60bfca55630b14579bcbf00b72a0569e5e2709}{R\-A\-D\-I\-A\-N\-S}
+ \}
+\begin{DoxyCompactList}\small\item\em Le reglage concernant l'unite des angles. \end{DoxyCompactList}\item 
+enum \hyperlink{class_settings_a2d04760870d51e7ca8692b99914feee5}{Type\-Constante} \{ \hyperlink{class_settings_a2d04760870d51e7ca8692b99914feee5af0e47cd4d31f34f37f884a4f0fede3b1}{E\-N\-T\-I\-E\-R}, 
+\hyperlink{class_settings_a2d04760870d51e7ca8692b99914feee5a459bca6cedd517b3bb4a14ac9f9b5275}{R\-A\-T\-I\-O\-N\-N\-E\-L}, 
+\hyperlink{class_settings_a2d04760870d51e7ca8692b99914feee5a505d204db40572a1d7463805246fca41}{R\-E\-E\-L}
+ \}
+\begin{DoxyCompactList}\small\item\em Le reglage concernant le type de constante en cours d'utilisation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_settings_adb4ecdba67a8afd48e814d158660a1b3}{Utilisation\-De\-Complexe} \hyperlink{class_settings_a226a2f433d78c004337fe92d4f2c0de0}{get\-Utilisation\-De\-Complexe} ()
+\begin{DoxyCompactList}\small\item\em getter du reglage concernant l'utilisation des complexes. \end{DoxyCompactList}\item 
+void \hyperlink{class_settings_a87838a3f7856c6727777eedfdc66d978}{set\-Utilisation\-De\-Complexe} (\hyperlink{class_settings_adb4ecdba67a8afd48e814d158660a1b3}{Utilisation\-De\-Complexe} comp)
+\begin{DoxyCompactList}\small\item\em setter du reglage concernant l'utilisation des complexes. \end{DoxyCompactList}\item 
+\hyperlink{class_settings_a7c410b290dcc4eb1374afde392f60bfc}{Angles} \hyperlink{class_settings_a22ffe21e72ea4de6b72a277d6f40823e}{get\-Angles} ()
+\begin{DoxyCompactList}\small\item\em getter du reglage concernant l'unite des angles. \end{DoxyCompactList}\item 
+void \hyperlink{class_settings_a16c9352aff0f6cda8d32162f5683662f}{set\-Angles} (\hyperlink{class_settings_a7c410b290dcc4eb1374afde392f60bfc}{Angles} an)
+\begin{DoxyCompactList}\small\item\em setter du reglage concernant l'unite des angles. \end{DoxyCompactList}\item 
+\hyperlink{class_settings_a2d04760870d51e7ca8692b99914feee5}{Type\-Constante} \hyperlink{class_settings_aad1ece7ef8379ee45532e9fbadef4a07}{get\-Type\-Constante} ()
+\begin{DoxyCompactList}\small\item\em getter du reglage concernant le type des constantes. \end{DoxyCompactList}\item 
+void \hyperlink{class_settings_a04de3fa2f43190fc5cac3caa7b9070c5}{set\-Type\-Constante} (\hyperlink{class_settings_a2d04760870d51e7ca8692b99914feee5}{Type\-Constante} co)
+\begin{DoxyCompactList}\small\item\em setter du reglage concernant le type des constantes. \end{DoxyCompactList}\item 
+int \hyperlink{class_settings_a86d89a7e5f502b0ec628c23d0a65e15e}{get\-Nb\-Elem\-Affichable} ()
+\begin{DoxyCompactList}\small\item\em getter du reglage concernant le nombre d'elements de la pile affichable. \end{DoxyCompactList}\item 
+void \hyperlink{class_settings_aa1fa14a8735fb1d5c48de999d92be929}{set\-Nb\-Element\-Affichable} (int nb\-Element)
+\begin{DoxyCompactList}\small\item\em setter du reglage concernant le nombre d'éléments à afficher dans la pile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_settings}{Settings} $\ast$ \hyperlink{class_settings_a5134bac1c68824ef48651c8469cf8722}{get\-Instance} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de retourner l'instance de la classe \hyperlink{class_settings}{Settings}. \end{DoxyCompactList}\item 
+static void \hyperlink{class_settings_a9008b343feeb2a29215dc21c22d508e0}{free\-Instance} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de libérer l'instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe (utilisant le Design Pattern Singleton) permettant de gerer les paramètres de la calculatrice (utilisee dans le cadre de la sauvegarde de contexte notamment). 
+
+Definition at line 17 of file settings.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_settings_a7c410b290dcc4eb1374afde392f60bfc}{\index{Settings@{Settings}!Angles@{Angles}}
+\index{Angles@{Angles}!Settings@{Settings}}
+\subsubsection[{Angles}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Settings\-::\-Angles}}}\label{class_settings_a7c410b290dcc4eb1374afde392f60bfc}
+
+
+Le reglage concernant l'unite des angles. 
+
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{D\-E\-G\-R\-E\-S@{D\-E\-G\-R\-E\-S}!Settings@{Settings}}\index{Settings@{Settings}!D\-E\-G\-R\-E\-S@{D\-E\-G\-R\-E\-S}}\item[{\em 
+\hypertarget{class_settings_a7c410b290dcc4eb1374afde392f60bfca1b0c8eaf991d4d335a3832f2a9796a35}{D\-E\-G\-R\-E\-S}\label{class_settings_a7c410b290dcc4eb1374afde392f60bfca1b0c8eaf991d4d335a3832f2a9796a35}
+}]Les angles sont exprimes en degres. \index{R\-A\-D\-I\-A\-N\-S@{R\-A\-D\-I\-A\-N\-S}!Settings@{Settings}}\index{Settings@{Settings}!R\-A\-D\-I\-A\-N\-S@{R\-A\-D\-I\-A\-N\-S}}\item[{\em 
+\hypertarget{class_settings_a7c410b290dcc4eb1374afde392f60bfca55630b14579bcbf00b72a0569e5e2709}{R\-A\-D\-I\-A\-N\-S}\label{class_settings_a7c410b290dcc4eb1374afde392f60bfca55630b14579bcbf00b72a0569e5e2709}
+}]Les angles sont exprimees en radians. \end{description}
+\end{Desc}
+
+
+
+Definition at line 33 of file settings.\-h.
+
+\hypertarget{class_settings_a2d04760870d51e7ca8692b99914feee5}{\index{Settings@{Settings}!Type\-Constante@{Type\-Constante}}
+\index{Type\-Constante@{Type\-Constante}!Settings@{Settings}}
+\subsubsection[{Type\-Constante}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Settings\-::\-Type\-Constante}}}\label{class_settings_a2d04760870d51e7ca8692b99914feee5}
+
+
+Le reglage concernant le type de constante en cours d'utilisation. 
+
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{E\-N\-T\-I\-E\-R@{E\-N\-T\-I\-E\-R}!Settings@{Settings}}\index{Settings@{Settings}!E\-N\-T\-I\-E\-R@{E\-N\-T\-I\-E\-R}}\item[{\em 
+\hypertarget{class_settings_a2d04760870d51e7ca8692b99914feee5af0e47cd4d31f34f37f884a4f0fede3b1}{E\-N\-T\-I\-E\-R}\label{class_settings_a2d04760870d51e7ca8692b99914feee5af0e47cd4d31f34f37f884a4f0fede3b1}
+}]Les constantes utilisees sont de type entier. \index{R\-A\-T\-I\-O\-N\-N\-E\-L@{R\-A\-T\-I\-O\-N\-N\-E\-L}!Settings@{Settings}}\index{Settings@{Settings}!R\-A\-T\-I\-O\-N\-N\-E\-L@{R\-A\-T\-I\-O\-N\-N\-E\-L}}\item[{\em 
+\hypertarget{class_settings_a2d04760870d51e7ca8692b99914feee5a459bca6cedd517b3bb4a14ac9f9b5275}{R\-A\-T\-I\-O\-N\-N\-E\-L}\label{class_settings_a2d04760870d51e7ca8692b99914feee5a459bca6cedd517b3bb4a14ac9f9b5275}
+}]Les constantes utilisees sont de type rationnel. \index{R\-E\-E\-L@{R\-E\-E\-L}!Settings@{Settings}}\index{Settings@{Settings}!R\-E\-E\-L@{R\-E\-E\-L}}\item[{\em 
+\hypertarget{class_settings_a2d04760870d51e7ca8692b99914feee5a505d204db40572a1d7463805246fca41}{R\-E\-E\-L}\label{class_settings_a2d04760870d51e7ca8692b99914feee5a505d204db40572a1d7463805246fca41}
+}]Les constantes utilisees sont de type reel. \end{description}
+\end{Desc}
+
+
+
+Definition at line 43 of file settings.\-h.
+
+\hypertarget{class_settings_adb4ecdba67a8afd48e814d158660a1b3}{\index{Settings@{Settings}!Utilisation\-De\-Complexe@{Utilisation\-De\-Complexe}}
+\index{Utilisation\-De\-Complexe@{Utilisation\-De\-Complexe}!Settings@{Settings}}
+\subsubsection[{Utilisation\-De\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Settings\-::\-Utilisation\-De\-Complexe}}}\label{class_settings_adb4ecdba67a8afd48e814d158660a1b3}
+
+
+Le reglage concernant l'utilisation de complexe. 
+
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{C\-O\-M\-P\-L\-E\-X\-E@{C\-O\-M\-P\-L\-E\-X\-E}!Settings@{Settings}}\index{Settings@{Settings}!C\-O\-M\-P\-L\-E\-X\-E@{C\-O\-M\-P\-L\-E\-X\-E}}\item[{\em 
+\hypertarget{class_settings_adb4ecdba67a8afd48e814d158660a1b3ab3f9ae5d2d8d1dbba5157cebb6eba9b1}{C\-O\-M\-P\-L\-E\-X\-E}\label{class_settings_adb4ecdba67a8afd48e814d158660a1b3ab3f9ae5d2d8d1dbba5157cebb6eba9b1}
+}]L'utilisation des complexes est autorisee. \index{N\-O\-N\-\_\-\-C\-O\-M\-P\-L\-E\-X\-E@{N\-O\-N\-\_\-\-C\-O\-M\-P\-L\-E\-X\-E}!Settings@{Settings}}\index{Settings@{Settings}!N\-O\-N\-\_\-\-C\-O\-M\-P\-L\-E\-X\-E@{N\-O\-N\-\_\-\-C\-O\-M\-P\-L\-E\-X\-E}}\item[{\em 
+\hypertarget{class_settings_adb4ecdba67a8afd48e814d158660a1b3a13cf89257e83656f5747caea9cbd5b4a}{N\-O\-N\-\_\-\-C\-O\-M\-P\-L\-E\-X\-E}\label{class_settings_adb4ecdba67a8afd48e814d158660a1b3a13cf89257e83656f5747caea9cbd5b4a}
+}]L'utilisation des complexes n'est pas autorisee. \end{description}
+\end{Desc}
+
+
+
+Definition at line 23 of file settings.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_settings_a9008b343feeb2a29215dc21c22d508e0}{\index{Settings@{Settings}!free\-Instance@{free\-Instance}}
+\index{free\-Instance@{free\-Instance}!Settings@{Settings}}
+\subsubsection[{free\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Settings\-::free\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_settings_a9008b343feeb2a29215dc21c22d508e0}
+
+
+Méthode permettant de libérer l'instance. 
+
+
+
+Definition at line 26 of file settings.\-cpp.
+
+\hypertarget{class_settings_a22ffe21e72ea4de6b72a277d6f40823e}{\index{Settings@{Settings}!get\-Angles@{get\-Angles}}
+\index{get\-Angles@{get\-Angles}!Settings@{Settings}}
+\subsubsection[{get\-Angles}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Angles} {\bf Settings\-::get\-Angles} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_settings_a22ffe21e72ea4de6b72a277d6f40823e}
+
+
+getter du reglage concernant l'unite des angles. 
+
+\begin{DoxyReturn}{Returns}
+L'unité d'angles utilisée 
+\end{DoxyReturn}
+
+
+Definition at line 112 of file settings.\-h.
+
+\hypertarget{class_settings_a5134bac1c68824ef48651c8469cf8722}{\index{Settings@{Settings}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!Settings@{Settings}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Settings} $\ast$ {\bf Settings\-::get\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_settings_a5134bac1c68824ef48651c8469cf8722}
+
+
+Méthode permettant de retourner l'instance de la classe \hyperlink{class_settings}{Settings}. 
+
+\begin{DoxyReturn}{Returns}
+L'instance 
+\end{DoxyReturn}
+
+
+Definition at line 20 of file settings.\-cpp.
+
+\hypertarget{class_settings_a86d89a7e5f502b0ec628c23d0a65e15e}{\index{Settings@{Settings}!get\-Nb\-Elem\-Affichable@{get\-Nb\-Elem\-Affichable}}
+\index{get\-Nb\-Elem\-Affichable@{get\-Nb\-Elem\-Affichable}!Settings@{Settings}}
+\subsubsection[{get\-Nb\-Elem\-Affichable}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Settings\-::get\-Nb\-Elem\-Affichable} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_settings_a86d89a7e5f502b0ec628c23d0a65e15e}
+
+
+getter du reglage concernant le nombre d'elements de la pile affichable. 
+
+\begin{DoxyReturn}{Returns}
+Le nombre d'éléments de la pile à afficher 
+\end{DoxyReturn}
+
+
+Definition at line 140 of file settings.\-h.
+
+\hypertarget{class_settings_aad1ece7ef8379ee45532e9fbadef4a07}{\index{Settings@{Settings}!get\-Type\-Constante@{get\-Type\-Constante}}
+\index{get\-Type\-Constante@{get\-Type\-Constante}!Settings@{Settings}}
+\subsubsection[{get\-Type\-Constante}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type\-Constante} {\bf Settings\-::get\-Type\-Constante} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_settings_aad1ece7ef8379ee45532e9fbadef4a07}
+
+
+getter du reglage concernant le type des constantes. 
+
+\begin{DoxyReturn}{Returns}
+Le type de constante utilisé 
+\end{DoxyReturn}
+
+
+Definition at line 126 of file settings.\-h.
+
+\hypertarget{class_settings_a226a2f433d78c004337fe92d4f2c0de0}{\index{Settings@{Settings}!get\-Utilisation\-De\-Complexe@{get\-Utilisation\-De\-Complexe}}
+\index{get\-Utilisation\-De\-Complexe@{get\-Utilisation\-De\-Complexe}!Settings@{Settings}}
+\subsubsection[{get\-Utilisation\-De\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Utilisation\-De\-Complexe} {\bf Settings\-::get\-Utilisation\-De\-Complexe} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_settings_a226a2f433d78c004337fe92d4f2c0de0}
+
+
+getter du reglage concernant l'utilisation des complexes. 
+
+\begin{DoxyReturn}{Returns}
+L'utilisation ou non des complexes 
+\end{DoxyReturn}
+
+
+Definition at line 98 of file settings.\-h.
+
+\hypertarget{class_settings_a16c9352aff0f6cda8d32162f5683662f}{\index{Settings@{Settings}!set\-Angles@{set\-Angles}}
+\index{set\-Angles@{set\-Angles}!Settings@{Settings}}
+\subsubsection[{set\-Angles}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Settings\-::set\-Angles} (
+\begin{DoxyParamCaption}
+\item[{{\bf Angles}}]{an}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_settings_a16c9352aff0f6cda8d32162f5683662f}
+
+
+setter du reglage concernant l'unite des angles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em an} & Angles \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 119 of file settings.\-h.
+
+\hypertarget{class_settings_aa1fa14a8735fb1d5c48de999d92be929}{\index{Settings@{Settings}!set\-Nb\-Element\-Affichable@{set\-Nb\-Element\-Affichable}}
+\index{set\-Nb\-Element\-Affichable@{set\-Nb\-Element\-Affichable}!Settings@{Settings}}
+\subsubsection[{set\-Nb\-Element\-Affichable}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Settings\-::set\-Nb\-Element\-Affichable} (
+\begin{DoxyParamCaption}
+\item[{int}]{nb\-Element}
+\end{DoxyParamCaption}
+)}}\label{class_settings_aa1fa14a8735fb1d5c48de999d92be929}
+
+
+setter du reglage concernant le nombre d'éléments à afficher dans la pile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\-Element} & \hyperlink{class_nombre}{Nombre} d'éléments de la pile à afficher \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file settings.\-cpp.
+
+\hypertarget{class_settings_a04de3fa2f43190fc5cac3caa7b9070c5}{\index{Settings@{Settings}!set\-Type\-Constante@{set\-Type\-Constante}}
+\index{set\-Type\-Constante@{set\-Type\-Constante}!Settings@{Settings}}
+\subsubsection[{set\-Type\-Constante}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Settings\-::set\-Type\-Constante} (
+\begin{DoxyParamCaption}
+\item[{{\bf Type\-Constante}}]{co}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_settings_a04de3fa2f43190fc5cac3caa7b9070c5}
+
+
+setter du reglage concernant le type des constantes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em co} & Type\-Constante \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 133 of file settings.\-h.
+
+\hypertarget{class_settings_a87838a3f7856c6727777eedfdc66d978}{\index{Settings@{Settings}!set\-Utilisation\-De\-Complexe@{set\-Utilisation\-De\-Complexe}}
+\index{set\-Utilisation\-De\-Complexe@{set\-Utilisation\-De\-Complexe}!Settings@{Settings}}
+\subsubsection[{set\-Utilisation\-De\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Settings\-::set\-Utilisation\-De\-Complexe} (
+\begin{DoxyParamCaption}
+\item[{{\bf Utilisation\-De\-Complexe}}]{comp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_settings_a87838a3f7856c6727777eedfdc66d978}
+
+
+setter du reglage concernant l'utilisation des complexes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comp} & Utilisation\-De\-Complexe \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 105 of file settings.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{settings_8h}{settings.\-h}\item 
+\hyperlink{settings_8cpp}{settings.\-cpp}\end{DoxyCompactItemize}

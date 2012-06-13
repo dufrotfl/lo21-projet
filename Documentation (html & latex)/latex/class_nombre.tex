@@ -1,0 +1,428 @@
+\hypertarget{class_nombre}{\section{Nombre Class Reference}
+\label{class_nombre}\index{Nombre@{Nombre}}
+}
+
+
+Classe qui étend l'interface \hyperlink{class_constante}{Constante} pour regrouper tout les valeurs de type numérique sous cette classe et également de proposer les différentes opérations spécifiques aux nombres (opérations arithmétiques, etc).  
+
+
+
+
+{\ttfamily \#include $<$nombre.\-h$>$}
+
+Inheritance diagram for Nombre\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_nombre}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_nombre_a4c6b76d82eb43d78f09ef09ac96e68c3}{$\sim$\-Nombre} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de classe. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_nombre_a718d616bbf2e5e8f133df958e8bb3d7f}{sign} ()=0
+\begin{DoxyCompactList}\small\item\em Methode permettant de transformer le nombre en son opposé. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_nombre_a5be0e66e9bbec508d236ba8dbe1eb6bc}{sqr} ()=0
+\begin{DoxyCompactList}\small\item\em Méthode permettant de transformer le nombre en son carré. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_nombre_aed65cb1449858c078e91610afb3a6447}{cube} ()=0
+\begin{DoxyCompactList}\small\item\em Méthode permettant de transformer le nombre en son cube. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_nombre_complexe}{Nombre\-Complexe} $\ast$ \hyperlink{class_nombre_a11092e1fcde81c05b4c518398baf3691}{to\-Nombre\-Complexe} ()=0
+\begin{DoxyCompactList}\small\item\em Méthode permettant de convertir un \hyperlink{class_nombre}{Nombre} en son équivalent en \hyperlink{class_nombre_complexe}{Nombre\-Complexe}. \end{DoxyCompactList}\item 
+\hyperlink{class_expression}{Expression} $\ast$ \hyperlink{class_nombre_aa1f5526edb56eae2e40c17632670bed6}{operator+} (\hyperlink{class_expression}{Expression} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('+').  \end{DoxyCompactList}\item 
+\hyperlink{class_expression}{Expression} $\ast$ \hyperlink{class_nombre_af71f33adeab91851ffcc15cad121d8c2}{operator-\/} (\hyperlink{class_expression}{Expression} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('-\/').  \end{DoxyCompactList}\item 
+\hyperlink{class_expression}{Expression} $\ast$ \hyperlink{class_nombre_ab1ba55765b198cda277000d6b80403a5}{operator/} (\hyperlink{class_expression}{Expression} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('/').  \end{DoxyCompactList}\item 
+\hyperlink{class_expression}{Expression} $\ast$ \hyperlink{class_nombre_ab99de52caa404260195eea417158edb5}{operator$\ast$} (\hyperlink{class_expression}{Expression} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('$\ast$').  \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_nombre_a229c1d79d365612f92108fbfeb90edc3}{Acos} ()  throw (\-Log\-Message)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de calculer le cos sur un \hyperlink{class_nombre}{Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_nombre_a4d9ff32a9e30b511360c72bc6c1e88fb}{Asin} ()  throw (\-Log\-Message)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de calculer le sin sur un \hyperlink{class_nombre}{Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_nombre_a41e4de9cae8eb7dbb92618d9d60e2407}{Atan} ()  throw (\-Log\-Message)
+\begin{DoxyCompactList}\small\item\em Méthode permettant d'appliquer la tan sur un \hyperlink{class_nombre}{Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_nombre_aa404e08423be432dbbc33dcf065ef121}{Asinh} ()  throw (\-Log\-Message)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de calculer le sinush sur un \hyperlink{class_nombre}{Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_nombre_afe078f44711c53b620b2f230fc14000e}{Acosh} ()  throw (\-Log\-Message)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de calculer le cosh sur un \hyperlink{class_nombre}{Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_nombre_a39146b14a1b90e07f743cafa5654f4ac}{Atanh} ()  throw (\-Log\-Message)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de calculer le tanh sur un \hyperlink{class_nombre}{Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_nombre_a43fba9af9a6945b25c4911844e55f6eb}{Aln} ()  throw (\-Log\-Message)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de calculer le logarithme népérien sur un \hyperlink{class_nombre}{Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_nombre_ae08b484b5c2749c5887e912f3a3b4b76}{Alog} ()  throw (\-Log\-Message)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de calculer le logarithme sur un \hyperlink{class_nombre}{Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_nombre_a1b25dae06f854558c169ba44c162b815}{Ainv} ()  throw (\-Log\-Message)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de retourner l'inverse d'un \hyperlink{class_nombre}{Nombre}. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_nombre_abd9749ce16130bd71b8990c6660b70c3}{Asqrt} ()  throw (\-Log\-Message)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de calculer la racine d'un \hyperlink{class_nombre}{Nombre}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe qui étend l'interface \hyperlink{class_constante}{Constante} pour regrouper tout les valeurs de type numérique sous cette classe et également de proposer les différentes opérations spécifiques aux nombres (opérations arithmétiques, etc). 
+
+Definition at line 22 of file nombre.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_nombre_a4c6b76d82eb43d78f09ef09ac96e68c3}{\index{Nombre@{Nombre}!$\sim$\-Nombre@{$\sim$\-Nombre}}
+\index{$\sim$\-Nombre@{$\sim$\-Nombre}!Nombre@{Nombre}}
+\subsubsection[{$\sim$\-Nombre}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Nombre\-::$\sim$\-Nombre} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_nombre_a4c6b76d82eb43d78f09ef09ac96e68c3}
+
+
+Destructeur de classe. 
+
+
+
+Definition at line 28 of file nombre.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_nombre_a229c1d79d365612f92108fbfeb90edc3}{\index{Nombre@{Nombre}!Acos@{Acos}}
+\index{Acos@{Acos}!Nombre@{Nombre}}
+\subsubsection[{Acos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante} $\ast$ {\bf Nombre\-::\-Acos} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throw ({\bf Log\-Message})}}\label{class_nombre_a229c1d79d365612f92108fbfeb90edc3}
+
+
+Méthode permettant de calculer le cos sur un \hyperlink{class_nombre}{Nombre}. 
+
+\begin{DoxyReturn}{Returns}
+La constante contenant le cos du \hyperlink{class_nombre}{Nombre} en tenant compte des paramètres utilisateurs (R\-A\-D\-I\-A\-N ou D\-E\-G\-R\-E\-S). 
+\end{DoxyReturn}
+
+
+Definition at line 48 of file nombre.\-cpp.
+
+\hypertarget{class_nombre_afe078f44711c53b620b2f230fc14000e}{\index{Nombre@{Nombre}!Acosh@{Acosh}}
+\index{Acosh@{Acosh}!Nombre@{Nombre}}
+\subsubsection[{Acosh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante} $\ast$ {\bf Nombre\-::\-Acosh} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throw ({\bf Log\-Message})}}\label{class_nombre_afe078f44711c53b620b2f230fc14000e}
+
+
+Méthode permettant de calculer le cosh sur un \hyperlink{class_nombre}{Nombre}. 
+
+\begin{DoxyReturn}{Returns}
+La constante contenant le cosh du \hyperlink{class_nombre}{Nombre} en tenant compte des paramètres utilisateurs (R\-A\-D\-I\-A\-N ou D\-E\-G\-R\-E\-S). 
+\end{DoxyReturn}
+
+
+Definition at line 116 of file nombre.\-cpp.
+
+\hypertarget{class_nombre_a1b25dae06f854558c169ba44c162b815}{\index{Nombre@{Nombre}!Ainv@{Ainv}}
+\index{Ainv@{Ainv}!Nombre@{Nombre}}
+\subsubsection[{Ainv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante} $\ast$ {\bf Nombre\-::\-Ainv} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throw ({\bf Log\-Message})}}\label{class_nombre_a1b25dae06f854558c169ba44c162b815}
+
+
+Méthode permettant de retourner l'inverse d'un \hyperlink{class_nombre}{Nombre}. 
+
+\begin{DoxyReturn}{Returns}
+La constante contenant l'inverse du \hyperlink{class_nombre}{Nombre}. 
+\end{DoxyReturn}
+
+
+Definition at line 197 of file nombre.\-cpp.
+
+\hypertarget{class_nombre_a43fba9af9a6945b25c4911844e55f6eb}{\index{Nombre@{Nombre}!Aln@{Aln}}
+\index{Aln@{Aln}!Nombre@{Nombre}}
+\subsubsection[{Aln}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante} $\ast$ {\bf Nombre\-::\-Aln} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throw ({\bf Log\-Message})}}\label{class_nombre_a43fba9af9a6945b25c4911844e55f6eb}
+
+
+Méthode permettant de calculer le logarithme népérien sur un \hyperlink{class_nombre}{Nombre}. 
+
+\begin{DoxyReturn}{Returns}
+La constante contenant le logarithme népérien du \hyperlink{class_nombre}{Nombre}. 
+\end{DoxyReturn}
+
+
+Definition at line 156 of file nombre.\-cpp.
+
+\hypertarget{class_nombre_ae08b484b5c2749c5887e912f3a3b4b76}{\index{Nombre@{Nombre}!Alog@{Alog}}
+\index{Alog@{Alog}!Nombre@{Nombre}}
+\subsubsection[{Alog}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante} $\ast$ {\bf Nombre\-::\-Alog} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throw ({\bf Log\-Message})}}\label{class_nombre_ae08b484b5c2749c5887e912f3a3b4b76}
+
+
+Méthode permettant de calculer le logarithme sur un \hyperlink{class_nombre}{Nombre}. 
+
+\begin{DoxyReturn}{Returns}
+La constante contenant le logarithme du \hyperlink{class_nombre}{Nombre}. 
+\end{DoxyReturn}
+
+
+Definition at line 176 of file nombre.\-cpp.
+
+\hypertarget{class_nombre_a4d9ff32a9e30b511360c72bc6c1e88fb}{\index{Nombre@{Nombre}!Asin@{Asin}}
+\index{Asin@{Asin}!Nombre@{Nombre}}
+\subsubsection[{Asin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante} $\ast$ {\bf Nombre\-::\-Asin} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throw ({\bf Log\-Message})}}\label{class_nombre_a4d9ff32a9e30b511360c72bc6c1e88fb}
+
+
+Méthode permettant de calculer le sin sur un \hyperlink{class_nombre}{Nombre}. 
+
+\begin{DoxyReturn}{Returns}
+La constante contenant le sin du \hyperlink{class_nombre}{Nombre} en tenant compte des paramètres utilisateurs (R\-A\-D\-I\-A\-N ou D\-E\-G\-R\-E\-S). 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file nombre.\-cpp.
+
+\hypertarget{class_nombre_aa404e08423be432dbbc33dcf065ef121}{\index{Nombre@{Nombre}!Asinh@{Asinh}}
+\index{Asinh@{Asinh}!Nombre@{Nombre}}
+\subsubsection[{Asinh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante} $\ast$ {\bf Nombre\-::\-Asinh} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throw ({\bf Log\-Message})}}\label{class_nombre_aa404e08423be432dbbc33dcf065ef121}
+
+
+Méthode permettant de calculer le sinush sur un \hyperlink{class_nombre}{Nombre}. 
+
+\begin{DoxyReturn}{Returns}
+La constante contenant le sinush du \hyperlink{class_nombre}{Nombre} en tenant compte des paramètres utilisateurs (R\-A\-D\-I\-A\-N ou D\-E\-G\-R\-E\-S). 
+\end{DoxyReturn}
+
+
+Definition at line 96 of file nombre.\-cpp.
+
+\hypertarget{class_nombre_abd9749ce16130bd71b8990c6660b70c3}{\index{Nombre@{Nombre}!Asqrt@{Asqrt}}
+\index{Asqrt@{Asqrt}!Nombre@{Nombre}}
+\subsubsection[{Asqrt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante} $\ast$ {\bf Nombre\-::\-Asqrt} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throw ({\bf Log\-Message})}}\label{class_nombre_abd9749ce16130bd71b8990c6660b70c3}
+
+
+Méthode permettant de calculer la racine d'un \hyperlink{class_nombre}{Nombre}. 
+
+\begin{DoxyReturn}{Returns}
+La constante contenant la racine du \hyperlink{class_nombre}{Nombre}. 
+\end{DoxyReturn}
+
+
+Definition at line 222 of file nombre.\-cpp.
+
+\hypertarget{class_nombre_a41e4de9cae8eb7dbb92618d9d60e2407}{\index{Nombre@{Nombre}!Atan@{Atan}}
+\index{Atan@{Atan}!Nombre@{Nombre}}
+\subsubsection[{Atan}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante} $\ast$ {\bf Nombre\-::\-Atan} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throw ({\bf Log\-Message})}}\label{class_nombre_a41e4de9cae8eb7dbb92618d9d60e2407}
+
+
+Méthode permettant d'appliquer la tan sur un \hyperlink{class_nombre}{Nombre}. 
+
+\begin{DoxyReturn}{Returns}
+La constante contenant la tan du \hyperlink{class_nombre}{Nombre} en tenant compte des paramètres utilisateurs (R\-A\-D\-I\-A\-N ou D\-E\-G\-R\-E\-S). 
+\end{DoxyReturn}
+
+
+Definition at line 72 of file nombre.\-cpp.
+
+\hypertarget{class_nombre_a39146b14a1b90e07f743cafa5654f4ac}{\index{Nombre@{Nombre}!Atanh@{Atanh}}
+\index{Atanh@{Atanh}!Nombre@{Nombre}}
+\subsubsection[{Atanh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante} $\ast$ {\bf Nombre\-::\-Atanh} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throw ({\bf Log\-Message})}}\label{class_nombre_a39146b14a1b90e07f743cafa5654f4ac}
+
+
+Méthode permettant de calculer le tanh sur un \hyperlink{class_nombre}{Nombre}. 
+
+\begin{DoxyReturn}{Returns}
+La constante contenant le tanh du \hyperlink{class_nombre}{Nombre} en tenant compte des paramètres utilisateurs (R\-A\-D\-I\-A\-N ou D\-E\-G\-R\-E\-S). 
+\end{DoxyReturn}
+
+
+Definition at line 136 of file nombre.\-cpp.
+
+\hypertarget{class_nombre_aed65cb1449858c078e91610afb3a6447}{\index{Nombre@{Nombre}!cube@{cube}}
+\index{cube@{cube}!Nombre@{Nombre}}
+\subsubsection[{cube}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf Nombre\-::cube} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_nombre_aed65cb1449858c078e91610afb3a6447}
+
+
+Méthode permettant de transformer le nombre en son cube. 
+
+
+
+Implemented in \hyperlink{class_rationnel_a72bf5e2bac1e10990d44783b8d2d7ab1}{Rationnel}, \hyperlink{class_entier_a8fbf1379f26622554393e48df17867fd}{Entier}, \hyperlink{class_nombre_complexe_ae6e43b7eec06f92933e8f54571e383e6}{Nombre\-Complexe}, and \hyperlink{class_reel_ac46be5621787809b3fea257b54fee83f}{Reel}.
+
+\hypertarget{class_nombre_ab99de52caa404260195eea417158edb5}{\index{Nombre@{Nombre}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Nombre@{Nombre}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expression} $\ast$ Nombre\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Expression} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{class_nombre_ab99de52caa404260195eea417158edb5}
+
+
+Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('$\ast$').  
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & La constante à insérer dans l'expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L'expression ressortissante de l'opération 
+\end{DoxyReturn}
+ 
+
+Definition at line 20 of file nombre.\-cpp.
+
+\hypertarget{class_nombre_aa1f5526edb56eae2e40c17632670bed6}{\index{Nombre@{Nombre}!operator+@{operator+}}
+\index{operator+@{operator+}!Nombre@{Nombre}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expression} $\ast$ Nombre\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Expression} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{class_nombre_aa1f5526edb56eae2e40c17632670bed6}
+
+
+Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('+').  
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & La constante à insérer dans l'expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L'expression ressortissante de l'opération 
+\end{DoxyReturn}
+ 
+
+Definition at line 8 of file nombre.\-cpp.
+
+\hypertarget{class_nombre_af71f33adeab91851ffcc15cad121d8c2}{\index{Nombre@{Nombre}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Nombre@{Nombre}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expression} $\ast$ Nombre\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Expression} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{class_nombre_af71f33adeab91851ffcc15cad121d8c2}
+
+
+Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('-\/').  
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & La constante à insérer dans l'expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L'expression ressortissante de l'opération 
+\end{DoxyReturn}
+ 
+
+Definition at line 12 of file nombre.\-cpp.
+
+\hypertarget{class_nombre_ab1ba55765b198cda277000d6b80403a5}{\index{Nombre@{Nombre}!operator/@{operator/}}
+\index{operator/@{operator/}!Nombre@{Nombre}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expression} $\ast$ Nombre\-::operator/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Expression} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{class_nombre_ab1ba55765b198cda277000d6b80403a5}
+
+
+Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('/').  
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & La constante à insérer dans l'expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L'expression ressortissante de l'opération 
+\end{DoxyReturn}
+ 
+
+Definition at line 16 of file nombre.\-cpp.
+
+\hypertarget{class_nombre_a718d616bbf2e5e8f133df958e8bb3d7f}{\index{Nombre@{Nombre}!sign@{sign}}
+\index{sign@{sign}!Nombre@{Nombre}}
+\subsubsection[{sign}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf Nombre\-::sign} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_nombre_a718d616bbf2e5e8f133df958e8bb3d7f}
+
+
+Methode permettant de transformer le nombre en son opposé. 
+
+
+
+Implemented in \hyperlink{class_rationnel_a723b922369bb264764b319fde37068d7}{Rationnel}, \hyperlink{class_entier_a91748c3918f8eed1c188f5175328cf1a}{Entier}, \hyperlink{class_nombre_complexe_ae81bf4639b5fbbb27f20204720a38489}{Nombre\-Complexe}, and \hyperlink{class_reel_ab86c394e2e4a6729ecafba23e65915ad}{Reel}.
+
+\hypertarget{class_nombre_a5be0e66e9bbec508d236ba8dbe1eb6bc}{\index{Nombre@{Nombre}!sqr@{sqr}}
+\index{sqr@{sqr}!Nombre@{Nombre}}
+\subsubsection[{sqr}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf Nombre\-::sqr} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_nombre_a5be0e66e9bbec508d236ba8dbe1eb6bc}
+
+
+Méthode permettant de transformer le nombre en son carré. 
+
+
+
+Implemented in \hyperlink{class_rationnel_acb4195e9590b74f9895398f69acc7692}{Rationnel}, \hyperlink{class_entier_a66dff979b86690f26360fd3a93b25537}{Entier}, \hyperlink{class_nombre_complexe_aca52852015c47d4c8246fbf3c9cebd62}{Nombre\-Complexe}, and \hyperlink{class_reel_a612dd1edfce0d6fa687ab4cbfc700d07}{Reel}.
+
+\hypertarget{class_nombre_a11092e1fcde81c05b4c518398baf3691}{\index{Nombre@{Nombre}!to\-Nombre\-Complexe@{to\-Nombre\-Complexe}}
+\index{to\-Nombre\-Complexe@{to\-Nombre\-Complexe}!Nombre@{Nombre}}
+\subsubsection[{to\-Nombre\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Nombre\-Complexe}$\ast$ {\bf Nombre\-::to\-Nombre\-Complexe} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_nombre_a11092e1fcde81c05b4c518398baf3691}
+
+
+Méthode permettant de convertir un \hyperlink{class_nombre}{Nombre} en son équivalent en \hyperlink{class_nombre_complexe}{Nombre\-Complexe}. 
+
+\begin{DoxyReturn}{Returns}
+Le pointeur vers le nombre\-Complexe nouvellement crée 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_nombre_complexe_a10a9ca96f5d1a1d6ebff4099befca807}{Nombre\-Complexe}, \hyperlink{class_entier_abadca482fe27a3302f874e9e7c109579}{Entier}, \hyperlink{class_rationnel_a06771fbd968456d02a56480ba3a12bc6}{Rationnel}, and \hyperlink{class_reel_a3ba5e47699a1ccff32075a588afda91e}{Reel}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{nombre_8h}{nombre.\-h}\item 
+\hyperlink{nombre_8cpp}{nombre.\-cpp}\end{DoxyCompactItemize}

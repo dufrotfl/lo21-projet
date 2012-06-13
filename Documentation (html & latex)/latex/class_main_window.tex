@@ -1,0 +1,174 @@
+\hypertarget{class_main_window}{\section{Main\-Window Class Reference}
+\label{class_main_window}\index{Main\-Window@{Main\-Window}}
+}
+
+
+Classe (utilisant le Design Pattern Singleton) permettant de gérer l'interface de la calculatrice, ainsi que les interactions entre celle-\/ci et les classes associées.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_a58135ab8b13869a0ac40aa110c0914eb}{charger\-Contexte} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de charger le contexte \-: cad charger les bons paramètres en fonction des settings. \end{DoxyCompactList}\item 
+\hyperlink{class_pile}{Pile} $\ast$ \hyperlink{class_main_window_aafa30e84f5163a63323a7fb3a960199e}{get\-Pile} () const 
+\begin{DoxyCompactList}\small\item\em Getter permettant de retourner la pile utilisé. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_ad75c14f8c8d8c5f3591f6286f6df71a8}{set\-Stack\-Display\-Spin\-Box} (int i)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de fixer le nombre d'éléments de la pile à afficher. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a431d6a7fd08fac994cd0740f4f58eac8}{set\-Input\-Line\-Edit} (const Q\-String \&str)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de modifier le contenu du champ de saisie par la string en paramètre, et appelle la méthode permettant de traiter cette chaine. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a8cf3c5ca6532158f321ff234ad5fca58}{set\-Stack\-Display\-Text\-Edit} (const Q\-String \&str)
+\begin{DoxyCompactList}\small\item\em Méthode permettant d'ajouter \char`\"{}str\char`\"{} au contenu déjà présent dans le champ de saisie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_main_window}{Main\-Window} $\ast$ \hyperlink{class_main_window_adbe77fe06e8ee3324c38577a79b4eed6}{get\-Instance} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de retourner l'instance de la classe. \end{DoxyCompactList}\item 
+static void \hyperlink{class_main_window_afdf126bf06f3b9828eb6653cc3d37603}{free\-Instance} ()
+\begin{DoxyCompactList}\small\item\em Méthode permettant de libérer l'instance de classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe (utilisant le Design Pattern Singleton) permettant de gérer l'interface de la calculatrice, ainsi que les interactions entre celle-\/ci et les classes associées. 
+
+Definition at line 30 of file mainwindow.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_main_window_a58135ab8b13869a0ac40aa110c0914eb}{\index{Main\-Window@{Main\-Window}!charger\-Contexte@{charger\-Contexte}}
+\index{charger\-Contexte@{charger\-Contexte}!MainWindow@{Main\-Window}}
+\subsubsection[{charger\-Contexte}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Main\-Window\-::charger\-Contexte} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_main_window_a58135ab8b13869a0ac40aa110c0914eb}
+
+
+Méthode permettant de charger le contexte \-: cad charger les bons paramètres en fonction des settings. 
+
+
+
+Definition at line 27 of file mainwindow.\-cpp.
+
+\hypertarget{class_main_window_afdf126bf06f3b9828eb6653cc3d37603}{\index{Main\-Window@{Main\-Window}!free\-Instance@{free\-Instance}}
+\index{free\-Instance@{free\-Instance}!MainWindow@{Main\-Window}}
+\subsubsection[{free\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Main\-Window\-::free\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_main_window_afdf126bf06f3b9828eb6653cc3d37603}
+
+
+Méthode permettant de libérer l'instance de classe. 
+
+
+
+Definition at line 54 of file mainwindow.\-cpp.
+
+\hypertarget{class_main_window_adbe77fe06e8ee3324c38577a79b4eed6}{\index{Main\-Window@{Main\-Window}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!MainWindow@{Main\-Window}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Main\-Window} $\ast$ {\bf Main\-Window\-::get\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_main_window_adbe77fe06e8ee3324c38577a79b4eed6}
+
+
+Méthode permettant de retourner l'instance de la classe. 
+
+\begin{DoxyReturn}{Returns}
+L'instance de la classe 
+\end{DoxyReturn}
+
+
+Definition at line 48 of file mainwindow.\-cpp.
+
+\hypertarget{class_main_window_aafa30e84f5163a63323a7fb3a960199e}{\index{Main\-Window@{Main\-Window}!get\-Pile@{get\-Pile}}
+\index{get\-Pile@{get\-Pile}!MainWindow@{Main\-Window}}
+\subsubsection[{get\-Pile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pile}$\ast$ {\bf Main\-Window\-::get\-Pile} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_main_window_aafa30e84f5163a63323a7fb3a960199e}
+
+
+Getter permettant de retourner la pile utilisé. 
+
+\begin{DoxyReturn}{Returns}
+La pile de la calculatrice 
+\end{DoxyReturn}
+
+
+Definition at line 72 of file mainwindow.\-h.
+
+\hypertarget{class_main_window_a431d6a7fd08fac994cd0740f4f58eac8}{\index{Main\-Window@{Main\-Window}!set\-Input\-Line\-Edit@{set\-Input\-Line\-Edit}}
+\index{set\-Input\-Line\-Edit@{set\-Input\-Line\-Edit}!MainWindow@{Main\-Window}}
+\subsubsection[{set\-Input\-Line\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Main\-Window\-::set\-Input\-Line\-Edit} (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{str}
+\end{DoxyParamCaption}
+)}}\label{class_main_window_a431d6a7fd08fac994cd0740f4f58eac8}
+
+
+Méthode permettant de modifier le contenu du champ de saisie par la string en paramètre, et appelle la méthode permettant de traiter cette chaine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & La chaine de caractères à insérer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 508 of file mainwindow.\-cpp.
+
+\hypertarget{class_main_window_ad75c14f8c8d8c5f3591f6286f6df71a8}{\index{Main\-Window@{Main\-Window}!set\-Stack\-Display\-Spin\-Box@{set\-Stack\-Display\-Spin\-Box}}
+\index{set\-Stack\-Display\-Spin\-Box@{set\-Stack\-Display\-Spin\-Box}!MainWindow@{Main\-Window}}
+\subsubsection[{set\-Stack\-Display\-Spin\-Box}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Main\-Window\-::set\-Stack\-Display\-Spin\-Box} (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_main_window_ad75c14f8c8d8c5f3591f6286f6df71a8}
+
+
+Méthode permettant de fixer le nombre d'éléments de la pile à afficher. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Le nombre d'éléments à afficher \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 504 of file mainwindow.\-cpp.
+
+\hypertarget{class_main_window_a8cf3c5ca6532158f321ff234ad5fca58}{\index{Main\-Window@{Main\-Window}!set\-Stack\-Display\-Text\-Edit@{set\-Stack\-Display\-Text\-Edit}}
+\index{set\-Stack\-Display\-Text\-Edit@{set\-Stack\-Display\-Text\-Edit}!MainWindow@{Main\-Window}}
+\subsubsection[{set\-Stack\-Display\-Text\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Main\-Window\-::set\-Stack\-Display\-Text\-Edit} (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{str}
+\end{DoxyParamCaption}
+)}}\label{class_main_window_a8cf3c5ca6532158f321ff234ad5fca58}
+
+
+Méthode permettant d'ajouter \char`\"{}str\char`\"{} au contenu déjà présent dans le champ de saisie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & La chaine de caractères à ajouter \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 500 of file mainwindow.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mainwindow_8h}{mainwindow.\-h}\item 
+\hyperlink{mainwindow_8cpp}{mainwindow.\-cpp}\end{DoxyCompactItemize}

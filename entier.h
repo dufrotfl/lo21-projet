@@ -15,7 +15,7 @@ class NombreComplexe;
 
 /*!
  \class Entier
- \brief Classe implémentant l'interface de @link NombreNonComplexe @endlink
+ \brief Classe implémentant l'interface de @link NombreNonComplexe @endlink et permettant de gérer des constantes de type entier
 */
 class Entier : public NombreNonComplexe {
 private:
@@ -25,15 +25,15 @@ private:
     int _val;
 public:
     /*!
-      \brief Destructeur de la classe
+      \brief Destructeur de la classe.
       */
     ~Entier() {}
 	/**
-     \brief Constructeur par défaut
+     \brief Constructeur par défaut.
 	*/
     Entier():_val(0) {}
 	/**
-     \brief Constructeur avec paramètre
+     \brief Constructeur avec paramètre.
      \param v La valeur de l'entier
 	*/
     Entier(int v):_val(v) {}
@@ -42,21 +42,21 @@ public:
       */
     Entier* clone() const;
     /**
-      \brief Crée un entier par constructeur par copie
+      \brief Crée un entier par constructeur par copie.
       \param e L'entier à copier
       */
     Entier(const Entier &e) { _val = e.getVal(); }
 	/**
-	 \brief Getter de la valeur de l'entier
+	 \brief Getter de la valeur de l'entier.
 	 \return La valeur de l'entier
 	 */
     int getVal() const {return _val;}
 	/**
-	 \brief Méthode permettant de transformer le nombre en sa factorielle
+	 \brief Méthode permettant de transformer le nombre en sa factorielle.
 	 */
     void fact() {for(int val_copy=_val-1;val_copy>1; val_copy--) _val*=val_copy;}
 	/**
-	 \brief Méthode permettant de transformer le nombre en son reste de la division du nombre par m
+	 \brief Méthode permettant de transformer le nombre en son reste de la division du nombre par m.
 	 \param m Le diviseur
 	 */
     void mod(int m)  {_val = _val%m;}

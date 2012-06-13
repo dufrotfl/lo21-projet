@@ -13,7 +13,7 @@
 
 /*!
   \class HistoriqueOperateurSwap
-  \brief Classe implémentant l'interface @link Historique @endlink et permettant de gérer l'historique de la commande swap
+  \brief Classe implémentant l'interface @link Historique @endlink et permettant de gérer l'historique de la commande swap.
   */
 class HistoriqueOperateurSwap : public Historique {
     /**<
@@ -26,13 +26,13 @@ class HistoriqueOperateurSwap : public Historique {
     Entier* _entier2;
 public:
     /*!
-      \brief Constructeur avec paramètres
+      \brief Constructeur avec paramètres.
       \param c1 Le premier indice du swap
       \param c2 Le second indice du swap
       */
     HistoriqueOperateurSwap(Entier* c1, Entier* c2):_entier1(c1->clone()), _entier2(c2->clone()) {}
     /*!
-      \brief Destructeur de la classe
+      \brief Destructeur de la classe.
       */
     ~HistoriqueOperateurSwap() {delete _entier1; delete _entier2;}
     /*!

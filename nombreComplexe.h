@@ -11,7 +11,8 @@
 
 
 /*!
- \class Classe implémentant l'interface @link Nombre @endlink 
+ \class NombreComplexe
+ \brief Classe implémentant l'interface @link Nombre @endlink  et permettant de gérer des constantes de type complexe
 */
 class NombreComplexe : public Nombre {
 private:

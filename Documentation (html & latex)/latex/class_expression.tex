@@ -1,0 +1,266 @@
+\hypertarget{class_expression}{\section{Expression Class Reference}
+\label{class_expression}\index{Expression@{Expression}}
+}
+
+
+Classe implémentant l'interface de \hyperlink{class_constante}{Constante} et permettant la gestion d'un expression.  
+
+
+
+
+{\ttfamily \#include $<$expression.\-h$>$}
+
+Inheritance diagram for Expression\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_expression}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_expression_afcf87716bf0abfe8d414c92529e1564a}{Expression} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{class_expression_aeefdef970387f310f7b84c840045f51e}{Expression} (const Q\-String \&str)
+\begin{DoxyCompactList}\small\item\em Constructeur par copie. \end{DoxyCompactList}\item 
+\hyperlink{class_expression}{Expression} $\ast$ \hyperlink{class_expression_ad357e8bb1174b3582833ebcbf6d6e232}{clone} () const 
+\begin{DoxyCompactList}\small\item\em Méthode permettant de cloner une constante.  \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_expression_ae1a9e65c034a2614977955cf5bfc8b05}{get\-Liste} () const 
+\begin{DoxyCompactList}\small\item\em Méthode permettant de retourner la chaine contenant l'expression. \end{DoxyCompactList}\item 
+void \hyperlink{class_expression_a6828fe53c893fa3b8c8357bc2c9482f9}{set\-Liste} (const Q\-String \&str)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de modifier la chaine contenant l'expression. \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_expression_a60e6e305cdd8e878df2e3081ae15a4d0}{to\-String} () const 
+\begin{DoxyCompactList}\small\item\em Fonction permettant de renvoyer une chaine comprenant la valuation de la constante associé, cette fonction est utilisée dans le cadre de l'affichage des constantes dans la pile.  \end{DoxyCompactList}\item 
+\hyperlink{class_expression}{Expression} $\ast$ \hyperlink{class_expression_a14c9ec2a29777e43b07447cfcdbf5968}{operator+} (\hyperlink{class_constante}{Constante} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('+'). \end{DoxyCompactList}\item 
+\hyperlink{class_expression}{Expression} $\ast$ \hyperlink{class_expression_ab0f151eea8c2920a41d9b88b835ffbac}{operator-\/} (\hyperlink{class_constante}{Constante} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('-\/'). \end{DoxyCompactList}\item 
+\hyperlink{class_expression}{Expression} $\ast$ \hyperlink{class_expression_a4117f2eff2bb19a7d9b96696d97a0be7}{operator$\ast$} (\hyperlink{class_constante}{Constante} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('$\ast$'). \end{DoxyCompactList}\item 
+\hyperlink{class_expression}{Expression} $\ast$ \hyperlink{class_expression_ae3924fe2659a6c1b465a14d24296498c}{operator/} (\hyperlink{class_constante}{Constante} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('/'). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe implémentant l'interface de \hyperlink{class_constante}{Constante} et permettant la gestion d'un expression. 
+
+Definition at line 19 of file expression.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_expression_afcf87716bf0abfe8d414c92529e1564a}{\index{Expression@{Expression}!Expression@{Expression}}
+\index{Expression@{Expression}!Expression@{Expression}}
+\subsubsection[{Expression}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expression\-::\-Expression} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_expression_afcf87716bf0abfe8d414c92529e1564a}
+
+
+Constructeur par défaut. 
+
+
+
+Definition at line 5 of file expression.\-cpp.
+
+\hypertarget{class_expression_aeefdef970387f310f7b84c840045f51e}{\index{Expression@{Expression}!Expression@{Expression}}
+\index{Expression@{Expression}!Expression@{Expression}}
+\subsubsection[{Expression}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expression\-::\-Expression} (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{str}
+\end{DoxyParamCaption}
+)}}\label{class_expression_aeefdef970387f310f7b84c840045f51e}
+
+
+Constructeur par copie. 
+
+
+
+Definition at line 8 of file expression.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_expression_ad357e8bb1174b3582833ebcbf6d6e232}{\index{Expression@{Expression}!clone@{clone}}
+\index{clone@{clone}!Expression@{Expression}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expression} $\ast$ {\bf Expression\-::clone} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_expression_ad357e8bb1174b3582833ebcbf6d6e232}
+
+
+Méthode permettant de cloner une constante.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em Le} & pointeur vers la constante clonée \\
+\hline
+\end{DoxyParams}
+ 
+
+Implements \hyperlink{class_constante_a5769ea385161e02bd2d1bcadefc2c510}{Constante}.
+
+
+
+Definition at line 12 of file expression.\-cpp.
+
+\hypertarget{class_expression_ae1a9e65c034a2614977955cf5bfc8b05}{\index{Expression@{Expression}!get\-Liste@{get\-Liste}}
+\index{get\-Liste@{get\-Liste}!Expression@{Expression}}
+\subsubsection[{get\-Liste}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String {\bf Expression\-::get\-Liste} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_expression_ae1a9e65c034a2614977955cf5bfc8b05}
+
+
+Méthode permettant de retourner la chaine contenant l'expression. 
+
+\begin{DoxyReturn}{Returns}
+La chaine de l'expression 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file expression.\-h.
+
+\hypertarget{class_expression_a4117f2eff2bb19a7d9b96696d97a0be7}{\index{Expression@{Expression}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Expression@{Expression}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expression} $\ast$ Expression\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Constante} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_expression_a4117f2eff2bb19a7d9b96696d97a0be7}
+
+
+Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('$\ast$'). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & La constante à insérer dans l'expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L'expression ressortissante de l'opération 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file expression.\-cpp.
+
+\hypertarget{class_expression_a14c9ec2a29777e43b07447cfcdbf5968}{\index{Expression@{Expression}!operator+@{operator+}}
+\index{operator+@{operator+}!Expression@{Expression}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expression} $\ast$ Expression\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Constante} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_expression_a14c9ec2a29777e43b07447cfcdbf5968}
+
+
+Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('+'). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & La constante à insérer dans l'expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L'expression ressortissante de l'opération 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file expression.\-cpp.
+
+\hypertarget{class_expression_ab0f151eea8c2920a41d9b88b835ffbac}{\index{Expression@{Expression}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Expression@{Expression}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expression} $\ast$ Expression\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Constante} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_expression_ab0f151eea8c2920a41d9b88b835ffbac}
+
+
+Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('-\/'). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & La constante à insérer dans l'expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L'expression ressortissante de l'opération 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file expression.\-cpp.
+
+\hypertarget{class_expression_ae3924fe2659a6c1b465a14d24296498c}{\index{Expression@{Expression}!operator/@{operator/}}
+\index{operator/@{operator/}!Expression@{Expression}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expression} $\ast$ Expression\-::operator/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Constante} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_expression_ae3924fe2659a6c1b465a14d24296498c}
+
+
+Méthode permettant de retourner une expression contenant l'expression appelante, la constante passée en paramètre et ainsi que l'opérateur associé ('/'). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & La constante à insérer dans l'expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L'expression ressortissante de l'opération 
+\end{DoxyReturn}
+
+
+Definition at line 61 of file expression.\-cpp.
+
+\hypertarget{class_expression_a6828fe53c893fa3b8c8357bc2c9482f9}{\index{Expression@{Expression}!set\-Liste@{set\-Liste}}
+\index{set\-Liste@{set\-Liste}!Expression@{Expression}}
+\subsubsection[{set\-Liste}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Expression\-::set\-Liste} (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_expression_a6828fe53c893fa3b8c8357bc2c9482f9}
+
+
+Méthode permettant de modifier la chaine contenant l'expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em La} & nouvelle chaine de l'expression \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 47 of file expression.\-h.
+
+\hypertarget{class_expression_a60e6e305cdd8e878df2e3081ae15a4d0}{\index{Expression@{Expression}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Expression@{Expression}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String {\bf Expression\-::to\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_expression_a60e6e305cdd8e878df2e3081ae15a4d0}
+
+
+Fonction permettant de renvoyer une chaine comprenant la valuation de la constante associé, cette fonction est utilisée dans le cadre de l'affichage des constantes dans la pile.  
+
+\begin{DoxyReturn}{Returns}
+La chaine à afficher dans la pile 
+\end{DoxyReturn}
+ 
+
+Implements \hyperlink{class_constante_ad5ea6850196ee9f86b74c74009a87ab1}{Constante}.
+
+
+
+Definition at line 16 of file expression.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{expression_8h}{expression.\-h}\item 
+\hyperlink{expression_8cpp}{expression.\-cpp}\end{DoxyCompactItemize}

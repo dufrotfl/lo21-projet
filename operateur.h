@@ -13,7 +13,7 @@
 
 /*!
   \class Operateur
-  \brief Classe implémentant l'interface de @link Constante @endlink
+  \brief Classe (utilisant le design pattern strategy) implémentant l'interface de @link Constante @endlink et permettant de gérer les constantes de type opérateur (+,-,/,*, sin, cos, etc...).
   */
 class Operateur : public Constante {
 private:
@@ -27,11 +27,11 @@ private:
     int _arite;
 public:
     /*!
-      \brief Crée un opérateur par défaut
+      \brief Constructeur par défaut.
       */
     Operateur();
     /*!
-      \brief Crée un opérateur en fonction du paramètre
+      \brief Constructeur avec paramètres.
       \param op La chaine représentant l'opérateur
       \param ar L'arité de l'opérateur
       */
@@ -55,7 +55,7 @@ public:
       */
     QString toString() const {return _operateur;}
     /*!
-      \brief Méthode permettant d'appeler la bonne méthode en fonction de l'opérateur et des deux constantes associées
+      \brief Méthode permettant d'appeler la bonne méthode en fonction de l'opérateur et des deux constantes associées.
       \param c1 La première opérande (présente dans le cas d'une opération unaire & binaire)
       \param c2 La seconde opérande (présente dans le cas d'une opération binaire)
       \return Le résultat de type @link Constante @endlink après avoir appliqué l'opération

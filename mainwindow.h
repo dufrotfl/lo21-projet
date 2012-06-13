@@ -53,16 +53,16 @@ private:
     ~MainWindow();
 public:
    /*!
-     \brief Méthode permettant de retourner l'instance de la classe
+     \brief Méthode permettant de retourner l'instance de la classe.
      \return L'instance de la classe
      */
     static MainWindow* getInstance() ;
     /*!
-      \brief Méthode permettant de libérer l'instance de classe
+      \brief Méthode permettant de libérer l'instance de classe.
       */
     static void freeInstance();
     /*!
-      \brief Méthode permettant de charger le contexte : cad charger les bons paramètres en fonction des settings
+      \brief Méthode permettant de charger le contexte : cad charger les bons paramètres en fonction des settings.
       */
     void chargerContexte();
     /*!
@@ -76,7 +76,7 @@ public:
       */
     void setStackDisplaySpinBox(int i);
     /*!
-      \brief Méthode permettant de modifier le contenu du champ de saisie par la string en paramètre, et appelle la méthode permettant de traiter cette chaine
+      \brief Méthode permettant de modifier le contenu du champ de saisie par la string en paramètre, et appelle la méthode permettant de traiter cette chaine.
       \param str La chaine de caractères à insérer
       */
     void setInputLineEdit(const QString &str);
